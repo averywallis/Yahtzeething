@@ -4,9 +4,7 @@ Author: Avery Wallis
 Sources:
 
 """
-
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, LineAsset, PolygonAsset
-
 
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
@@ -21,14 +19,12 @@ gooy=Color(0xCDF238,1.0)
 white=Color(0xFFFFFF,1.0)
 darkblue=Color(0x052099,1.0)
 
-
 thinline= LineStyle(1, black)
 thickline= LineStyle(5, black)
 thickishline= LineStyle(2.5, black)
 noline=LineStyle(0, black)
 portalline=LineStyle(1, blue)
 portalline2=LineStyle(1, orange)
-
 
 wall=RectangleAsset(500,500, noline, wall)
 blueportal=EllipseAsset(27, 60, noline, blue)
@@ -40,6 +36,7 @@ plat=RectangleAsset(250, 50, noline, plat)
 doorline=LineAsset(0, 120, thinline)
 goo=PolygonAsset([(0,500),(800,500),(800,600,),(0,600)],noline,gooy)
 
+"""
 Sprite(wall, (400,20))
 Sprite(wall, (100,20))
 Sprite(exit, (800,100))
@@ -52,6 +49,7 @@ Sprite(innerportal, (700,90))
 Sprite(blueportal, (200,340))
 Sprite(innerportal, (200,340))
 Sprite(goo, (100,0))
+"""
 
 myapp = App()
 myapp.run()
