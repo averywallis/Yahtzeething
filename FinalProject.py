@@ -53,6 +53,17 @@ Sprite(goo, (100,0))
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
-
+    Sprite(wall, (400,20))
+    Sprite(wall, (100,20))
+    Sprite(exit, (800,100))
+    Sprite(exit2, (800, 100))
+    Sprite(doorline, (800, 30))
+    Sprite(plat, (100,400))
+    Sprite(plat, (650, 150))
+    Sprite(orangeportal, (700,90))
+    Sprite(innerportal, (700,90))
+    Sprite(blueportal, (200,340))
+    Sprite(innerportal, (200,340))
+    Sprite(goo, (100,0))
 myapp = PortalGame(500,500)
 myapp.run()
