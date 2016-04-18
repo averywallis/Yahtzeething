@@ -50,6 +50,9 @@ Sprite(blueportal, (200,340))
 Sprite(innerportal, (200,340))
 Sprite(goo, (100,0))
 """
+class PortalGame(App):
+    def __init__(self, width, height):
+        super().__init__(width, height)
 
-myapp = App()
+myapp = PortalGame()
 myapp.run()
