@@ -60,6 +60,6 @@ class PortalGame(App):
     Sprite(blueportal, (200,340))
     Sprite(innerportal, (200,340))
     Sprite(goo, (100,0))
-    Chell((500,250))
+    Chell((250,250))
 myapp = PortalGame(1000,1000)
 myapp.run()
