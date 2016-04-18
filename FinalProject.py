@@ -37,7 +37,8 @@ doorline=LineAsset(0, 120, thinline)
 goo=PolygonAsset([(0,500),(800,500),(800,600,),(0,600)],noline,gooy)
 
 class Chell(Sprite):
-    asset = ImageAsset("images/Chell.png", 
+    asset = ImageAsset("images/Chell.png"
+    
     def __init__(self, position):
         super().__init__(Chell.asset, position)
 
