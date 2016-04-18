@@ -54,5 +54,5 @@ class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
 
-myapp = PortalGame()
+myapp = PortalGame(500,500)
 myapp.run()
