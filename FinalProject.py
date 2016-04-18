@@ -44,6 +44,12 @@ class Chell(Sprite):
         self.visible = True
         self.x = 250
         self.y = 250
+        PortalGame.listenKeyEvent("keydown", "d", self.rightOn)
+        PortalGame.listenKeyEvent("keyup", "d", self.rightOff)
+        PortalGame.listenKeyEvent("keydown", "a", self.leftOn)
+        PortalGame.listenKeyEvent("keyup", "a", self.leftOff
+    def step(self):
+        
 
 class PortalGame(App):
     def __init__(self, width, height):
