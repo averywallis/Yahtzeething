@@ -1,7 +1,7 @@
 """
 FinalProject.py
 Author: Avery Wallis
-Sources:
+Sources: Hayden Hatfield
 
 """
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, LineAsset
@@ -44,12 +44,23 @@ class Chell(Sprite):
         self.visible = True
         self.x = 250
         self.y = 250
+        self.click = 0
         PortalGame.listenKeyEvent("keydown", "d", self.rightOn)
         PortalGame.listenKeyEvent("keyup", "d", self.rightOff)
         PortalGame.listenKeyEvent("keydown", "a", self.leftOn)
-        PortalGame.listenKeyEvent("keyup", "a", self.leftOff
+        PortalGame.listenKeyEvent("keyup", "a", self.leftOff)
+        PortalGame.listenMouseEvent("mousedown", self.ClickOn)
+        PortalGame.listenMouseEvent("mouseup", self.ClickOff)
+        if self.click ==1:
+            self.x=500
+            self.y=500
+            
     def step(self):
         
+    def ClickOn(self,event):
+        self.click = 1
+    def ClickOff(self,event):
+        self.click = 0
 
 class PortalGame(App):
     def __init__(self, width, height):
