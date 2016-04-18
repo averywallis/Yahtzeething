@@ -42,8 +42,8 @@ class Chell(Sprite):
     def __init__(self, position):
         super().__init__(Chell.asset, position)
         self.visible = True
-        self.x = 500
-        self.y = 500
+        self.x = 250
+        self.y = 250
 
 class PortalGame(App):
     def __init__(self, width, height):
@@ -61,5 +61,6 @@ class PortalGame(App):
     Sprite(innerportal, (200,340))
     Sprite(goo, (100,0))
     Chell((250,250))
+    
 myapp = PortalGame(1000,1000)
 myapp.run()
