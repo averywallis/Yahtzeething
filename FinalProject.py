@@ -53,8 +53,8 @@ class Chell(Sprite):
         PortalGame.listenMouseEvent("dblclick", self.ClickOff)
         
         if self.click == 1:
-            self.x=500
-            self.y=500
+            self.x = 500
+            self.y = 500
         
     def step(self):
         self.x = self.x
