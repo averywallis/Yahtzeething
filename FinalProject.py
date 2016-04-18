@@ -56,7 +56,7 @@ class Chell(Sprite):
             self.y=500
             
     def step(self):
-        
+        self.x=self.x
     def ClickOn(self,event):
         self.click = 1
     def ClickOff(self,event):
