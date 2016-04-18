@@ -5,6 +5,7 @@ Sources:
 
 """
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, LineAsset, PolygonAsset
+from ggame import ImageAsset
 
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
