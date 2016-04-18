@@ -62,6 +62,14 @@ class Chell(Sprite):
         self.click = 1
     def ClickOff(self,event):
         self.click = 0
+    def rightOn(self,event):
+        self.mright = 1
+    def rightOff(self,event):
+        self.mright = 0
+    def leftOn(self,event):
+        self.mleft = 1
+    def leftOff(self,event):
+        self.mleft = 0
 
 class PortalGame(App):
     def __init__(self, width, height):
