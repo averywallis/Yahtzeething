@@ -41,6 +41,7 @@ class Chell(Sprite):
     asset = ImageAsset("images/Chell.png")
     def __init__(self, position):
         super().__init__(Chell.asset, position)
+        self.visible = True
         self.x = 500
         self.y = 500
 
