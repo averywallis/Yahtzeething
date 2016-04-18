@@ -45,7 +45,7 @@ class Chell(Sprite):
         self.x = 250
         self.y = 250
         self.click = 0
-        Portalgame.listenKeyEvent("keydown", "d", self.rightOn)
+        PortalGame.listenKeyEvent("keydown", "d", self.rightOn)
         PortalGame.listenKeyEvent("keyup", "d", self.rightOff)
         PortalGame.listenKeyEvent("keydown", "a", self.leftOn)
         PortalGame.listenKeyEvent("keyup", "a", self.leftOff)
