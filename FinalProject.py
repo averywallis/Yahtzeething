@@ -58,8 +58,7 @@ class Chell(Sprite):
         PortalGame.listenKeyEvent("keyup", "alt", self.altOff)
         
     def step(self):
-        self.setImage(self.image//2)
-        self.image += 1
+        
         if self.click == 1:
             self.x = 500
             self.y = 500
