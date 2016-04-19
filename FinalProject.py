@@ -115,12 +115,9 @@ class PortalGame(App):
         Sprite(doorline, (800, 30))
         Sprite(plat, (100,400))
         Sprite(plat, (650, 150))
-        Sprite(orangeportal, (700,90))
-        Sprite(innerportal, (700,90))
-        Sprite(blueportal, (200,340))
-        Sprite(innerportal, (200,340))
         Sprite(goo, (100,0))
         Chell((0,0))
+        BluePortal((0,0))
         
     def step(self):
         for chell in self.getSpritesbyClass(Chell):
