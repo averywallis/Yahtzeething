@@ -88,7 +88,7 @@ class PortalGame(App):
         Sprite(goo, (100,0))
         Chell((0,0))
     def step(self):
-    for ship in self.getSpritesbyClass(Chell):
+        for ship in self.getSpritesbyClass(Chell):
             ship.step()
 myapp = PortalGame(1000,1000)
 myapp.run()
