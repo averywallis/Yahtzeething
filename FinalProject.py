@@ -48,6 +48,7 @@ class Chell(Sprite):
         self.mright = 0
         self.mleft = 0
         self.alt = 0
+    
         PortalGame.listenKeyEvent("keydown", "d", self.rightOn)
         PortalGame.listenKeyEvent("keyup", "d", self.rightOff)
         PortalGame.listenKeyEvent("keydown", "a", self.leftOn)
@@ -79,6 +80,8 @@ class Chell(Sprite):
             
     def ClickOn(self,event):
         self.click = 1
+    def ClickOff(self,event):
+        self.click = 0
     def rightOn(self,event):
         self.mright = 1
     def rightOff(self,event):
