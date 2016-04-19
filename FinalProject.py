@@ -102,8 +102,8 @@ class BluePortal(Sprite):
         super().__init__(self.asset, position)
         self.visible = True
         self.scale = .25
-        self.x = 500
-        self.y = 500
+        self.x = 250
+        self.y = 250
         
     def step(self):
         self.x = 500
