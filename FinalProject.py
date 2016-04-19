@@ -95,8 +95,16 @@ class Chell(Sprite):
         self.alt = 1
     def altOff(self,event):
         self.alt = 0
-    
-    
+
+class BluePortal(Sprite):
+    asset = ImageAsset("images/Blue_Portal.png")
+    def __init__(self, position):
+        super().__init__(self.asset, position)
+        self.x = 500
+        self.y = 500
+        
+    def step(self):
+        self.x = 500
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
