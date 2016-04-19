@@ -100,6 +100,7 @@ class BluePortal(Sprite):
     asset = ImageAsset("images/Blue_Portal.png")
     def __init__(self, position):
         super().__init__(self.asset, position)
+        self.visible = True
         self.x = 500
         self.y = 500
         
