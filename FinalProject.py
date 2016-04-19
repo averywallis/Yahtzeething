@@ -58,13 +58,13 @@ class Chell(Sprite):
             self.x = 500
             self.y = 500
         if self.mright == 1:
-            self.x += .5
+            self.x += .75
             self.y = self.y
         if self.mright == 0:
             self.x =self.x
             self.y=self.y
         if self.mleft == 1:
-            self.x += -.5
+            self.x += -.75
             self.y = self.y
         if self.mleft == 0:
             self.x = self.x
