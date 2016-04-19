@@ -110,7 +110,15 @@ class BluePortal(Sprite):
         
 class OrangePortal(Sprite):
     asset = ImageAsset("images/portal___orange_portal_by_maxiesnax-d5pcfmj.png")
-    
+    def __init__(self, position):
+        super().__init__(BluePortal.asset, position)
+        self.visible = True
+        self.scale = .25
+        self.x = 275
+        self.y = 250
+        
+    def step(self):
+        self.y = 250
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
