@@ -49,6 +49,7 @@ class Chell(Sprite):
         self.mleft = 0
         self.alt = 0
         self.image = 0
+        self.scale = .5
         PortalGame.listenKeyEvent("keydown", "d", self.rightOn)
         PortalGame.listenKeyEvent("keyup", "d", self.rightOff)
         PortalGame.listenKeyEvent("keydown", "a", self.leftOn)
