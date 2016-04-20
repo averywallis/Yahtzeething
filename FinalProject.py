@@ -65,6 +65,7 @@ class Chell(Sprite):
             self.click = 0
         else:
             self.click = 0
+            
         if self.click == 1 and self.alt == 1:
             BluePortal(self.position)
             self.click = 0
@@ -140,7 +141,6 @@ class PortalGame(App):
         Sprite(plat, (100,400))
         Sprite(plat, (650, 150))
         Sprite(goo, (100,0))
-        BluePortal((0,0))
         Chell((0,0))
         
     def step(self):
