@@ -117,6 +117,7 @@ class OrangePortal(Sprite):
         self.center = (0,0)
         self.image = 0
         
+        
     def step(self):
         self.x=self.x
         
@@ -132,7 +133,6 @@ class PortalGame(App):
         Sprite(plat, (650, 150))
         Sprite(goo, (100,0))
         BluePortal((0,0))
-        OrangePortal((0,0))
         Chell((0,0))
         
     def step(self):
