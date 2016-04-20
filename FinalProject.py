@@ -1,7 +1,7 @@
 """
 FinalProject.py
 Author: Avery Wallis
-Sources: Hayden Hatfield
+Sources: Hayden Hatfield,
 
 """
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, LineAsset
@@ -63,8 +63,8 @@ class Chell(Sprite):
         if self.click == 1:
             self.x = 500
             self.y = 500
-        else:
-            self.click = 0
+            else:
+                self.click = 0
         if self.click == 1 and self.alt ==1:
             self.x = 700
             self.y = 700
@@ -121,6 +121,7 @@ class OrangePortal(Sprite):
         
     def step(self):
         self.y = 250
+        
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
