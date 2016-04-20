@@ -61,7 +61,7 @@ class Chell(Sprite):
     def step(self):
         
         if self.click == 1 and self.alt != 1:
-            OrangePortal(self.position)
+            OrangePortal((a,b))
             self.click = 0
         else:
             self.click = 0
@@ -91,6 +91,8 @@ class Chell(Sprite):
             
     def ClickOn(self,event):
         self.click = 1
+        a = event.x
+        b = event.y
     def ClickOff(self,event):
         self.click = 0
     def rightOn(self,event):
