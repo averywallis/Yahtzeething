@@ -117,9 +117,8 @@ class OrangePortal(Sprite):
         self.center = (0,0)
         self.image = 0
         
-        
     def step(self):
-        self.x=self.x
+        self.x=win32gui.GetCursorPos(point)
         
 class PortalGame(App):
     def __init__(self, width, height):
