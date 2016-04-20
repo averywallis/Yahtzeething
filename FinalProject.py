@@ -117,7 +117,7 @@ class OrangePortal(Sprite):
         self.center = (0,0)
         
     def step(self):
-        
+        self.x=self.x
         
 class PortalGame(App):
     def __init__(self, width, height):
