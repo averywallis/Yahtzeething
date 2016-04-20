@@ -63,6 +63,8 @@ class Chell(Sprite):
         if self.click == 1:
             self.x = 500
             self.y = 500
+        else:
+            self.click = 0
         if self.click == 1 and self.alt ==1:
             self.x = 700
             self.y = 700
