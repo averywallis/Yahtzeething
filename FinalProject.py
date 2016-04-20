@@ -65,13 +65,8 @@ class Chell(Sprite):
             OrangePortal((self.cox,self.coy))
             self.click = 0
             self.alt = 0
-        else:
-            self.click = 0
         if self.click == 1 and self.alt == 1:
             BluePortal((self.cox,self.coy))
-            self.click = 0
-            self.alt = 0
-        else:
             self.click = 0
             self.alt = 0
     
