@@ -93,8 +93,6 @@ class Chell(Sprite):
         self.click = 1
         a = event.x
         b = event.y
-    def ClickOff(self,event):
-        self.click = 0
     def rightOn(self,event):
         self.mright = 1
     def rightOff(self,event):
@@ -143,7 +141,7 @@ class PortalGame(App):
         Sprite(plat, (100,400))
         Sprite(plat, (650, 150))
         Sprite(goo, (100,0))
-        OrangePortal((a,b))
+        OrangePortal(a,b)
         Chell((0,0))
         
     def step(self):
