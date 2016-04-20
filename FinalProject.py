@@ -61,7 +61,8 @@ class Chell(Sprite):
     def step(self):
         
         if self.click == 1:
-             OrangePortal(self.position)
+            flags, hcursor, (x,y) = win32gui.GetCursorInfo()
+            OrangePortal((x,y))
         else:
             self.click = 0
         if self.click == 1 and self.alt ==1:
