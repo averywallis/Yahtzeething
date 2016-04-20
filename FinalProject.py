@@ -119,7 +119,10 @@ class OrangePortal(Sprite):
         self.y = 250
         
     def step(self):
-        self.y = 250
+        self.setImage(self.image//2)
+        self.image += 1
+        if self.image == 20:
+            self.destroy()
         
 class PortalGame(App):
     def __init__(self, width, height):
