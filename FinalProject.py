@@ -59,13 +59,13 @@ class Chell(Sprite):
         PortalGame.listenKeyEvent("keyup", "alt", self.altOff)
         
     def step(self):
-        
+        if self.alt == 1:
+            print("stuff")
         if self.click == 1 and self.alt != 1:
             OrangePortal((self.cox,self.coy))
             self.click = 0
         else:
             self.click = 0
-            
         if self.click == 1 and self.alt == 1:
             BluePortal(self.position)
             self.click = 0
