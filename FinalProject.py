@@ -55,8 +55,8 @@ class Chell(Sprite):
         PortalGame.listenKeyEvent("keydown", "a", self.leftOn)
         PortalGame.listenKeyEvent("keyup", "a", self.leftOff)
         PortalGame.listenMouseEvent("click", self.ClickOn)
-        PortalGame.listenKeyEvent("keydown", "option", self.altOn)
-        PortalGame.listenKeyEvent("keyup", "option", self.altOff)
+        PortalGame.listenKeyEvent("keydown", "alt", self.altOn)
+        PortalGame.listenKeyEvent("keyup", "alt", self.altOff)
         
     def step(self):
         if self.alt == 1:
@@ -73,9 +73,7 @@ class Chell(Sprite):
         else:
             self.click = 0
             self.alt = 0
-        if self.click == 1 and self.alt ==1:
-            self.x = 700
-            self.y = 700
+    
         if self.mright == 1:
             self.x += .75
             self.y = self.y
