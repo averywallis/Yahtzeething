@@ -113,10 +113,8 @@ class OrangePortal(Sprite):
     asset = ImageAsset("images/portal___orange_portal_by_maxiesnax-d5pcfmj.png")
     def __init__(self, position):
         super().__init__(OrangePortal.asset, position)
-        self.visible = True
         self.scale = .25
-        self.x = 275
-        self.y = 250
+        self.center = (0,0)
         
     def step(self):
         self.setImage(self.image//2)
