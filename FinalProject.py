@@ -115,6 +115,7 @@ class OrangePortal(Sprite):
         super().__init__(OrangePortal.asset, position)
         self.scale = .25
         self.center = (0,0)
+        self.image = 0
         
     def step(self):
         self.x=self.x
