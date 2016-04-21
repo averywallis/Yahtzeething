@@ -125,6 +125,9 @@ class OrangePortal(Sprite):
         self.y = self.y
         if self.des == 1:
             self.destroy
+        else:
+            self.x = self.x
+            self.y = self.y
         
 class PortalGame(App):
     def __init__(self, width, height):
