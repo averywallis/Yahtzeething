@@ -116,6 +116,7 @@ class OrangePortal(Sprite):
         self.scale = .25
         self.center = (0,0)
         self.image = 0
+        self.des = 0
         
     def step(self):
         self.x = self.x
