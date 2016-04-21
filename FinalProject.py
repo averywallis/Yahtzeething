@@ -5,7 +5,7 @@ Sources: Hayden Hatfield,
 
 """
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, LineAsset
-from ggame import ImageAsset, PolygonAsset
+from ggame import ImageAsset, PolygonAsset, Frame
 
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
