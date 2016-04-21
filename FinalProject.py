@@ -60,6 +60,8 @@ class Chell(Sprite):
         
     def step(self):
         if self.click == 1 and self.alt != 1:
+            self.des = 1
+            self.des = 0
             OrangePortal((self.cox-60,self.coy-70))
             self.click = 0
             self.alt = 0
@@ -121,6 +123,8 @@ class OrangePortal(Sprite):
     def step(self):
         self.x = self.x
         self.y = self.y
+        if self.des == 1:
+            self.destroy
         
 class PortalGame(App):
     def __init__(self, width, height):
