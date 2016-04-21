@@ -67,24 +67,20 @@ class Chell(Sprite):
                 self.oportal.destroy()
                 self.oportal = OrangePortal((self.cox-60,self.coy-70))
                 self.click = 0
-                self.alt = 0
             else:
                 self.oportal = OrangePortal((self.cox-60,self.coy-70))
                 self.oportal
                 self.click = 0
-                self.alt = 0
                 
         if self.click == 1 and self.alt == 1:
             if self.bportal:
                 self.bportal.destroy()
                 self.bportal = BluePortal((self.cox-60,self.coy-70))
                 self.click = 0
-                self.alt = 0
             else:
                 self.bportal = BluePortal((self.cox-60,self.coy-70))
                 self.bportal
                 self.click = 0
-                self.alt = 0
     
         if self.mright == 1:
             self.x += .75
