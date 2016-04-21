@@ -50,6 +50,7 @@ class Chell(Sprite):
         self.alt = 0
         self.image = 0
         self.scale = .25
+        self.op = 0
         PortalGame.listenKeyEvent("keydown", "d", self.rightOn)
         PortalGame.listenKeyEvent("keyup", "d", self.rightOff)
         PortalGame.listenKeyEvent("keydown", "a", self.leftOn)
@@ -60,11 +61,13 @@ class Chell(Sprite):
         
     def step(self):
         if self.click == 1 and self.alt != 1:
-            OrangePortal((self.cox-60,self.coy-70))
-            self.click = 0
-            self.alt = 0
+            if self.op != 0:
+                OrangePortal((self.cox-60,self.coy-70))
+                self.click = 0
+                self.alt = 0
+            else:
+                self.op = 1
         if self.click == 1 and self.alt == 1:
-            BluePortal.step
             BluePortal((self.cox-60,self.coy-70))
             self.click = 0
             self.alt = 0
