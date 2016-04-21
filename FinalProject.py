@@ -116,8 +116,8 @@ class BluePortal(Sprite):
     asset = ImageAsset("images/Blue_Portal.png")
     def __init__(self, position):
         super().__init__(BluePortal.asset, position)
-        self.visible = True
         self.scale = .25
+        self.center = (0,0)
         
     def step(self):
         self.x = self.x
@@ -129,8 +129,6 @@ class OrangePortal(Sprite):
         super().__init__(OrangePortal.asset, position)
         self.scale = .25
         self.center = (0,0)
-        self.image = 0
-        self.des = 0
         
     def step(self):
         self.x = self.x
