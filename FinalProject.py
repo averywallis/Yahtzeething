@@ -60,7 +60,7 @@ class Chell(Sprite):
         
     def step(self):
         if self.click == 1 and self.alt != 1:
-            OrangePortal((self.cox-30,self.coy-25))
+            OrangePortal((self.cox-40,self.coy-25))
             self.click = 0
             self.alt = 0
         if self.click == 1 and self.alt == 1:
