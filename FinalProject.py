@@ -121,6 +121,7 @@ class OrangePortal(Sprite):
     def step(self):
         self.x = self.x
         self.y = self.y
+        self.des = 1
         if self.des == 1:
             self.destroy
         else:
