@@ -58,16 +58,16 @@ class Chell(Sprite):
         PortalGame.listenMouseEvent("click", self.ClickOn)
         PortalGame.listenKeyEvent("keydown", "alt", self.altOn)
         PortalGame.listenKeyEvent("keyup", "alt", self.altOff)
+        self.oportal = None
         
     def step(self):
         if self.click == 1 and self.alt != 1:
-            if self.op != 0:
-                OrangePortal((self.cox-60,self.coy-70))
+            if self.oportal:
+                self.oportal.destroy()
+                self.oportal = OrangePortal((self.cox-60,self.coy-70))
                 self.click = 0
                 self.alt = 0
-                self.op = 1
-            else:
-                self.op = 1
+                self.oportal = False
         if self.click == 1 and self.alt == 1:
             BluePortal((self.cox-60,self.coy-70))
             self.click = 0
