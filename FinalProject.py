@@ -41,7 +41,7 @@ goo=PolygonAsset([(0,500),(800,500),(800,600,),(0,600)],noline,gooy)
 
 class Chell(Sprite):
     asset = ImageAsset("images/Chell1.png", Frame(200, 45, 400, 375), 1, 'vertical')
-    assetflip = ImageAsset("images/Chell1.png", Frame(600, 420, -400, -375), 1, 'vertical')
+    assetflip = ImageAsset("images/Chell1.png", Frame(600, 420, -400, -75), 1, 'vertical')
     def __init__(self, position):
         super().__init__(Chell.asset, position)
         self.visible = True
