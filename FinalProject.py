@@ -93,7 +93,7 @@ class Chell(Sprite):
             self.x =self.x
             self.y=self.y
         if self.mleft == 1:
-            self.setImage(Chell.assetflip)
+            self.nextImage(True)
             self.x += -.75
             self.y = self.y
         if self.mleft == 0:
