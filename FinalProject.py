@@ -86,7 +86,7 @@ class Chell(Sprite):
                 self.click = 0
     
         if self.mright == 1:
-            self.image = Chell.asset
+            self.setImage(Chell.asset)
             self.x += .75
             self.y = self.y
         if self.mright == 0:
