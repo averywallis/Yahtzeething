@@ -43,7 +43,7 @@ class Chell(Sprite):
     asset = ImageAsset("images/Chell1.png")
     assetflip = ImageAsset("images/Chell2.png")
     def __init__(self, position):
-        super().__init__(Chell.asset,Chelll.assetfril position)
+        super().__init__(Chell.asset,Chelll.assetflip, position)
         self.visible = True
         self.x = 250
         self.y = 250
