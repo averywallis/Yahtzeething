@@ -86,8 +86,8 @@ class Chell(Sprite):
             else:
                 self.bportal = BluePortal((self.cox-60,self.coy-70))
                 self.bportal
-                self.cbx = self.cox
-                self.cby = self.coy
+                self.cbx = self.cox -60
+                self.cby = self.coy -70
                 self.click = 0
     
         if self.mright == 1:
