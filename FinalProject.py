@@ -40,7 +40,7 @@ doorline=LineAsset(0, 120, thinline)
 goo=PolygonAsset([(0,500),(800,500),(800,600,),(0,600)],noline,gooy)
 
 class Chell(Sprite):
-    asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,363), 2, 'horizontal')
+    asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,362), 2, 'horizontal')
     def __init__(self, position):
         super().__init__(Chell.asset, position)
         self.visible = True
