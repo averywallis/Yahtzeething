@@ -101,10 +101,10 @@ class Chell(Sprite):
         
         col = self.collidingWithSprites(OrangePortal)
         if col:
-            if self.oportal:
+            if self.bportal:
                 self.x = 500
                 self.y = 500
-            
+
     def ClickOn(self,event):
         self.click = 1
         self.cox = event.x
