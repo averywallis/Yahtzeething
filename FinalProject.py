@@ -81,7 +81,7 @@ class Chell(Sprite):
                 self.bportal.destroy()
                 self.bportal = BluePortal((self.cox-60,self.coy-70))
                 self.cbx = self.cox
-                sefl.cby = self.cox
+                sefl.cby = self.coy
                 self.click = 0
             else:
                 self.bportal = BluePortal((self.cox-60,self.coy-70))
