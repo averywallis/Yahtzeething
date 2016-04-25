@@ -78,9 +78,13 @@ class Chell(Sprite):
             if self.bportal:
                 self.bportal.destroy()
                 self.bportal = BluePortal((self.cox-60,self.coy-70))
+                self.cbx = self.cox
+                sefl.cby = self.cox
                 self.click = 0
             else:
                 self.bportal = BluePortal((self.cox-60,self.coy-70))
+                self.cbx = self.cox
+                sefl.cby = self.cox
                 self.bportal
                 self.click = 0
     
@@ -102,8 +106,8 @@ class Chell(Sprite):
         col = self.collidingWithSprites(OrangePortal)
         if col:
             if self.bportal:
-                self.x = self.cox+5
-                self.y = self.coy +5
+                self.x = self.BluePortal.x
+                self.y = self.Blueportal.y
         """        
         col1 = self.collidingWithSprites(BluePortal)
         if col1:
