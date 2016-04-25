@@ -84,7 +84,7 @@ class Chell(Sprite):
                 sefl.cby = event.y
                 self.click = 0
             else:
-                self.bportal = BluePortal((self.cox-30,self.coy-70))
+                self.bportal = BluePortal((self.cox,self.coy-70))
                 self.bportal
                 self.cbx = self.cox -60
                 self.cby = self.coy -70
