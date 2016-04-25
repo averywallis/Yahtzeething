@@ -108,7 +108,8 @@ class Chell(Sprite):
         col1 = self.collidingWithSprites(BluePortal)
         if col1:
             if self.oportal:
-                self.x = 
+                self.x = 500
+                sefl.y = 500
 
     def ClickOn(self,event):
         self.click = 1
