@@ -70,6 +70,7 @@ class Chell(Sprite):
             if self.oportal:
                 self.oportal.destroy()
                 self.oportal = OrangePortal((self.cpx-60,self.cpy-70))
+                self.cox = self.cpx 
                 self.click = 0
             else:
                 self.oportal = OrangePortal((self.cpx-60,self.cpy-70))
