@@ -96,7 +96,15 @@ class Chell(Sprite):
                 self.cbx = self.cpx
                 self.cby = self.cpy
                 self.click = 0
-    
+        
+        
+        col = self.collidingWithSprites(OrangePortal)
+        if col:
+            if self.bportal:
+                self.x = self.cbx
+                self.y = self.cby
+
+        
         if self.mright == 1:
             self.setImage(0)
             self.x += .75
@@ -111,12 +119,6 @@ class Chell(Sprite):
         if self.mleft == 0:
             self.x = self.x
             self.y = self.y
-        
-        col = self.collidingWithSprites(OrangePortal)
-        if col:
-            if self.bportal:
-                self.x = self.cbx
-                self.y = self.cby
 
     def ClickOn(self,event):
         self.click = 1
