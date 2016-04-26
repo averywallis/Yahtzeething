@@ -105,6 +105,7 @@ class Chell(Sprite):
                 self.x = self.cbx
                 self.y = self.cby
                 """
+                self.Chell.destroy()
                 Chell((self.cbx,self.cby))
 
         
