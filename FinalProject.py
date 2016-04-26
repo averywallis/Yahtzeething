@@ -68,7 +68,7 @@ class Chell(Sprite):
         self.coy = 0
         self.cpx = 0
         self.cpy = 0
-        self.center = (103,100)
+
         
     def step(self):
         if self.click == 1 and self.alt != 1:
