@@ -91,7 +91,7 @@ class Chell(Sprite):
                 self.bportal = BluePortal((self.cpx-50,self.cpy-70))
                 print("stuff")
                 self.cbx = self.cpx
-                sefl.cby = self.cpy
+                self.cby = self.cpy
                 print("stuff")
                 self.click = 0
                 
