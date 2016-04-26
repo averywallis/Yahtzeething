@@ -92,6 +92,7 @@ class Chell(Sprite):
                 print("stuff")
                 self.cbx = self.cpx
                 sefl.cby = self.cpy
+                print("stuff")
                 self.click = 0
                 
             else:
