@@ -140,7 +140,7 @@ class BluePortal(Sprite):
         self.y = self.y
         
 class OrangePortal(Sprite):
-    asset = ImageAsset("images/portal___orange_portal_by_maxiesnax-d5pcfmj.png", Frame(10,10,100,100), 1, vertical)
+    asset = ImageAsset("images/portal___orange_portal_by_maxiesnax-d5pcfmj.png", Frame(10,10,100,100), 1, 'vertical')
     def __init__(self, position):
         super().__init__(OrangePortal.asset, position)
         self.scale = .25
