@@ -69,25 +69,25 @@ class Chell(Sprite):
         if self.click == 1 and self.alt != 1:
             if self.oportal:
                 self.oportal.destroy()
-                self.oportal = OrangePortal((self.cox-60,self.coy-70))
+                self.oportal = OrangePortal((self.cpx-60,self.cpy-70))
                 self.click = 0
             else:
-                self.oportal = OrangePortal((self.cox-60,self.coy-70))
+                self.oportal = OrangePortal((self.cpx-60,self.cpy-70))
                 self.oportal
                 self.click = 0
                 
         if self.click == 1 and self.alt == 1:
             if self.bportal:
                 self.bportal.destroy()
-                self.bportal = BluePortal((self.cox-60,self.coy-70))
-                self.cbx = self.cox - 30
-                sefl.cby = self.coy - 60
+                self.bportal = BluePortal((self.cpx-60,self.cpy-70))
+                self.cbx = self.cpx - 30
+                sefl.cby = self.cpy - 60
                 self.click = 0
             else:
-                self.bportal = BluePortal((self.cox-60,self.coy-70))
+                self.bportal = BluePortal((self.cpx-60,self.cpy-70))
                 self.bportal
-                self.cbx = self.cox - 30
-                self.cby = self.coy - 60
+                self.cbx = self.cpx - 30
+                self.cby = self.cpy - 60
                 self.click = 0
     
         if self.mright == 1:
@@ -113,8 +113,8 @@ class Chell(Sprite):
 
     def ClickOn(self,event):
         self.click = 1
-        self.cox = event.x
-        self.coy = event.y
+        self.cpx = event.x
+        self.cpy = event.y
     def rightOn(self,event):
         self.mright = 1
     def rightOff(self,event):
