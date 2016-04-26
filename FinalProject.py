@@ -87,6 +87,7 @@ class Chell(Sprite):
             if self.bportal:
                 print("stuff")
                 self.bportal.destroy()
+                print("stuff")
                 self.bportal = BluePortal((self.cpx-50,self.cpy-70))
                 self.cbx = self.cpx
                 sefl.cby = self.cpy
