@@ -97,7 +97,7 @@ class Chell(Sprite):
                 self.cby = self.cpy
                 self.click = 0
         
-        if self.x<=self.cox-10 and self.x>=self.cox-30 and self.bportal:
+        if self.x<=self.cox-20 and self.x>=self.cox-30 and self.bportal:
             self.x = self.cbx
             self.y = self.cby
         """
