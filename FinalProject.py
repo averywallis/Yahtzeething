@@ -129,7 +129,7 @@ class Chell(Sprite):
         self.alt = 0
 
 class BluePortal(Sprite):
-    asset = ImageAsset("images/Blue_Portal.png", Frame(25,10,350,475), 1, 'vertical'))
+    asset = ImageAsset("images/Blue_Portal.png", Frame(25,10,350,475), 1, 'vertical')
     def __init__(self, position):
         super().__init__(BluePortal.asset, position)
         self.scale = .25
