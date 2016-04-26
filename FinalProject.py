@@ -85,14 +85,10 @@ class Chell(Sprite):
                 
         if self.click == 1 and self.alt == 1:
             if self.bportal:
-                print("stuff")
                 self.bportal.destroy()
-                print("stuff")
                 self.bportal = BluePortal((self.cpx-50,self.cpy-70))
-                print("stuff")
                 self.cbx = self.cpx
                 self.cby = self.cpy
-                print("stuff")
                 self.click = 0
                 
             else:
