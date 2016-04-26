@@ -103,6 +103,7 @@ class Chell(Sprite):
             if self.bportal:
                 self.x = self.cbx
                 self.y = self.cby
+                self.setImage(0)
 
         
         if self.mright == 1:
