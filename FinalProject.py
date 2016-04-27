@@ -178,7 +178,7 @@ class PortalGame(App):
         
     def step(self):
         for chell in self.getSpritesbyClass(Chell):
-            Chell.step()
+            chell.step()
             
 myapp = PortalGame(1000,1000)
 myapp.run()
