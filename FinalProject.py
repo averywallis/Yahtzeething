@@ -104,7 +104,7 @@ class Chell(Sprite):
             
         if self.x<=self.cbx-20 and self.x>=self.cbx-30 and self.bportal and self.y <=self.cby-10 and self.y>=self.cby-40:
             self.destroy()
-            self.Chell((0,0))
+            Chell((0,0))
             self.x = self.cox - 10
             self.y = self.coy - 40
         """
