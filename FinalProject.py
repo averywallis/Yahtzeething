@@ -180,5 +180,5 @@ class PortalGame(App):
         for chell in self.getSpritesbyClass(Chell):
             chell.step()
             
-myapp = PortalGame(1000,750)
+myapp = PortalGame(1080,720)
 myapp.run()
