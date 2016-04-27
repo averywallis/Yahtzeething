@@ -105,13 +105,6 @@ class Chell(Sprite):
         if self.x<=self.cbx-20 and self.x>=self.cbx-30 and self.bportal and self.y <=self.cby-10 and self.y>=self.cby-40:
             self.x = self.cox - 10
             self.y = self.coy - 40
-        """
-        col = self.collidingWithSprites(OrangePortal)
-        if col:
-            if self.bportal:
-                self.x = self.cbx
-                self.y = self.cby
-        """
         
         if self.mright == 1:
             self.setImage(0)
@@ -179,6 +172,8 @@ class PortalGame(App):
         Sprite(plat, (650, 150))
         Sprite(goo, (100,0))
         Chell((0,0))
+        OrangePortal((0,0))
+        BluePortal((0,0))
         
     def step(self):
         for chell in self.getSpritesbyClass(Chell):
