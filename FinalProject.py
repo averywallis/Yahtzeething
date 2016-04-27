@@ -98,7 +98,7 @@ class Chell(Sprite):
                 self.cby = self.cpy
                 self.click = 0
         
-        if self.x<=self.cox-20 and self.x>=self.cox-30 and self.bportal and self.y <=self.coy+50 and self.y>=self.coy-50:
+        if self.x<=self.cox-20 and self.x>=self.cox-30 and self.bportal and self.y <=self.coy+20 and self.y>=self.coy-50:
             self.x = self.cbx
             self.y = self.cby
         """
@@ -175,7 +175,6 @@ class PortalGame(App):
         Sprite(plat, (650, 150))
         Sprite(goo, (100,0))
         Chell((0,0))
-        BluePortal((0,0))
         
     def step(self):
         for chell in self.getSpritesbyClass(Chell):
