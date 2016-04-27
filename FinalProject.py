@@ -103,8 +103,8 @@ class Chell(Sprite):
             self.y = self.cby - 40
             
         if self.x<=self.cbx-20 and self.x>=self.cbx-30 and self.bportal and self.y <=self.cby-10 and self.y>=self.cby-50:
-            self.x = self.cbx - 10
-            self.y = self.cby - 40
+            self.x = self.cox - 10
+            self.y = self.coy - 40
         """
         col = self.collidingWithSprites(OrangePortal)
         if col:
