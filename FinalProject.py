@@ -186,7 +186,7 @@ class PortalGame(App):
         for chell in self.getSpritesbyClass(Chell):
             chell.step()
             
-        if self.bg2p = 1:
+        if self.bg2p == 1:
             self.bg2.play()
     
     def bg2p(self,event):
