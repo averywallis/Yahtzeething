@@ -165,6 +165,9 @@ class PortalGame(App):
     
     def __init__(self, width, height):
         super().__init__(width, height)
+        self.bg2 = Sound(PortalGame.bg2)
+        self.bg2.volume= 10
+        
         Sprite(wall, (400,20))
         Sprite(wall, (100,20))
         Sprite(exit, (800,100))
@@ -178,6 +181,7 @@ class PortalGame(App):
         BluePortal((0,0))
         
     def step(self):
+        self.bg2.play()
         for chell in self.getSpritesbyClass(Chell):
             chell.step()
             
