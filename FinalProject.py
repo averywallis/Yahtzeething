@@ -187,10 +187,10 @@ class PortalGame(App):
             chell.step()
             
         if self.bg2p == 1:
-            self.bg2.play()
+            self.bg21.play()
     
     def bg2p(self,event):
-        self.bg2p = 1
+        self.bg2p1 = 1
         
 myapp = PortalGame(1000,1000)
 myapp.run()
