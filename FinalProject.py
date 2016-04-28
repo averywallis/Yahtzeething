@@ -73,7 +73,7 @@ class Chell(Sprite):
     def step(self):
         if self.click == 1 and self.alt != 1:
             if self.oportal:
-                self.OrangePortal((self.cpx-50,self.cpy-70))
+                OrangePortal((self.cpx-50,self.cpy-70))
                 self.cox = self.cpx
                 self.coy = self.cpy
                 self.click = 0
@@ -92,7 +92,7 @@ class Chell(Sprite):
                 self.click = 0
                 
             else:
-                self.BluePortal((self.cpx-50,self.cpy-70))
+                self.bportal = BluePortal((self.cpx-50,self.cpy-70))
                 self.cbx = self.cpx
                 self.cby = self.cpy
                 self.click = 0
