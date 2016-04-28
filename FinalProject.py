@@ -73,10 +73,8 @@ class Chell(Sprite):
     def step(self):
         if self.click == 1 and self.alt != 1:
             if self.oportal:
-                self.p1 = OrangePortal.x
-                OrangePortal.x = self.cpx-50
-                OrangePortal.y = self.cpy-70
-                OrangePortal.visible = True
+                self.oportal.destroy()
+                self.oportal = OrangePortal((self.cpx-50,self.cpy-70))
                 self.cox = self.cpx
                 self.coy = self.cpy
                 self.click = 0
@@ -178,7 +176,6 @@ class PortalGame(App):
         OrangePortal((0,0))
         BluePortal((0,0))
         Chell((0,0))
-
         
     def step(self):
         for chell in self.getSpritesbyClass(Chell):
