@@ -168,7 +168,7 @@ class PortalGame(App):
         self.bg2 = Sound(PortalGame.bg2)
         PortalGame.listenKeyEvent("keydown", 'p', self.bg2p)
         self.bg2.volume= 10
-        self.bg2p = 0
+        self.bg2p1 = 0
         
         Sprite(wall, (400,20))
         Sprite(wall, (100,20))
