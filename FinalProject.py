@@ -166,7 +166,9 @@ class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
         self.bg2 = Sound(PortalGame.bg2)
+        PortalGame.listenKeyEvent("keydown", 'p', self.bg2p)
         self.bg2.volume= 10
+        self.bg2p = 0
         
         Sprite(wall, (400,20))
         Sprite(wall, (100,20))
@@ -181,9 +183,14 @@ class PortalGame(App):
         BluePortal((0,0))
         
     def step(self):
-        self.bg2.play()
         for chell in self.getSpritesbyClass(Chell):
             chell.step()
             
+        if self.bg2p = 1:
+            self.bg2.play()
+    
+    def bg2p(self,event):
+        self.bg2p = 1
+        
 myapp = PortalGame(1000,1000)
 myapp.run()
