@@ -161,6 +161,8 @@ class OrangePortal(Sprite):
         self.y = self.y
         
 class PortalGame(App):
+    bg2 = SoundAsset('portal2_background02.wav')
+    
     def __init__(self, width, height):
         super().__init__(width, height)
         Sprite(wall, (400,20))
