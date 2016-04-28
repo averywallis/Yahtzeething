@@ -92,7 +92,7 @@ class Chell(Sprite):
                 self.click = 0
                 
             else:
-                self.bportal = BluePortal((self.cpx-50,self.cpy-70))
+                self.BluePortal((self.cpx-50,self.cpy-70))
                 self.cbx = self.cpx
                 self.cby = self.cpy
                 self.click = 0
