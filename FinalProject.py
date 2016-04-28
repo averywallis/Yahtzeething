@@ -161,15 +161,8 @@ class OrangePortal(Sprite):
         self.y = self.y
         
 class PortalGame(App):
-    bg2 = SoundAsset("sounds/portal2_background02.wav")
-    
     def __init__(self, width, height):
         super().__init__(width, height)
-        self.bg2 = Sound(PortalGame.bg2)
-        PortalGame.listenKeyEvent("keydown", 'p', self.bg2p)
-        self.bg2.volume= 10
-        self.bg2p1 = 0
-        
         Sprite(wall, (400,20))
         Sprite(wall, (100,20))
         Sprite(exit, (800,100))
@@ -186,11 +179,5 @@ class PortalGame(App):
         for chell in self.getSpritesbyClass(Chell):
             chell.step()
             
-        if self.bg2p == 1:
-            self.bg21.play()
-    
-    def bg2p(self,event):
-        self.bg2p1 = 1
-        
-myapp = PortalGame(1000,1000)
+myapp = PortalGame(1000,750)
 myapp.run()
