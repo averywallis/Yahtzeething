@@ -144,7 +144,7 @@ class BluePortal(Sprite):
         super().__init__(BluePortal.asset, position)
         self.scale = .25
         self.center = (0,0)
-        self.visible = False
+
         
     def step(self):
         self.x = self.x
@@ -156,7 +156,7 @@ class OrangePortal(Sprite):
         super().__init__(OrangePortal.asset, position)
         self.scale = .25
         self.center = (0,0)
-        self.visible = False
+
         
     def step(self):
         self.x = self.x
