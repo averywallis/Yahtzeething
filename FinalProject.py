@@ -7,7 +7,7 @@ maxiesnax for the Orange Portal Image:0 "http://orig05.deviantart.net/58ec/f/201
 Blue Portal Image "http://vignette4.wikia.nocookie.net/kirby-bulborb/images/1/12/Blue_Portal.png/revision/latest?cb=20151004085207"
 """
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, LineAsset
-from ggame import ImageAsset, PolygonAsset, Frame
+from ggame import ImageAsset, PolygonAsset, Frame, Sound, SoundAsset
 
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
