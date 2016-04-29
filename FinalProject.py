@@ -171,6 +171,11 @@ class PortalGame(App):
     def step(self):
         for chell in self.getSpritesbyClass(Chell):
             chell.step()
+        for blueportal in self.getSpritesbyClass(BluePortal):
+            blueportal.step()
+        for orangeportal in self.getSpritesbyClass(OrangePortal):
+            orangeportal.step()
+    
             
 myapp = PortalGame(1000,750)
 myapp.run()
