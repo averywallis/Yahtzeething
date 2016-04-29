@@ -41,6 +41,10 @@ goo=PolygonAsset([(0,500),(800,500),(800,600,),(0,600)],noline,gooy)
 
 cpx = 0
 cpy = 0
+self.cox = 0
+self.coy = 0
+self.cbx = 0
+self.cby = 0
 
 class Chell(Sprite):
     asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,361), 2, 'horizontal')
@@ -65,17 +69,12 @@ class Chell(Sprite):
         PortalGame.listenKeyEvent("keyup", "alt", self.altOff)
         self.oportal = None
         self.bportal = None
-        self.cox = 0
-        self.coy = 0
-        self.cbx = 0
-        self.cby = 0
 
         
     def step(self):
         if self.click == 1 and self.alt != 1:
             if self.oportal:
-                self.x1 = self.x
-                self.y1 = self.y
+                
                 self.oportal.destroy()
                 self.oportal = OrangePortal((cpx-50,cpy-70))
                 self.cox = cpx
