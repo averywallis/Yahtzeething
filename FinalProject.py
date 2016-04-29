@@ -89,18 +89,14 @@ class Chell(Sprite):
                 global cby
                 cby = cpy
                 self.click = 0
-                
             else:
-                self.bportal = BluePortal((cpx-50,cpy-70))
-                self.cbx = cpx
-                self.cby = cpy
                 self.click = 0
         
         if self.x<= cox-20 and self.x>=cox-30 and self.bportal and self.y <=coy-10 and self.y>=coy-40:
             self.x = self.cbx - 10
             self.y = self.cby - 40
             
-        if self.x<=self.cbx-20 and self.x>=self.cbx-30 and self.bportal and self.y <=self.cby-10 and self.y>=self.cby-40:
+        if self.x<=cbx-20 and self.x>=cbx-30 and self.bportal and self.y <=cby-10 and self.y>=cby-40:
             self.x = cox - 10
             self.y = coy - 40
         
