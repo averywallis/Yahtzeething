@@ -143,8 +143,8 @@ class BluePortal(Sprite):
 
         
     def step(self):
-        self.x = self.x
-        self.y = self.y
+        self.x = cbx
+        self.y = cby
         
 class OrangePortal(Sprite):
     asset = ImageAsset("images/portal___orange_portal_by_maxiesnax-d5pcfmj.png", Frame(25,10,350,475), 1, 'vertical')
