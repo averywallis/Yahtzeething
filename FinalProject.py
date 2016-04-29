@@ -139,7 +139,7 @@ class BluePortal(Sprite):
         
     def step(self):
         self.x = cbx - 50
-        self.y = cby - 40
+        self.y = cby - 60
         
 class OrangePortal(Sprite):
     asset = ImageAsset("images/portal___orange_portal_by_maxiesnax-d5pcfmj.png", Frame(25,10,350,475), 1, 'vertical')
@@ -151,7 +151,7 @@ class OrangePortal(Sprite):
         
     def step(self):
         self.x = cox - 50
-        self.y = coy - 40
+        self.y = coy - 60
         
 class PortalGame(App):
     def __init__(self, width, height):
