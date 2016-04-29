@@ -39,6 +39,9 @@ plat=RectangleAsset(250, 50, noline, plat)
 doorline=LineAsset(0, 120, thinline)
 goo=PolygonAsset([(0,500),(800,500),(800,600,),(0,600)],noline,gooy)
 
+cpx = 0
+cpy = 0
+
 class Chell(Sprite):
     asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,361), 2, 'horizontal')
     def __init__(self, position):
@@ -62,12 +65,10 @@ class Chell(Sprite):
         PortalGame.listenKeyEvent("keyup", "alt", self.altOff)
         self.oportal = None
         self.bportal = None
-        self.cbx = 0
-        self.cby = 0
         self.cox = 0
         self.coy = 0
-        self.cpx = 0
-        self.cpy = 0
+        self.cbx = 0
+        self.cby = 0
 
         
     def step(self):
@@ -76,31 +77,30 @@ class Chell(Sprite):
                 self.x1 = self.x
                 self.y1 = self.y
                 self.oportal.destroy()
-                self.oportal = OrangePortal((self.cpx-50,self.cpy-70))
-                self.cox = self.cpx
-                self.coy = self.cpy
+                self.oportal = OrangePortal((cpx-50,cpy-70))
+                self.cox = cpx
+                self.coy = cpy
                 self.click = 0
             else:
                 self.x1 = self.x
                 self.y1 = self.y
-                self.oportal = OrangePortal((self.cpx-50,self.cpy-70))
-
-                self.cox = self.cpx
-                self.coy = self.cpy
+                self.oportal = OrangePortal((cpx-50,cpy-70))
+                self.cox = cpx
+                self.coy = cpy
                 self.click = 0
                 
         if self.click == 1 and self.alt == 1:
             if self.bportal:
                 self.bportal.destroy()
-                self.bportal = BluePortal((self.cpx-50,self.cpy-70))
-                self.cbx = self.cpx
-                self.cby = self.cpy
+                self.bportal = BluePortal((cpx-50,cpy-70))
+                self.cbx = cpx
+                self.cby = cpy
                 self.click = 0
                 
             else:
-                self.bportal = BluePortal((self.cpx-50,self.cpy-70))
-                self.cbx = self.cpx
-                self.cby = self.cpy
+                self.bportal = BluePortal((cpx-50,cpy-70))
+                self.cbx = cpx
+                self.cby = cpy
                 self.click = 0
         
         if self.x<=self.cox-20 and self.x>=self.cox-30 and self.bportal and self.y <=self.coy-10 and self.y>=self.coy-40:
@@ -128,8 +128,8 @@ class Chell(Sprite):
 
     def ClickOn(self,event):
         self.click = 1
-        self.cpx = event.x
-        self.cpy = event.y
+        global cpx = event.x
+        global cpy = event.y
     def rightOn(self,event):
         self.mright = 1
     def rightOff(self,event):
