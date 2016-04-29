@@ -67,8 +67,6 @@ class Chell(Sprite):
         PortalGame.listenMouseEvent("click", self.ClickOn)
         PortalGame.listenKeyEvent("keydown", "alt", self.altOn)
         PortalGame.listenKeyEvent("keyup", "alt", self.altOff)
-        self.oportal = None
-        self.bportal = None
 
         
     def step(self):
