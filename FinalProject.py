@@ -39,7 +39,7 @@ plat=RectangleAsset(250, 50, noline, plat)
 doorline=LineAsset(0, 120, thinline)
 goo=PolygonAsset([(0,500),(800,500),(800,600,),(0,600)],noline,gooy)
 
-global cpx = 0
+global.cpx = 0
 global cpy = 0
 
 class Chell(Sprite):
