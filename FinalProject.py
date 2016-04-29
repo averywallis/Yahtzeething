@@ -73,14 +73,11 @@ class Chell(Sprite):
         
     def step(self):
         if self.click == 1 and self.alt != 1:
-            if self.oportal:
-                global cox
-                cox = cpx
-                global coy
-                coy = cpy
-                self.click = 0
-            else:
-                self.click = 0
+            global cox
+            cox = cpx
+            global coy
+            coy = cpy
+            self.click = 0
                 
         if self.click == 1 and self.alt == 1:
             if self.bportal:
