@@ -85,7 +85,6 @@ class Chell(Sprite):
             global cby
             cby = cpy
             self.click = 0
-
         
         if self.x<= cox-20 and self.x>=cox-30 and self.y <= coy-10 and self.y >= coy-40:
             self.x = cbx - 10
@@ -97,14 +96,14 @@ class Chell(Sprite):
         
         if self.mright == 1:
             self.setImage(0)
-            self.x += .75
+            self.x += 1
             self.y = self.y
         if self.mright == 0:
             self.x =self.x
             self.y=self.y
         if self.mleft == 1:
             self.setImage(1)
-            self.x += -.75
+            self.x += -1
             self.y = self.y
         if self.mleft == 0:
             self.x = self.x
