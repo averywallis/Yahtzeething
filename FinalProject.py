@@ -128,8 +128,8 @@ class Chell(Sprite):
 
     def ClickOn(self,event):
         self.click = 1
-        cpx = event.x
-        cpy = event.y
+        global cpx = event.x
+        global cpy = event.y
     def rightOn(self,event):
         self.mright = 1
     def rightOff(self,event):
