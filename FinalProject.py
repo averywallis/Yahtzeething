@@ -86,8 +86,10 @@ class Chell(Sprite):
             if self.bportal:
                 self.bportal.destroy()
                 self.bportal = BluePortal((cpx-50,cpy-70))
-                self.cbx = cpx
-                self.cby = cpy
+                global cbx
+                cbx = cpx
+                global cby
+                cby = cpy
                 self.click = 0
                 
             else:
@@ -101,8 +103,8 @@ class Chell(Sprite):
             self.y = self.cby - 40
             
         if self.x<=self.cbx-20 and self.x>=self.cbx-30 and self.bportal and self.y <=self.cby-10 and self.y>=self.cby-40:
-            self.x = self.cox - 10
-            self.y = self.coy - 40
+            self.x = cox - 10
+            self.y = coy - 40
         
         if self.mright == 1:
             self.setImage(0)
