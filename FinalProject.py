@@ -80,14 +80,12 @@ class Chell(Sprite):
             self.click = 0
                 
         if self.click == 1 and self.alt == 1:
-            if self.bportal:
-                global cbx
-                cbx = cpx
-                global cby
-                cby = cpy
-                self.click = 0
-            else:
-                self.click = 0
+            global cbx
+            cbx = cpx
+            global cby
+            cby = cpy
+            self.click = 0
+
         
         if self.x<= cox-20 and self.x>=cox-30 and self.bportal and self.y <=coy-10 and self.y>=coy-40:
             self.x = self.cbx - 10
