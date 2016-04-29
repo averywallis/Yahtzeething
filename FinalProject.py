@@ -84,8 +84,6 @@ class Chell(Sprite):
                 
         if self.click == 1 and self.alt == 1:
             if self.bportal:
-                self.bportal.destroy()
-                self.bportal = BluePortal((cpx-50,cpy-70))
                 global cbx
                 cbx = cpx
                 global cby
@@ -161,8 +159,8 @@ class OrangePortal(Sprite):
 
         
     def step(self):
-        self.x = self.x
-        self.y = self.y
+        self.x = cox
+        self.y = coy
         
 class PortalGame(App):
     def __init__(self, width, height):
