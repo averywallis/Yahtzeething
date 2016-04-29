@@ -39,8 +39,8 @@ plat=RectangleAsset(250, 50, noline, plat)
 doorline=LineAsset(0, 120, thinline)
 goo=PolygonAsset([(0,500),(800,500),(800,600,),(0,600)],noline,gooy)
 
-global cpx = 0
-global cpy = 0
+cpx = 0
+cpy = 0
 
 class Chell(Sprite):
     asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,361), 2, 'horizontal')
@@ -128,8 +128,8 @@ class Chell(Sprite):
 
     def ClickOn(self,event):
         self.click = 1
-        cpx = event.x
-        cpy = event.y
+        global cpx = event.x
+        global cpy = event.y
     def rightOn(self,event):
         self.mright = 1
     def rightOff(self,event):
