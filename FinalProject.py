@@ -41,10 +41,10 @@ goo=PolygonAsset([(0,500),(800,500),(800,600,),(0,600)],noline,gooy)
 
 cpx = 0
 cpy = 0
-cox = 0
-coy = 0
-cbx = 0
-cby = 0
+cox = -100
+coy = -100
+cbx = -100
+cby = -100
 
 class Chell(Sprite):
     asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,361), 2, 'horizontal')
