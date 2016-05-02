@@ -105,7 +105,7 @@ class Chell(Sprite):
             self.x = self.x
             self.y = self.y
             
-        if self.y>=650+365:
+        if self.y>=650:
             self.x = 100
             self.y = 400
 
