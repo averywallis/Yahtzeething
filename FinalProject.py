@@ -84,11 +84,11 @@ class Chell(Sprite):
             cby = cpy
             self.click = 0
         
-        if self.x<= cox-20 and self.x>=cox-30 and self.y <= coy-10 and self.y >= coy-40:
+        if self.x<= cox-20 and self.x>=cox-30 and self.y <= coy-10 and self.y >= coy-40 and coy>0 and cox>0:
             self.x = cbx - 10
             self.y = cby - 40
             
-        if self.x<=cbx-20 and self.x>=cbx-30 and self.y <= cby-10 and self.y >= cby-40:
+        if self.x<=cbx-20 and self.x>=cbx-30 and self.y <= cby-10 and self.y >= cby-40 and cby>0 and cox>0:
             self.x = cox - 10
             self.y = coy - 40
         
