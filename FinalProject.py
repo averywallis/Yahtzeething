@@ -49,8 +49,8 @@ class Chell(Sprite):
     def __init__(self, position):
         super().__init__(Chell.asset, position)
         self.visible = True
-        self.x = 250
-        self.y = 250
+        self.x = 0
+        self.y = 410
         self.click = 0
         self.mright = 0
         self.mleft = 0
