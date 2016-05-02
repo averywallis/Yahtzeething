@@ -34,7 +34,7 @@ exitbig=CircleAsset(70, thinline, plat)
 exitsmall=CircleAsset(20, thinline, plat)
 plat=RectangleAsset(250, 50, noline, plat)
 doorline=LineAsset(0, 120, thinline)
-goo=PolygonAsset([(0,0),(1000,0),(1000,100,),(0,100)],noline,gooy)
+goo=RectangleAsset(1000,100,noline,gooy)
 
 cpx = 0
 cpy = 0
