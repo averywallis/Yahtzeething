@@ -107,7 +107,7 @@ class Chell(Sprite):
             
         if self.y>=650:
             self.x = 100
-            self.y = 400
+            self.y = 410
 
     def ClickOn(self,event):
         self.click = 1
