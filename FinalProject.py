@@ -105,8 +105,7 @@ class Chell(Sprite):
             self.x = self.x
             self.y = self.y
             
-        col = self.collidingWith(Chell)
-        if col:
+        if self.y>=650:
             self.x = 0
             self.y = 0
 
