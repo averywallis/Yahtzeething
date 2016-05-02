@@ -158,7 +158,7 @@ class PortalGame(App):
         Sprite(exitbig, (800,100))
         Sprite(exitsmall, (800, 100))
         Sprite(doorline, (800, 30))
-        Sprite(plat, (0,750))
+        Sprite(plat, (0,500))
         Sprite(plat, (650, 150))
         Sprite(goo, (0,650))
         Sprite(txt_asset,(0,0))
