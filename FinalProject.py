@@ -156,7 +156,7 @@ class PortalGame(App):
         txt_asset= TextAsset(text="WASD to Move", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         txt_asset1= TextAsset(text="Left Click to Place Orange Portal", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         txt_asset2= TextAsset(text="Alt + Left Click to Place Blue Portal", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
-        Sprite(wall, (400,20))
+        Sprite(wall, (0,0))
         Sprite(wall, (100,20))
         Sprite(exit, (800,100))
         Sprite(exit2, (800, 100))
