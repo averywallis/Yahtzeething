@@ -153,6 +153,7 @@ class OrangePortal(Sprite):
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
+        txt_asset= TextAsset(text="WASD to Move", width=200, align='center',style='20px Arial', fill=Color(0xff2222,1))
         Sprite(wall, (400,20))
         Sprite(wall, (100,20))
         Sprite(exit, (800,100))
