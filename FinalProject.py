@@ -159,7 +159,7 @@ class PortalGame(App):
         Sprite(doorline, (800, 30))
         Sprite(plat, (100,400))
         Sprite(plat, (650, 150))
-        Sprite(goo, (0,100))
+        Sprite(goo, (0,650))
         Sprite(txt_asset,(0,0))
         Sprite(txt_asset1, (0,10))
         Sprite(txt_asset2, (0,20))
