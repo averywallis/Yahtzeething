@@ -29,7 +29,7 @@ noline=LineStyle(0, black)
 portalline=LineStyle(1, blue)
 portalline2=LineStyle(1, orange)
 
-wall=RectangleAsset(1000,500, noline, wall)
+wall=RectangleAsset(1000,750, noline, wall)
 blueportal=EllipseAsset(27, 60, noline, blue)
 orangeportal=EllipseAsset(27, 60, noline, orange)
 innerportal=EllipseAsset(24, 57, noline, white)
