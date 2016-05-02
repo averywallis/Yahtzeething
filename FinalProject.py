@@ -104,6 +104,8 @@ class Chell(Sprite):
         if self.mleft == 0:
             self.x = self.x
             self.y = self.y
+            
+        if self.collidingWithSprite(goo) 
 
     def ClickOn(self,event):
         self.click = 1
