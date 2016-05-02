@@ -150,7 +150,7 @@ class OrangePortal(Sprite):
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
-        txt_asset= TextAsset(text="WASD to Move", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
+        txt_asset= TextAsset(text="A to Move Left, D to Move Right", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         txt_asset1= TextAsset(text="Left Click to Place Orange Portal", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         txt_asset2= TextAsset(text="Alt + Left Click to Place Blue Portal", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         Sprite(wall, (0,0))
