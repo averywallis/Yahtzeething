@@ -105,7 +105,8 @@ class Chell(Sprite):
             self.x = self.x
             self.y = self.y
             
-        if self.collidingWith(goo):
+        col = self.collidingWithSprites(goo)
+        if col:
             self.x = 0
             self.y = 0
 
