@@ -166,7 +166,7 @@ class PortalGame(App):
         Sprite(goo, (100,0))
         Sprite(txt_asset,(0,0))
         Sprite(txt_asset1, (0,10))
-        Sprite(txt_asset2, (0,30))
+        Sprite(txt_asset2, (0,20))
         BluePortal((0,0))
         OrangePortal((0,0))
         Chell((0,0))
