@@ -154,7 +154,7 @@ class Chell(Sprite):
     def jumpOn(self,event):
         self.jump1 = 1
     def jumpOff(self,event):
-        self.jump1 = 0
+        self.jump1 = 1
     def resetOn(self,event):
         self.reset = 1
     def resetOff(self,event):
