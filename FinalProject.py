@@ -53,7 +53,7 @@ class Chell(Sprite):
         self.y = 410
         self.vx = 0
         self.vy = 0
-        self.jump = 0
+        self.jump1 = 0
         self.click = 0
         self.mright = 0
         self.mleft = 0
@@ -117,7 +117,7 @@ class Chell(Sprite):
             self.y = self.y
             
         # basic jump    
-        if self.jump == 1:
+        if self.jump1 == 1:
             self.vx = 0
             self.vy += 1
             
@@ -152,9 +152,9 @@ class Chell(Sprite):
         global cpy
         cpy = event.y
     def jumpOn(self,event):
-        self.jump = 1
+        self.jump1 = 1
     def jumpOff(self,event):
-        self.jump = 0
+        self.jump1 = 0
     def resetOn(self,event):
         self.reset = 1
     def resetOff(self,event):
