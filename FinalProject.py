@@ -120,13 +120,13 @@ class Chell(Sprite):
             self.x = 100
             self.y = 410
             global cox
-            cox = 0
+            cox = -100
             global coy
-            coy = 0
+            coy = -100
             global cbx
-            cbx = 0
+            cbx = -100
             global cby
-            cby = 0
+            cby = -100
             self.reset = 0
 
     def ClickOn(self,event):
