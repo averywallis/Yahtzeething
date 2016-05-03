@@ -137,6 +137,8 @@ class Chell(Sprite):
         cpy = event.y
     def resetOn(self,event):
         self.reset = 1
+    def resetOff(self,event):
+        self.reset = 0
     def rightOn(self,event):
         self.mright = 1
     def rightOff(self,event):
