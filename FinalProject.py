@@ -52,7 +52,7 @@ class Chell(Sprite):
         self.x = 0
         self.y = 410
         self.vx = 0
-        self.xy = 0
+        self.vy = 0
         self.jump = 0
         self.click = 0
         self.mright = 0
