@@ -51,6 +51,9 @@ class Chell(Sprite):
         self.visible = True
         self.x = 0
         self.y = 410
+        self.vx = 0
+        self.xy = 0
+        self.jump = 0
         self.click = 0
         self.mright = 0
         self.mleft = 0
@@ -69,7 +72,7 @@ class Chell(Sprite):
         PortalGame.listenKeyEvent("keydown","r", self.resetOn)
         PortalGame.listenKeyEvent("keyup", "r", self.resetOff)
         PortalGame.listenKeyEvent("keydown", "space", self.jumpOn)
-        Portal
+        PortalGame.listenKeyEvent("keyup","space", self.jumpOff)
 
         
     def step(self):
@@ -137,6 +140,10 @@ class Chell(Sprite):
         cpx = event.x
         global cpy
         cpy = event.y
+    def jumpOn(self,event):
+        self.jump = 1
+    def jumpOff(self,event):
+        self.jump = 0
     def resetOn(self,event):
         self.reset = 1
     def resetOff(self,event):
