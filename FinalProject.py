@@ -90,14 +90,17 @@ class Chell(Sprite):
             cby = cpy
             self.click = 0
         
+        # player and orange portal detection
         if self.x<= cox-20 and self.x>=cox-30 and self.y <= coy-10 and self.y >= coy-40 and cby>=0 and cbx>=0:
             self.x = cbx - 10
             self.y = cby - 40
-            
+        
+        # player and blue portal detection    
         if self.x<=cbx-20 and self.x>=cbx-30 and self.y <= cby-10 and self.y >= cby-40 and coy>=0 and cox>=0:
             self.x = cox - 10
             self.y = coy - 40
         
+        # move right and left
         if self.mright == 1:
             self.setImage(0)
             self.x += 1
@@ -113,6 +116,12 @@ class Chell(Sprite):
             self.x = self.x
             self.y = self.y
             
+        # basic jump    
+        if self.jump == 1:
+            self.vy = -10
+            self.vy += 1
+            
+        # borders    
         if self.y >= 560:
             self.x = 100
             self.y = 410
@@ -121,6 +130,7 @@ class Chell(Sprite):
         if self.x > 947:
             self.x = 947
         
+        # reset
         if self.reset == 1:
             self.x = 0
             self.y = 410
