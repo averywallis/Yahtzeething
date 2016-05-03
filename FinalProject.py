@@ -117,7 +117,7 @@ class Chell(Sprite):
             self.x = 947
         
         if self.reset == 1:
-            self.x = 100
+            self.x = 0
             self.y = 410
             global cox
             cox = -100
