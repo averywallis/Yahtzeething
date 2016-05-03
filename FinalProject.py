@@ -117,7 +117,17 @@ class Chell(Sprite):
             self.x = 947
         
         if self.reset == 1:
-
+            self.x = 100
+            self.y = 410
+            global cox
+            cox = 0
+            global coy
+            coy = 0
+            global cbx
+            cbx = 0
+            global cby
+            cby = 0
+            self.reset = 0
 
     def ClickOn(self,event):
         self.click = 1
