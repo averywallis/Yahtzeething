@@ -58,6 +58,7 @@ class Chell(Sprite):
         self.image = 0
         self.scale = .25
         self.op = 0
+        self.reset = 0
         PortalGame.listenKeyEvent("keydown", "d", self.rightOn)
         PortalGame.listenKeyEvent("keyup", "d", self.rightOff)
         PortalGame.listenKeyEvent("keydown", "a", self.leftOn)
@@ -65,6 +66,8 @@ class Chell(Sprite):
         PortalGame.listenMouseEvent("click", self.ClickOn)
         PortalGame.listenKeyEvent("keydown", "alt", self.altOn)
         PortalGame.listenKeyEvent("keyup", "alt", self.altOff)
+        PortalGame.listenKeyEvent("keydown","r", self.resetOn)
+        PortalGame.listenKeyEvent("keydown", "r", self.resetOff)
 
         
     def step(self):
@@ -112,6 +115,8 @@ class Chell(Sprite):
             self.x = 0
         if self.x > 947:
             self.x = 947
+        
+        if self.reset == 1:
 
 
     def ClickOn(self,event):
@@ -120,6 +125,8 @@ class Chell(Sprite):
         cpx = event.x
         global cpy
         cpy = event.y
+    def resetOn(self,event):
+        self.reset = 1
     def rightOn(self,event):
         self.mright = 1
     def rightOff(self,event):
