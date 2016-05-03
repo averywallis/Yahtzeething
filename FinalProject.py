@@ -71,8 +71,8 @@ class Chell(Sprite):
         PortalGame.listenKeyEvent("keyup", "alt", self.altOff)
         PortalGame.listenKeyEvent("keydown","r", self.resetOn)
         PortalGame.listenKeyEvent("keyup", "r", self.resetOff)
-        PortalGame.listenKeyEvent("keydown", "Space", self.jumpOn)
-        PortalGame.listenKeyEvent("keyup","Space", self.jumpOff)
+        PortalGame.listenKeyEvent("keydown", "space", self.jumpOn)
+        PortalGame.listenKeyEvent("keyup","space", self.jumpOff)
 
         
     def step(self):
