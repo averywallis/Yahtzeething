@@ -118,6 +118,7 @@ class Chell(Sprite):
             
         # basic jump    
         if self.jump == 1:
+            self.vx = 0
             self.vy = 100
             
             
