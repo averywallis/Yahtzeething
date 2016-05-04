@@ -18,7 +18,7 @@ orange = Color(0xffa500, 1.0)
 skin =Color(0xFCD15B, 1.0)
 wall=Color(0xE8E8E8, 1.0)
 orange=Color(0xFFa500,1.0)
-plat=Color(0xB9BDBB,1.0)
+platc=Color(0xB9BDBB,1.0)
 gooy=Color(0xCDF238,1.0)
 white=Color(0xFFFFFF,1.0)
 darkblue=Color(0x052099,1.0)
@@ -196,7 +196,8 @@ class OrangePortal(Sprite):
         self.y = coy - 60
     
 class Platforms(Sprite):
-    plat=RectangleAsset(250, 50, noline, plat)
+    platc=Color(0xB9BDBB,1.0)
+    plat=RectangleAsset(250, 50, noline, platc)
     def __init__(self, position):
         super().__init__(Platforms.plat, position)
     
