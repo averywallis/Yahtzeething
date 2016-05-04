@@ -218,6 +218,7 @@ class PortalGame(App):
         Sprite(txt_asset1, (0,10))
         Sprite(txt_asset2, (0,20))
         Sprite(resettxt,(0,30))
+        Platforms((100,100))
         BluePortal((0,0))
         OrangePortal((0,0))
         Chell((0,0))
