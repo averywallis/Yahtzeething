@@ -120,7 +120,7 @@ class Chell(Sprite):
         # basic jump    
         if self.jump1 == 1:
             if self.thing == 1 and self.jump1 == 1:
-                self.vy += .1
+                self.vy += .01
                 self.y += self.vy
                 if self.y < self.thing2 - 20:
                     self.vy -= .1
