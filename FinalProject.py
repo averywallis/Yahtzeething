@@ -119,7 +119,7 @@ class Chell(Sprite):
             self.x = self.x
             self.y = self.y
             
-        # constantly moving down for experimenting reasons
+        # constantly moving down for expirementing reasons
         self.vy += .001
         self.y += self.vy
             
