@@ -117,7 +117,7 @@ class Chell(Sprite):
             self.x = self.x
             self.y = self.y
             
-        # basic jump
+        # constantly moving down for experimenting reasons
         self.vy += .001
         self.y += self.vy
             
@@ -194,7 +194,11 @@ class OrangePortal(Sprite):
     def step(self):
         self.x = cox - 50
         self.y = coy - 60
-        
+    
+class Platforms(Sprite):
+    def __init__(self, position):
+        super().__init__(plat.asset, position)
+    
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
