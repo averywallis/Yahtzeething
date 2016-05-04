@@ -31,9 +31,9 @@ portalline= LineStyle(1, blue)
 portalline2= LineStyle(1, orange)
 
 wall=RectangleAsset(1000,750, noline, wall)
-exitbig=CircleAsset(70, thinline, plat)
-exitsmall=CircleAsset(20, thinline, plat)
-plat=RectangleAsset(250, 50, noline, plat)
+exitbig=CircleAsset(70, thinline, platc)
+exitsmall=CircleAsset(20, thinline, platc)
+plat=RectangleAsset(250, 50, noline, platc)
 doorline=LineAsset(0, 120, thinline)
 goo=RectangleAsset(1000,100,noline,gooy)
 
