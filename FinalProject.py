@@ -125,6 +125,9 @@ class Chell(Sprite):
                 if self.y < self.thing2 - 20:
                     self.vy -= .01
                     self.y -= self.vy
+                    if self.y >= self.thing2:
+                        self.vy = 0
+                        self.y = self.y
             else:
                 self.thing2 = self.y
                 self.thing = 1
