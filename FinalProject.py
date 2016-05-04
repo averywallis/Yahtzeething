@@ -9,7 +9,7 @@ Special thanks to Valve for creating such an awesome game. Hopefully you can cou
 """
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, LineAsset
 from ggame import ImageAsset, PolygonAsset, Frame, Sound, SoundAsset, TextAsset
-
+# colors
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
@@ -22,14 +22,14 @@ platc=Color(0xB9BDBB,1.0)
 gooy=Color(0xCDF238,1.0)
 white=Color(0xFFFFFF,1.0)
 darkblue=Color(0x052099,1.0)
-
+# lines
 thinline= LineStyle(1, black)
 thickline= LineStyle(5, black)
 thickishline= LineStyle(2.5, black)
 noline= LineStyle(0, black)
 portalline= LineStyle(1, blue)
 portalline2= LineStyle(1, orange)
-
+# assorted environmental sprites
 wall=RectangleAsset(1000,750, noline, wall)
 exitbig=CircleAsset(70, thinline, platc)
 exitsmall=CircleAsset(20, thinline, platc)
@@ -37,6 +37,7 @@ plat=RectangleAsset(250, 50, noline, platc)
 doorline=LineAsset(0, 120, thinline)
 goo=RectangleAsset(1000,100,noline,gooy)
 
+# global variables changed with the classes
 cpx = 0
 cpy = 0
 cox = -100
@@ -54,7 +55,6 @@ class Chell(Sprite):
         self.vx = 0
         self.vy = 0
         self.jump1 = 0
-        self.thing = 0
         self.click = 0
         self.mright = 0
         self.mleft = 0
@@ -63,6 +63,7 @@ class Chell(Sprite):
         self.scale = .25
         self.op = 0
         self.reset = 0
+        # all key inputs
         PortalGame.listenKeyEvent("keydown", "d", self.rightOn)
         PortalGame.listenKeyEvent("keyup", "d", self.rightOff)
         PortalGame.listenKeyEvent("keydown", "a", self.leftOn)
@@ -77,13 +78,14 @@ class Chell(Sprite):
 
         
     def step(self):
+        # move orange portal
         if self.click == 1 and self.alt != 1:
             global cox
             cox = cpx
             global coy
             coy = cpy
             self.click = 0
-                
+        # move blue portal        
         if self.click == 1 and self.alt == 1:
             global cbx
             cbx = cpx
@@ -177,7 +179,6 @@ class BluePortal(Sprite):
         super().__init__(BluePortal.asset, position)
         self.scale = .25
         self.center = (0,0)
-
         
     def step(self):
         self.x = cbx - 50
@@ -200,7 +201,6 @@ class Platforms(Sprite):
     plat=RectangleAsset(250, 50, noline, platc)
     def __init__(self, position):
         super().__init__(Platforms.plat, position)
-    
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
