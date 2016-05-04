@@ -196,8 +196,9 @@ class OrangePortal(Sprite):
         self.y = coy - 60
     
 class Platforms(Sprite):
+    plat=RectangleAsset(250, 50, noline, plat)
     def __init__(self, position):
-        super().__init__(plat.asset, position)
+        super().__init__(Platforms.plat, position)
     
 class PortalGame(App):
     def __init__(self, width, height):
