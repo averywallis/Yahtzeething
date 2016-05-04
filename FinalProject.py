@@ -120,18 +120,6 @@ class Chell(Sprite):
         # basic jump
         self.vy += .001
         self.y += self.vy
-        if self.jump1 == 1:
-            if self.thing == 1 and self.jump1 == 1:
-                self.vy += .001
-                self.y += self.vy
-                if self.y >= self.thing2:
-                    self.vy = 0
-                    self.y = self.y
-            else:
-                self.thing2 = self.y
-                self.thing = 1
-                self.vy = -10
-            
             
         # borders    
         if self.y >= 560:
