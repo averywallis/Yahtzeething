@@ -120,7 +120,7 @@ class Chell(Sprite):
             self.y = self.y
             
         # constantly moving down for expirementing reasons
-        self.vy += .01
+        self.vy += .001
         self.y += self.vy
         if self.collidingWithSprites(Platforms):
             self.y -= 1
