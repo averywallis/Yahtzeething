@@ -54,6 +54,7 @@ class Chell(Sprite):
         self.vx = 0
         self.vy = 0
         self.jump1 = 0
+        self.thing = 0
         self.click = 0
         self.mright = 0
         self.mleft = 0
@@ -118,9 +119,12 @@ class Chell(Sprite):
             
         # basic jump    
         if self.jump1 == 1:
-            self.vy = -10
-            self.vy += .1
-            self.y += self.vy
+            if self.thing == 1 and self.jump1 == 1:
+                self.vy += .1
+                self.y += self.vy
+            else:
+                self.thing = 1
+                self.vy = -10
             
             
         # borders    
