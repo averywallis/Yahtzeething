@@ -124,7 +124,7 @@ class Chell(Sprite):
         self.y += self.vy
         self.vy = 0
         if self.collidingWithSprites(Platforms):
-            self.y -= 1
+            self.y -= 4
             
         
         # borders    
