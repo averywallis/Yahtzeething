@@ -209,7 +209,7 @@ class OrangePortal(Sprite):
     
 class Platforms(Sprite):
     platc=Color(0xB9BDBB,1.0)
-    plat=RectangleAsset(250, 50, noline, platc)
+    plat=RectangleAsset(250, 1, noline, platc)
     def __init__(self, position):
         super().__init__(Platforms.plat, position)
 class PortalGame(App):
