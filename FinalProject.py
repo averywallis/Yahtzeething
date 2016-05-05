@@ -22,6 +22,7 @@ platc=Color(0xB9BDBB,1.0)
 gooy=Color(0xCDF238,1.0)
 white=Color(0xFFFFFF,1.0)
 darkblue=Color(0x052099,1.0)
+
 # lines
 thinline= LineStyle(1, black)
 thickline= LineStyle(5, black)
@@ -29,6 +30,7 @@ thickishline= LineStyle(2.5, black)
 noline= LineStyle(0, black)
 portalline= LineStyle(1, blue)
 portalline2= LineStyle(1, orange)
+
 # assorted environmental sprites
 wall=RectangleAsset(1000,750, noline, wall)
 exitbig=CircleAsset(70, thinline, platc)
@@ -236,12 +238,12 @@ class PortalGame(App):
         Sprite(optxt, (0,20))
         Sprite(bptxt, (0,30))
         Sprite(resettxt,(0,40))
-        
+        # assorted platforms
         Sprite(plat,(0,500))
         Sprite(plat,(650,150))
         Platforms((0,500))
         Platforms((650,150))
-        
+        # portals and Chell
         BluePortal((0,0))
         OrangePortal((0,0))
         Chell((0,0))
