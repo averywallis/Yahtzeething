@@ -125,11 +125,11 @@ class Chell(Sprite):
         self.vy = 0
         # if collliding with platform, go up to counteract the moving down, effectively staying still
         if self.collidingWithSprites(Platforms):
-            self.y -= 6
+            self.y -= 600
             self.vy = 0
             # jump
             if self.jump == 1:
-                self.vy -= 500
+
                 self.vy = -100
                 self.jump = 0
         
