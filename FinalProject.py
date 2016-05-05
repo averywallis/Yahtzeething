@@ -154,6 +154,7 @@ class Chell(Sprite):
             global cby
             cby = -100
             self.reset = 0
+            self.setImage(0)
 
     def ClickOn(self,event):
         self.click = 1
