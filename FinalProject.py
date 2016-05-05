@@ -226,7 +226,7 @@ class PortalGame(App):
         #exit sprite
         Sprite(exitbig, (75,450))
         Sprite(exitsmall, (75,450))
-        Sprite(doorline, (75,400))
+        Sprite(doorline, (75,375))
         #goo
         Sprite(goo, (0,650))
         # creation of text
