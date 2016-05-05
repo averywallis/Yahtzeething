@@ -104,6 +104,9 @@ class Chell(Sprite):
         if self.x<=cbx-20 and self.x>=cbx-30 and self.y <= cby-10 and self.y >= cby-40 and coy>=0 and cox>=0:
             self.x = cox - 10
             self.y = coy - 40
+            
+        # win
+        
         
         # move right and left
         if self.mright == 1:
