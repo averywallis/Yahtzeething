@@ -224,7 +224,7 @@ class PortalGame(App):
         #background
         Sprite(wall, (0,0))
         #exit sprite
-        Sprite(exitbig, (10,450))
+        Sprite(exitbig, (100,450))
         Sprite(exitsmall, (800, 100))
         Sprite(doorline, (800, 30))
         #goo
