@@ -223,7 +223,7 @@ class WinDoor(Sprite):
     def __init__(self, position):
         super().__init__(WinDoor.exitsmall, position)
         self.x = 800
-        self.y = 400
+        self.y = 100
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
