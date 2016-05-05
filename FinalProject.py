@@ -107,8 +107,7 @@ class Chell(Sprite):
             
         # win
         if self.collidingWithSprites(WinDoor):
-            youwintxt = TextAsset(text="YOU WIN!!", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
-            Sprite(youwintxt(100,100))
+            self.win = YouWinTxt(100,100)
         
         # move right and left
         if self.mright == 1:
