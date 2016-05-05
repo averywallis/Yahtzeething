@@ -252,11 +252,11 @@ class PortalGame(App):
         Sprite(plat,(650,150))
         Platforms((0,500))
         Platforms((650,150))
+        # win door
+        WinDoor((0,0))
         # exit sprites
         Sprite(exitbig, (800,100))
         Sprite(doorline, (800, 30))
-        # win door
-        WinDoor((0,0))
         # portals and Chell
         BluePortal((0,0))
         OrangePortal((0,0))
