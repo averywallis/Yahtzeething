@@ -54,7 +54,7 @@ class Chell(Sprite):
         self.y = 410
         self.vx = 0
         self.vy = 0
-        self.jump1 = 0
+        self.jump = 0
         self.click = 0
         self.mright = 0
         self.mleft = 0
@@ -119,13 +119,17 @@ class Chell(Sprite):
             self.x = self.x
             self.y = self.y
             
-        # constantly moving down for expirementing reasons
+        # constantly moving down for gravity
         self.vy += 5
         self.y += self.vy
         self.vy = 0
+        # if collliding with platform, go up to counteract the moving down, effectively staying still
         if self.collidingWithSprites(Platforms):
             self.y -= 5
-            
+        # jump
+        if self.jump == 1:
+            self.vy = -10
+            self.jump = 0
         
         # borders    
         if self.y >= 560:
@@ -157,9 +161,9 @@ class Chell(Sprite):
         global cpy
         cpy = event.y
     def jumpOn(self,event):
-        self.jump1 = 1
+        self.jump = 1
     def jumpOff(self,event):
-        self.jump1 = 0
+        self.jump = 0
     def resetOn(self,event):
         self.reset = 1
     def resetOff(self,event):
