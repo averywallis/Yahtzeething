@@ -128,7 +128,7 @@ class Chell(Sprite):
             self.y -= 5
         # jump
         if self.jump == 1:
-            self.vy = -10
+            self.vy = -100
             self.jump = 0
         
         # borders    
