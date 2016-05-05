@@ -107,7 +107,7 @@ class Chell(Sprite):
             
         # win
         if self.collidingWithSprites(WinDoor):
-            self.win = YouWin(100,100)
+            self.thing = YouWin(100,100)
         
         # move right and left
         if self.mright == 1:
@@ -230,7 +230,7 @@ class YouWin(Sprite):
     youwintxt = TextAsset(text="YOU WIN!!", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
     def __init__(self, position):
         super().__init__(YouWin.youwintxt, position)
-
+            
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
