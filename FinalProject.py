@@ -215,20 +215,25 @@ class Platforms(Sprite):
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
-        txt_asset= TextAsset(text="A to Move Left, D to Move Right", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
-        txt_asset1= TextAsset(text="Left Click to Place Orange Portal", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
-        txt_asset2= TextAsset(text="Alt + Left Click to Place Blue Portal", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
+        # defining of text on screen
+        movetxt= TextAsset(text="A to Move Left, D to Move Right", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
+        optxt= TextAsset(text="Left Click to Place Orange Portal", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
+        bptxt= TextAsset(text="Alt + Left Click to Place Blue Portal", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         resettxt= TextAsset(text="Press R to reset", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
+        #background
         Sprite(wall, (0,0))
-        Sprite(goo, (0,650))
+        #exit sprite
         Sprite(exitbig, (800,100))
         Sprite(exitsmall, (800, 100))
         Sprite(doorline, (800, 30))
+        #goo
         Sprite(goo, (0,650))
-        Sprite(txt_asset,(0,0))
-        Sprite(txt_asset1, (0,10))
-        Sprite(txt_asset2, (0,20))
+        # creation of text
+        Sprite(movetxt,(0,0))
+        Sprite(optxt, (0,10))
+        Sprite(bptxt, (0,20))
         Sprite(resettxt,(0,30))
+        
         Sprite(plat,(0,500))
         Sprite(plat,(650,150))
         Platforms((0,500))
