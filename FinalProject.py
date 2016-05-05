@@ -133,10 +133,11 @@ class Chell(Sprite):
                 self.vy = -100
                 self.jump = 0
         
-        # borders    
+        # death by goo    
         if self.y >= 560:
-            self.x = 100
+            self.x = 50
             self.y = 410
+        # borders
         if self.x <0:
             self.x = 0
         if self.x > 947:
@@ -144,7 +145,7 @@ class Chell(Sprite):
         
         # reset
         if self.reset == 1:
-            self.x = 0
+            self.x = 50
             self.y = 410
             global cox
             cox = -100
