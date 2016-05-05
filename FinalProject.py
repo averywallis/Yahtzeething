@@ -208,7 +208,6 @@ class OrangePortal(Sprite):
         self.scale = .25
         self.center = (0,0)
 
-        
     def step(self):
         self.x = cox - 50
         self.y = coy - 60
@@ -218,6 +217,12 @@ class Platforms(Sprite):
     plat=RectangleAsset(250, 1, noline, platc)
     def __init__(self, position):
         super().__init__(Platforms.plat, position)
+
+class WinDoor(Sprite):
+    exitsmall=CircleAsset(20, thinline, platc)
+    def __init__(self, position):
+        super().__init__(WinDoor.exitsmall, position)
+        
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
