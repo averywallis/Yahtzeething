@@ -268,6 +268,8 @@ class PortalGame(App):
         BluePortal((0,0))
         OrangePortal((0,0))
         Chell((0,0))
+        # win text
+        YouWin((-100,-100))
         
     def step(self):
         for chell in self.getSpritesbyClass(Chell):
