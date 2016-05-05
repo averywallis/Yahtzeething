@@ -227,7 +227,7 @@ class WinDoor(Sprite):
         self.y = 100
         
 class YouWin(Sprite):
-    youwintxt = TextAsset(text="YOU WIN!!", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
+    youwintxt = TextAsset(text="YOU WIN!!", width=200, align='center',style='100px Arial', fill=Color(0xff2222,1))
     def __init__(self, position):
         super().__init__(YouWin.youwintxt, position)
             
