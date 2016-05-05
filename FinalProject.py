@@ -106,14 +106,14 @@ class Chell(Sprite):
         # move right and left
         if self.mright == 1:
             self.setImage(0)
-            self.x += 1
+            self.x += 2
             self.y = self.y
         if self.mright == 0:
             self.x =self.x
             self.y=self.y
         if self.mleft == 1:
             self.setImage(1)
-            self.x += -1
+            self.x += -2
             self.y = self.y
         if self.mleft == 0:
             self.x = self.x
