@@ -222,7 +222,8 @@ class WinDoor(Sprite):
     exitsmall=CircleAsset(20, thinline, platc)
     def __init__(self, position):
         super().__init__(WinDoor.exitsmall, position)
-        
+        self.x = 800
+        self.y = 400
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
@@ -251,6 +252,8 @@ class PortalGame(App):
         Sprite(plat,(650,150))
         Platforms((0,500))
         Platforms((650,150))
+        # win door
+        WinDoor((0,0))
         # portals and Chell
         BluePortal((0,0))
         OrangePortal((0,0))
