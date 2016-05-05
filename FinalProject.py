@@ -247,16 +247,16 @@ class PortalGame(App):
         Sprite(optxt, (0,20))
         Sprite(bptxt, (0,30))
         Sprite(resettxt,(0,40))
-        # assorted platforms
-        Sprite(plat,(0,500))
-        Sprite(plat,(650,150))
-        Platforms((0,500))
-        Platforms((650,150))
         # exit sprites
         Sprite(exitbig, (800,100))
         # win door
         WinDoor((0,0))
         Sprite(doorline, (800, 30))
+        # assorted platforms
+        Sprite(plat,(0,500))
+        Sprite(plat,(650,150))
+        Platforms((0,500))
+        Platforms((650,150))
         # portals and Chell
         BluePortal((0,0))
         OrangePortal((0,0))
