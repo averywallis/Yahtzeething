@@ -226,6 +226,12 @@ class WinDoor(Sprite):
         super().__init__(WinDoor.exitsmall, position)
         self.x = 800
         self.y = 100
+        
+class YouWin(Sprite):
+    youwintxt = TextAsset(text="YOU WIN!!", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
+    def __init__(self, position):
+        super().__init__(YouWin.youwintxt, position)
+
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
