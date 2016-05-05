@@ -106,7 +106,7 @@ class Chell(Sprite):
             self.y = coy - 40
             
         # win
-        if self.collidingWithSprites(Windoor):
+        if self.collidingWithSprites(WinDoor):
             print("You win!!")
         
         # move right and left
