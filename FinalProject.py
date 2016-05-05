@@ -235,7 +235,7 @@ class PortalGame(App):
         resettxt = TextAsset(text="Press R to reset", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         #background
         Sprite(wall, (0,0))
-        #exit sprite
+        #entrance sprites
         Sprite(exitbig, (75,450))
         Sprite(exitsmall, (75,450))
         Sprite(doorline, (75,380))
@@ -252,6 +252,9 @@ class PortalGame(App):
         Sprite(plat,(650,150))
         Platforms((0,500))
         Platforms((650,150))
+        # exit sprites
+        Sprite(exitbig, (800,100))
+        Sprite(doorline, (800, 30))
         # win door
         WinDoor((0,0))
         # portals and Chell
