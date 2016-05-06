@@ -131,6 +131,7 @@ class Chell(Sprite):
         if self.collidingWithSprites(Platforms):
             self.vy -= .1
             self.y += self.vy
+            self.vy = 0
             # jump
             if self.jump == 1:
                 self.jumpon = 1
@@ -140,7 +141,6 @@ class Chell(Sprite):
         else:    
             self.vy += .1
             self.y += self.vy
-            #self.vy = 0
             self.jumpon = 0
 
                 
