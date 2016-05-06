@@ -145,7 +145,6 @@ class Chell(Sprite):
                     self.jumpon = 0
                     self.y -= 10
             self.vy = 0
-            self.jumpon ==
                 
                     
         
