@@ -134,7 +134,7 @@ class Chell(Sprite):
             self.vy = 0
             # jump
             if self.jump == 1:
-                self.vy = -4
+                self.vy = -3
         # constantly moving down for gravity
         else:    
             self.vy += .1
