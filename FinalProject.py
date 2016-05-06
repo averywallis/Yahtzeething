@@ -150,6 +150,7 @@ class Chell(Sprite):
         if self.y >= 560:
             self.x = 50
             self.y = 410
+            self.vy =0
         # borders
         if self.x <0:
             self.x = 0
