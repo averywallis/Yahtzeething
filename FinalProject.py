@@ -135,8 +135,10 @@ class Chell(Sprite):
             self.vy = 0
             # jump
             if self.jump == 1:
-                self.vy = -100
-                self.jump = 0
+                self.vy = 0
+                for x in range(0,100):
+                    self.vy -= 1
+                    self.y += sefl.vy
         
         # death by goo    
         if self.y >= 560:
