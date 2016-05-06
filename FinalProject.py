@@ -66,7 +66,7 @@ class Chell(Sprite):
         self.scale = .25
         self.op = 0
         self.reset = 0
-        self.jumpup = 0
+        self.jumpon = 0
         # all key inputs
         PortalGame.listenKeyEvent("keydown", "d", self.rightOn)
         PortalGame.listenKeyEvent("keyup", "d", self.rightOff)
@@ -128,7 +128,7 @@ class Chell(Sprite):
             self.y = self.y
             
         # constantly moving down for gravity
-        if self.jump == 1:
+        if self.jumpon == 1:
             self.y -= 5
         else:    
             self.vy += 6
