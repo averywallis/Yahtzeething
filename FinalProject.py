@@ -143,7 +143,6 @@ class Chell(Sprite):
             #self.vy = 0
             self.jumpon = 0
         # if collliding with platform, go up to counteract the moving down, effectively staying still
-        
                 
                     
         
