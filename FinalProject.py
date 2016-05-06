@@ -139,6 +139,7 @@ class Chell(Sprite):
                 self.vy = 0
                 for x in range(1,100):
                     self.y -= 1
+                    self.y += self.vy
                     
         
         # death by goo    
