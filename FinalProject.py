@@ -139,14 +139,6 @@ class Chell(Sprite):
             self.y -= 6
             self.vy = 0
             # jump
-        if self.jump == 1:
-            self.y -= 5
-            self.y -= 5
-            self.y -= 5
-            self.y -= 5
-            self.y -= 5
-            self.y -= 5
-            self.jump = 0
                     
         
         # death by goo    
