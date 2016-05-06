@@ -140,6 +140,9 @@ class Chell(Sprite):
             self.y -= 5
             self.y -= 5
             self.y -= 5
+            self.y -= 5
+            self.y -= 5
+            self.y -= 5
             self.jump = 0
                     
         
