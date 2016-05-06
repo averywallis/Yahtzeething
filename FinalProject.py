@@ -139,8 +139,10 @@ class Chell(Sprite):
                 self.vy = 0
                 self.vy -= 2
                 self.y += self.vy
+                self.vy = 0
                 self.vy -= 2
                 self.y += self.vy
+                self.vy = 0
                 self.vy -= 2
                 self.y += self.vy
                 self.vy = 0
