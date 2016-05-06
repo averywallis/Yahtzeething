@@ -142,7 +142,7 @@ class Chell(Sprite):
             # jump
             for x in range(1,10):
                 if self.jump == 1:
-                    self.y -= 5
+                    self.y -= 50
 
                 
                     
