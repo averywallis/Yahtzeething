@@ -67,6 +67,7 @@ class Chell(Sprite):
         self.op = 0
         self.reset = 0
         self.jumpon = 0
+        self.jumpt = 0
         # all key inputs
         PortalGame.listenKeyEvent("keydown", "d", self.rightOn)
         PortalGame.listenKeyEvent("keyup", "d", self.rightOff)
@@ -140,12 +141,13 @@ class Chell(Sprite):
             self.y -= 6
             self.vy = 0
             # jump
-            for x in range(1,10):
-                if self.jump == 1:
-                    self.jumpon = 1
-                    self.y -= 10
-            self.vy = 0
-            self.jumpon = 0
+            if self.jump == 1:
+                for x in range(1,10):
+                    if self.jumpt == 1:
+                        self.jumpon = 1
+                        self.y -= 10
+                self.vy = 0
+                self.jumpon = 0
                 
                     
         
