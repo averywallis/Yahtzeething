@@ -137,7 +137,7 @@ class Chell(Sprite):
             if self.jump == 1:
                 self.vy = 0
                 for x in range(0,10):
-                    self.vy -= 1
+                    self.vy -= .1
                     self.y += self.vy
                     
         
