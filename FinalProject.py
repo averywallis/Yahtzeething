@@ -9,6 +9,7 @@ Special thanks to Valve for creating such an awesome game. Hopefully you can cou
 """
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, LineAsset
 from ggame import ImageAsset, PolygonAsset, Frame, Sound, SoundAsset, TextAsset
+import time
 # colors
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
@@ -138,6 +139,7 @@ class Chell(Sprite):
             if self.jump == 1:
                 self.vy = 0
                 for x in range(1,50):
+                    time.sleep(.00005)
                     self.y -= 1
                     self.y = self.y
                     
