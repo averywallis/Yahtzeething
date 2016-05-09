@@ -165,7 +165,8 @@ class Chell(Sprite):
             cby = -100
             self.reset = 0
             self.setImage(0)
-            self.thing.destroy()
+            if self.thing:
+                self.thing.destroy()
 
     def ClickOn(self,event):
         self.click = 1
