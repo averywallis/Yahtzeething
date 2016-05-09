@@ -237,7 +237,7 @@ class CompanionCube(Sprite):
     cc = ImageAsset("images/companioncube.png")
     def __init__(self, position):
         super().__init__(CompanionCube.cc, position)
-        self.scale = .25
+        self.scale = 1/8
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
