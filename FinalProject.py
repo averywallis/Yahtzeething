@@ -239,6 +239,8 @@ class CompanionCube(Sprite):
     def __init__(self, position):
         super().__init__(CompanionCube.cc, position)
         self.scale = 1/6
+        self.x = 10
+        self.y = 450
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
