@@ -111,7 +111,7 @@ class Chell(Sprite):
             self.y = coy - 40
             
         # win
-        if self.collidingWithSprites(WinDoor) and self.win = 0:
+        if self.collidingWithSprites(WinDoor) and self.win == 0:
             self.thing = YouWin((400,400))
             self.win = 1
         
