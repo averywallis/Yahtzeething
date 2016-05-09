@@ -296,7 +296,6 @@ class PortalGame(App):
             blueportal.step()
         for orangeportal in self.getSpritesbyClass(OrangePortal):
             orangeportal.step()
-    
             
 myapp = PortalGame(1000,750)
 myapp.run()
