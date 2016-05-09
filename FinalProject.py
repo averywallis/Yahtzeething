@@ -153,7 +153,7 @@ class Chell(Sprite):
             self.x = 947
         # reset
         if self.reset == 1:
-            self.stuff = PortalGame
+            self.stuff = PortalGame()
 
     def ClickOn(self,event):
         self.click = 1
