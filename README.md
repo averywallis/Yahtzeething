@@ -1,5 +1,6 @@
 # Final Project
 
+[Play Portal!](http://runpython.com/?user=averywallis&repo=Final-Project&name=FinalProject.py)
 Fork this repository to begin working on your final project. Then do the following:
 
 * Edit the file called "functional.md" to describe the **functionality** of your project.
