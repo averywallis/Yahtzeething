@@ -241,6 +241,13 @@ class CompanionCube(Sprite):
         self.scale = 1/6
         self.x = 10
         self.y = 450
+        
+    def step(self):
+        # death by goo
+        if self.y >= 560:
+            self.x = 50
+            self.y = 410
+            self.vy =0 
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
