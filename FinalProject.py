@@ -67,8 +67,6 @@ class Chell(Sprite):
         self.scale = .25
         self.op = 0
         self.reset = 0
-        self.jumpon = 0
-        self.jumpt = 0
         self.win = 0
         # all key inputs
         PortalGame.listenKeyEvent("keydown", "d", self.rightOn)
