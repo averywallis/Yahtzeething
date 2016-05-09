@@ -52,6 +52,7 @@ class Chell(Sprite):
     asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,361), 2, 'horizontal')
     def __init__(self, position):
         super().__init__(Chell.asset, position)
+        # assorted variables modified during code
         self.visible = True
         self.x = 50
         self.y = 410
@@ -68,6 +69,7 @@ class Chell(Sprite):
         self.reset = 0
         self.jumpon = 0
         self.jumpt = 0
+        self.win = 0
         # all key inputs
         PortalGame.listenKeyEvent("keydown", "d", self.rightOn)
         PortalGame.listenKeyEvent("keyup", "d", self.rightOff)
@@ -109,8 +111,9 @@ class Chell(Sprite):
             self.y = coy - 40
             
         # win
-        if self.collidingWithSprites(WinDoor):
+        if self.collidingWithSprites(WinDoor) and self.win = 0:
             self.thing = YouWin((400,400))
+            self.win = 1
         
         # move right and left
         if self.mright == 1:
@@ -140,7 +143,6 @@ class Chell(Sprite):
             self.vy += .1
             self.y += self.vy
             self.jumpon = 0
-            
         # death by goo    
         if self.y >= 560:
             self.x = 50
@@ -151,7 +153,6 @@ class Chell(Sprite):
             self.x = 0
         if self.x > 947:
             self.x = 947
-        
         # reset
         if self.reset == 1:
             self.x = 50
