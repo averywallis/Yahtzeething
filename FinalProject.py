@@ -3,8 +3,9 @@ FinalProject.py
 Author: Avery Wallis
 Sources: Hayden Hatfield, Mr. Donnelly, 
 Marcelo Almaguer for the Chell character model used in his own version of Portal called "Remember the Game"
-maxiesnax for the Orange Portal Image:0 "http://orig05.deviantart.net/58ec/f/2012/361/2/5/portal___orange_portal_by_maxiesnax-d5pcfmj.png"
+maxiesnax for the Orange Portal Image: "http://orig05.deviantart.net/58ec/f/2012/361/2/5/portal___orange_portal_by_maxiesnax-d5pcfmj.png"
 Blue Portal Image "http://vignette4.wikia.nocookie.net/kirby-bulborb/images/1/12/Blue_Portal.png/revision/latest?cb=20151004085207"
+Scott Bouloutian for the Companion Cube image: "https://lh4.ggpht.com/afyb1Nyo1suLIWpbtEACIY65SHW2Fjr5g1-KN8ONkA3aNSPd7cJKSeIefsngjSaVjtA=w300"
 Special thanks to Valve for creating such an awesome game. Hopefully you can count to three.
 """
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, LineAsset
@@ -234,7 +235,7 @@ class YouWin(Sprite):
         super().__init__(YouWin.youwintxt, position)
             
 class CompanionCube(Sprite):
-    cc = ImageAsset("images/companioncube.png")
+    cc = ImageAsset("images/companioncube.png", Frame(10,10,270, 270), 1, 'horizontal')
     def __init__(self, position):
         super().__init__(CompanionCube.cc, position)
         self.scale = 1/6
