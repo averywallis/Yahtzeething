@@ -135,15 +135,12 @@ class Chell(Sprite):
             # jump
             if self.jump == 1:
                 self.vy = -3
-        # constantly moving down for gravity
+        # constantly moving down for gravity if not colliding with platform
         else:    
             self.vy += .1
             self.y += self.vy
             self.jumpon = 0
-
-                
-                    
-        
+            
         # death by goo    
         if self.y >= 560:
             self.x = 50
