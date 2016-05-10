@@ -293,7 +293,7 @@ class CubeButton(Sprite):
     def __init__(self, position):
         super().__init__(CubeButton.button, position)
         self.x = 700
-        self.y = 100
+        self.y = 600
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
