@@ -50,7 +50,7 @@ cbx = -100
 cby = -100
 ccx = 0
 ccy = 0
-h = 1
+hold = 1
 
 class Chell(Sprite):
     asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,361), 2, 'horizontal')
@@ -190,8 +190,8 @@ class Chell(Sprite):
         self.jump = 0
     def hold(self,event):
         self.hold = self.hold * (-1)
-        global h
-        h = h *(-1)
+        global hold
+        hold = hold * (-1)
     def resetOn(self,event):
         self.reset = 1
     def resetOff(self,event):
