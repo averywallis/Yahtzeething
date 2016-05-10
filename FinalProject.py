@@ -48,6 +48,8 @@ cox = -100
 coy = -100
 cbx = -100
 cby = -100
+ccx = 0
+ccy = 0
 
 class Chell(Sprite):
     asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,361), 2, 'horizontal')
