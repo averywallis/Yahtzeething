@@ -129,6 +129,7 @@ class Chell(Sprite):
         if self.mleft == 0:
             self.x = self.x
             self.y = self.y
+            
         # if collliding with platform, go up to counteract the moving down, effectively staying still    
         if self.collidingWithSprites(Platforms):
             self.vy -= .1
@@ -141,7 +142,7 @@ class Chell(Sprite):
         else:    
             self.vy += .1
             self.y += self.vy
-            self.jumpon = 0
+            
         # death by goo    
         if self.y >= 560:
             self.x = 50
@@ -241,12 +242,25 @@ class CompanionCube(Sprite):
         self.scale = 1/6
         self.x = 10
         self.y = 450
+        self.visible = True
+        self.vx = 0
+        self.vy = 0
         
     def step(self):
+        # moving up if colliding with platforms to counteract gravity
+        if self.collidingWithSprites(Platforms):
+            self.vy -= .1
+            self.y += self.vy
+            self.vy = 0
+        # constantly moving down for gravity if not colliding with platform
+        else:    
+            self.vy += .1
+            self.y += self.vy
+        
         # death by goo
         if self.y >= 560:
-            self.x = 50
-            self.y = 410
+            self.x = 10
+            self.y = 450
             self.vy =0 
 class PortalGame(App):
     def __init__(self, width, height):
