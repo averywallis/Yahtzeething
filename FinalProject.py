@@ -327,8 +327,8 @@ class PortalGame(App):
         Platforms((0,500))
         Sprite(plat,(650,150))
         Platforms((650,150))
-        Sprite(plat,(400,700))
-        Platforms((400,700))
+        Sprite(plat,(600,500))
+        Platforms((600,500))
         # button
         CubeButton((0,0))
         # portals, companion cube, and Chell
