@@ -178,7 +178,7 @@ class Chell(Sprite):
             global ccx
             ccx = 10
             global ccy
-            ccy = 300
+            ccy = 450
             self.reset = 0
             self.setImage(0)
 
@@ -259,7 +259,7 @@ class CompanionCube(Sprite):
         super().__init__(CompanionCube.cc, position)
         self.scale = 1/7
         self.x = 10
-        self.y = 300
+        self.y = 450
         self.visible = True
         self.vx = 0
         self.vy = 0
