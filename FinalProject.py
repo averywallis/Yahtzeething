@@ -50,6 +50,7 @@ cbx = -100
 cby = -100
 ccx = 0
 ccy = 0
+h = 1
 
 class Chell(Sprite):
     asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,361), 2, 'horizontal')
@@ -189,6 +190,8 @@ class Chell(Sprite):
         self.jump = 0
     def hold(self,event):
         self.hold = self.hold * (-1)
+        global h
+        h = h *(-1)
     def resetOn(self,event):
         self.reset = 1
     def resetOff(self,event):
@@ -263,12 +266,11 @@ class CompanionCube(Sprite):
             self.vy -= .1
             self.y += self.vy
             self.vy = 0
-            
         # constantly moving down for gravity if not colliding with platform
         else:    
             self.vy += .1
             self.y += self.vy
-        
+        # if colliding with Chell and being held, then 
         # death by goo
         if self.y >= 560:
             self.x = 10
