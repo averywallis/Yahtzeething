@@ -150,6 +150,7 @@ class Chell(Sprite):
         if self.collidingWithSprites(CompanionCube) and self.holding == -1:
             global ccx
             ccx = self.x
+            global ccy
             ccy = self.y
         # death by goo    
         if self.y >= 560:
