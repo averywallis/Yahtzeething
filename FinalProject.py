@@ -83,7 +83,7 @@ class Chell(Sprite):
         PortalGame.listenKeyEvent("keyup", "r", self.resetOff)
         PortalGame.listenKeyEvent("keydown", "space", self.jumpOn)
         PortalGame.listenKeyEvent("keyup", "space", self.jumpOff)
-
+        PortalGame.listenKeyEvent("keydown", "e" , self.hold)
         
     def step(self):
         # move orange portal
@@ -180,6 +180,8 @@ class Chell(Sprite):
         self.jump = 1
     def jumpOff(self,event):
         self.jump = 0
+    def hold(self,event):
+        self.hold = self.hold * (-1)
     def resetOn(self,event):
         self.reset = 1
     def resetOff(self,event):
