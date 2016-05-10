@@ -293,7 +293,7 @@ class PortalGame(App):
         super().__init__(width, height)
         # defining of text on screen
         movetxt = TextAsset(text="A to Move Left, D to Move Right", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
-        jumptxt = TextAsset(text="Space to Jump", width=200, align='center',style='10px Arua==ial',fill=Color(0xff2222,1))
+        jumptxt = TextAsset(text="Space to Jump, E to interact", width=200, align='center',style='10px Arua==ial',fill=Color(0xff2222,1))
         optxt = TextAsset(text="Left Click to Place Orange Portal", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         bptxt = TextAsset(text="Alt + Left Click to Place Blue Portal", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         resettxt = TextAsset(text="Press R to reset", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
