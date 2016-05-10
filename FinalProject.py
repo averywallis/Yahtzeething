@@ -275,8 +275,8 @@ class CompanionCube(Sprite):
         self.held = hold
         if self.collidingWithSprites(Chell) and self.held == -1:
             self.vy = 0
-            self.x = ccx
-            self.y = ccy
+            self.x = ccx + 10
+            self.y = ccy + 10
         # death by goo
         if self.y >= 560:
             self.x = 10
