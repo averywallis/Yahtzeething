@@ -324,8 +324,8 @@ class PortalGame(App):
         Sprite(doorline, (800, 30))
         # assorted platforms
         Sprite(plat,(0,500))
-        Sprite(plat,(650,150))
         Platforms((0,500))
+        Sprite(plat,(650,150))
         Platforms((650,150))
         # button
         CubeButton((0,0))
