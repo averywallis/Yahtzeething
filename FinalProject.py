@@ -11,6 +11,7 @@ Special thanks to Valve for creating such an awesome game. Hopefully you can cou
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, LineAsset
 from ggame import ImageAsset, PolygonAsset, Frame, Sound, SoundAsset, TextAsset
 import time
+
 # colors
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
@@ -286,7 +287,6 @@ class CompanionCube(Sprite):
             self.x = 10
             self.y = 450
             self.vy =0
-            
             
 class PortalGame(App):
     def __init__(self, width, height):
