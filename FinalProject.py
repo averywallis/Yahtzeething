@@ -292,7 +292,7 @@ class CubeButton(Sprite):
     button = RectangleAsset(100,10,noline,red)
     def __init__(self, position):
         super().__init__(CubeButton.button, position)
-        self.x = 600
+        self.x = 700
         self.y = 100
 class PortalGame(App):
     def __init__(self, width, height):
