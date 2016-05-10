@@ -245,13 +245,16 @@ class CompanionCube(Sprite):
         self.visible = True
         self.vx = 0
         self.vy = 0
-        
+        self.held = 1
     def step(self):
         # moving up if colliding with platforms to counteract gravity
         if self.collidingWithSprites(Platforms):
             self.vy -= .1
             self.y += self.vy
             self.vy = 0
+            if self.collidingWithSprites(Chell) and self.held == 1:
+                self.x = 0
+                self.y = 0
         # constantly moving down for gravity if not colliding with platform
         else:    
             self.vy += .1
@@ -261,7 +264,9 @@ class CompanionCube(Sprite):
         if self.y >= 560:
             self.x = 10
             self.y = 450
-            self.vy =0 
+            self.vy =0
+            
+            
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
