@@ -282,7 +282,7 @@ class CompanionCube(Sprite):
             self.x = ccx + 10
             self.y = ccy + 25
         # death by goo
-        if self.y >= 600:
+        if self.y >= 620:
             self.x = 10
             self.y = 450
             self.vy =0
