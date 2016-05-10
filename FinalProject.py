@@ -62,6 +62,7 @@ class Chell(Sprite):
         self.vx = 0
         self.vy = 0
         self.jump = 0
+        self.hold = 1
         self.click = 0
         self.mright = 0
         self.mleft = 0
@@ -144,7 +145,12 @@ class Chell(Sprite):
         else:    
             self.vy += .1
             self.y += self.vy
-            
+        
+        # hold cube
+        if self.collidingWithSprites(CompanionCube) and self.holding == -1:
+            global ccx
+            ccx = self.x
+            ccy = self.y
         # death by goo    
         if self.y >= 560:
             self.x = 50
