@@ -254,7 +254,7 @@ class YouWin(Sprite):
         super().__init__(YouWin.youwintxt, position)
             
 class CompanionCube(Sprite):
-    cc = ImageAsset("images/companioncube.png", Frame(10,20,270,260), 1, 'horizontal')
+    cc = ImageAsset("images/companioncube.png", Frame(20,20,260,260), 1, 'horizontal')
     def __init__(self, position):
         super().__init__(CompanionCube.cc, position)
         self.scale = 1/7
