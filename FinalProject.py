@@ -268,7 +268,7 @@ class CompanionCube(Sprite):
             self.vy = 0
         # constantly moving down for gravity if not colliding with platform
         else:    
-            self.vy += .1
+            self.vy += .01
             self.y += self.vy
         # if colliding with Chell and being held, then change to be "held"
         global hold
