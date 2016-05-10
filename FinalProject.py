@@ -253,7 +253,7 @@ class CompanionCube(Sprite):
     cc = ImageAsset("images/companioncube.png", Frame(10,10,270, 270), 1, 'horizontal')
     def __init__(self, position):
         super().__init__(CompanionCube.cc, position)
-        self.scale = 1/6
+        self.scale = 1/7
         self.x = 10
         self.y = 300
         self.visible = True
