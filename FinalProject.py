@@ -147,7 +147,7 @@ class Chell(Sprite):
             self.y += self.vy
         
         # hold cube
-        if self.collidingWithSprites(CompanionCube) and self.holding == -1:
+        if self.collidingWithSprites(CompanionCube) and self.hold == -1:
             global ccx
             ccx = self.x
             global ccy
