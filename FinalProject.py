@@ -272,8 +272,8 @@ class CompanionCube(Sprite):
             self.y += self.vy
         # if colliding with Chell and being held, then change to be "held"
         global hold
-        self.hold = hold
-        if self.collidingWithSprites(Chell) and self.hold == -1:
+        self.held = hold
+        if self.collidingWithSprites(Chell) and self.held == -1:
             self.x = ccx
             self.y = ccy
         # death by goo
