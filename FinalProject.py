@@ -320,8 +320,8 @@ class PortalGame(App):
         # portals, companion cube, and Chell
         BluePortal((0,0))
         OrangePortal((0,0))
-        CompanionCube((0,0))
         Chell((0,0))
+        CompanionCube((0,0))
         # win text
         YouWin((-1000,-1000))
         
