@@ -292,12 +292,12 @@ class CompanionCube(Sprite):
     def step(self):
         # moving up if colliding with platforms to counteract gravity
         if self.collidingWithSprites(Platforms):
-            self.vy -= .5
+            self.vy -= .1
             self.y += self.vy
             self.vy = 0
         # constantly moving down for gravity if not colliding with platform
         else:    
-            self.vy += .5
+            self.vy += .1
             self.y += self.vy
         # if colliding with Chell and being held, then change to be "held"
         global hold
