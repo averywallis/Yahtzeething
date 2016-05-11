@@ -313,9 +313,9 @@ class CompanionCube(Sprite):
         if self.holding == -1:
             self.x = ccx + 10
             self.y = ccy + 25
-        else:
-            self.x = self.x
-            self.y = self.y
+        if self.holding == 0:
+            self.x = 0
+            self.y = 0
         # death by goo
         if  self.y >= 620:
             self.x = 10
