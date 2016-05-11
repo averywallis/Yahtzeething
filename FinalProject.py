@@ -382,7 +382,7 @@ class PortalGame(App):
             orangeportal.step()
         for cc in self.getSpritesbyClass(CompanionCube):
             cc.step()
-        for cubebutton if self.getSpritesbyClass(CubeButton):
+        for cubebutton in self.getSpritesbyClass(CubeButton):
             cubebutton.step()
             
 myapp = PortalGame(1000,750)
