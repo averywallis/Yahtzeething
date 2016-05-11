@@ -125,7 +125,10 @@ class Chell(Sprite):
             self.x = cbx - 10
             self.y = cby - 40
             global holding
-            holding = holding * (-1)
+            holding = -1
+        else:
+            global holding
+            holding = 0
         # player, blue portal, and holding companion cube detection:    
         if self.x<=cbx-20 and self.x>=cbx-30 and self.y <= cby-10 and self.y >= cby-40 and coy>=0 and cox>=0 and self.collidingWithSprites(CompanionCube) and self.hold == -1:
             self.x = cox - 10
@@ -136,7 +139,9 @@ class Chell(Sprite):
             ccx = self.x
             global ccy
             ccy = self.y
-            
+        else:
+            global holding
+            holding = 0
         # win
         if self.collidingWithSprites(WinDoor) and self.win == 0:
             self.thing = YouWin((400,400))
