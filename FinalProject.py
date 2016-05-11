@@ -123,6 +123,8 @@ class Chell(Sprite):
         if self.x<=cbx-20 and self.x>=cbx-30 and self.y <= cby-10 and self.y >= cby-40 and coy>=0 and cox>=0 and self.collidingWithSprites(CompanionCube) and self.hold == -1:
             self.x = cox - 10
             self.y = coy - 40
+            global holding
+            holding = holding * (-1)
             
         # win
         if self.collidingWithSprites(WinDoor) and self.win == 0:
@@ -292,8 +294,13 @@ class CompanionCube(Sprite):
             self.vy = 0
             self.x = ccx + 10
             self.y = ccy + 25
+        global holding
+        self.holding = holding
+        if self.holding == -1:
+            self.x = ccx + 10
+            self.y = ccy +25
         # death by goo
-        if self.y >= 620:
+        if  self.y >= 620:
             self.x = 10
             self.y = 450
             self.vy =0
