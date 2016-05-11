@@ -170,6 +170,7 @@ class Chell(Sprite):
             ccx = self.x
             global ccy
             ccy = self.y
+            
         # death by goo    
         if self.y >= 560:
             self.x = 50
