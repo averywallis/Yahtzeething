@@ -308,6 +308,7 @@ class CompanionCube(Sprite):
             self.vy = 0
             self.x = ccx + 10
             self.y = ccy + 25
+        # if Chell goes through portal while holding, go to Chell
         global holding
         self.holding = holding
         if self.holding == -1:
