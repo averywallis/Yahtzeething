@@ -204,10 +204,6 @@ class Chell(Sprite):
             ccx = 10
             global ccy
             ccy = 450
-            global holding
-            holding = 0
-            global hold
-            hold = 1
             self.reset = 0
             self.setImage(0)
 
