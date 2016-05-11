@@ -326,9 +326,10 @@ class CubeButton(Sprite):
         self.x = 700
         self.y = 490
     def step(self):
-        self.x =self.x
-        self.y = self.y
-        
+        global hold
+        self.hold = hold
+        if self.collidingWithSprites(CompanionCube) and self.hold == -1:
+            print("4")
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
