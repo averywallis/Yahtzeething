@@ -105,6 +105,13 @@ class Chell(Sprite):
             cby = cpy
             self.click = 0
         
+        # hold cube
+        if self.collidingWithSprites(CompanionCube) and self.hold == -1:
+            global ccx
+            ccx = self.x
+            global ccy
+            ccy = self.y
+        
         # player and orange portal detection
         if self.x<= cox-20 and self.x>=cox-30 and self.y <= coy-10 and self.y >= coy-40 and cby>=0 and cbx>=0 and self.hold != -1:
             self.x = cbx - 10
@@ -163,13 +170,6 @@ class Chell(Sprite):
         else:    
             self.vy += .1
             self.y += self.vy
-        
-        # hold cube
-        if self.collidingWithSprites(CompanionCube) and self.hold == -1:
-            global ccx
-            ccx = self.x
-            global ccy
-            ccy = self.y
             
         # death by goo    
         if self.y >= 560:
