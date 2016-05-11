@@ -318,7 +318,7 @@ class CompanionCube(Sprite):
             self.x = 10
             self.y = 450
             self.vy =0
-
+            
 class CubeButton(Sprite):
     button = RectangleAsset(100,10,noline,red)
     def __init__(self, position):
@@ -326,8 +326,8 @@ class CubeButton(Sprite):
         self.x = 700
         self.y = 490
     def step(self):
-
-        
+        self.x =self.x
+        self.y = self.y
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
