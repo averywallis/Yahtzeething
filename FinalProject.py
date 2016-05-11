@@ -52,6 +52,7 @@ cby = -100
 ccx = 0
 ccy = 0
 hold = 1
+holding = 1
 
 class Chell(Sprite):
     asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,361), 2, 'horizontal')
@@ -116,7 +117,12 @@ class Chell(Sprite):
         if self.x<= cox-20 and self.x>=cox-30 and self.y <= coy-10 and self.y >= coy-40 and cby>=0 and cbx>=0 and self.collidingWithSprites(CompanionCube) and self.hold == -1:
             self.x = cbx - 10
             self.y = cby - 40
-        
+            global holding
+            holding = holding * (-1)
+        # player, blue portal, and holding companion cube detection:    
+        if self.x<=cbx-20 and self.x>=cbx-30 and self.y <= cby-10 and self.y >= cby-40 and coy>=0 and cox>=0 and self.collidingWithSprites(CompanionCube) and self.hold == -1:
+            self.x = cox - 10
+            self.y = coy - 40
             
         # win
         if self.collidingWithSprites(WinDoor) and self.win == 0:
