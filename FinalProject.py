@@ -207,7 +207,7 @@ class Chell(Sprite):
             global holding
             holding = 0
             global hold
-            hold = 0
+            hold = 1
             self.reset = 0
             self.setImage(0)
 
