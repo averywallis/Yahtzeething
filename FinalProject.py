@@ -318,9 +318,7 @@ class CompanionCube(Sprite):
             self.x = 10
             self.y = 450
             self.vy =0
-            global hold
-            hold = 1
-            
+
 class CubeButton(Sprite):
     button = RectangleAsset(100,10,noline,red)
     def __init__(self, position):
