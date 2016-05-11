@@ -325,6 +325,9 @@ class CubeButton(Sprite):
         super().__init__(CubeButton.button, position)
         self.x = 700
         self.y = 490
+    def step(self):
+        self.x =self.x
+        self.y = self.y
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
@@ -379,6 +382,8 @@ class PortalGame(App):
             orangeportal.step()
         for cc in self.getSpritesbyClass(CompanionCube):
             cc.step()
+        for cubebutton if self.getSpritesbyClass(CubeButton):
+            cubebutton.step()
             
 myapp = PortalGame(1000,750)
 myapp.run()
