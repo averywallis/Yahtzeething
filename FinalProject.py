@@ -125,7 +125,7 @@ class Chell(Sprite):
             self.x = cbx - 10
             self.y = cby - 40
             global holding
-            holding = holding * (-1)
+            holding = -1
             global ccx
             ccx = self.x
             global ccy
