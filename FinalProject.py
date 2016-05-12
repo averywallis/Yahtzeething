@@ -365,7 +365,7 @@ class PortalGame(App):
         jumptxt = TextAsset(text="Space to Jump, E to Interact", width=200, align='center',style='10px Arua==ial',fill=Color(0xff2222,1))
         optxt = TextAsset(text="Left Click to Place Orange Portal", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         bptxt = TextAsset(text="Alt + Left Click to Place Blue Portal", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
-        resettxt = TextAsset(text="Press R to reset", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
+        # resettxt = TextAsset(text="Press R to reset", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         #background
         Sprite(wall, (0,0))
         #entrance sprites
