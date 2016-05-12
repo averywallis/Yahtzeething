@@ -343,7 +343,8 @@ class CubeButton(Sprite):
         if self.collidingWithSprites(CompanionCube) and self.hold != -1:
             global win
             win = 1
-            
+
+"""            
 # win lights            
 class GreenLight(Sprite):
     glight = CircleAsset(5,noline,green)
@@ -353,6 +354,7 @@ class RedLight(Sprite):
     rlight = CircleAsset(5,noline,red)
     def __init__(self, position):
         super().__init__(RedLight.rlight, position)
+"""
         
 class PortalGame(App):
     def __init__(self, width, height):
