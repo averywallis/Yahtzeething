@@ -54,10 +54,11 @@ ccy = 0
 hold = 1
 holding = 1
 win = 0
-cgx = -100
-cgy = -100
-crx = -100
-cry = -100
+
+# cgx = -100
+# cgy = -100
+# crx = -100
+# cry = -100
 
 class Chell(Sprite):
     asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,361), 2, 'horizontal')
