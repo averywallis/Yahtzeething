@@ -349,20 +349,11 @@ class GreenLight(Sprite):
     glight = CircleAsset(5,noline,green)
     def __init__(self, position):
         super().__init__(GreenLight.glight, position)
-    def step(self):
-        global cgx
-        self.x = cgx
-        global cgy
-        self.y = cgy
 class RedLight(Sprite):
     rlight = CircleAsset(5,noline,red)
     def __init__(self, position):
         super().__init__(RedLight.rlight, position)
-    def step(self):
-        global crx
-        self.x = crx
-        global cry
-        self.y = cry
+        
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
@@ -421,10 +412,6 @@ class PortalGame(App):
             cc.step()
         for cubebutton in self.getSpritesbyClass(CubeButton):
             cubebutton.step()
-        for redlight in self.getSpritesbyClass(RedLight):
-            redlight.step()
-        for greenlight in self.getSpritesbyClass(GreenLight):
-            greenlight.step()
             
 myapp = PortalGame(1000,750)
 myapp.run()
