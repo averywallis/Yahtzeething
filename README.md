@@ -1,6 +1,6 @@
 # Final Project
 
-[Play Portal!](http://runpython.com/?user=averywallis&repo=Final-Project&name=FinalProject.py)
+[Play!](http://runpython.com/?user=averywallis&repo=Final-Project&name=FinalProject.py)
 
 Fork this repository to begin working on your final project. Then do the following:
 
