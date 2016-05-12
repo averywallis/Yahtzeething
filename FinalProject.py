@@ -195,6 +195,10 @@ class Chell(Sprite):
             cox = -100
             global coy
             coy = -100
+            global cbx
+            cbx = -100
+            global cby
+            cby = -100
         # borders
         if self.x <0:
             self.x = 0
