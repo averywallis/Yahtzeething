@@ -148,8 +148,8 @@ class Chell(Sprite):
             
         # win
         global win
-        self.win = win
-        if self.collidingWithSprites(WinDoor) and self.win==0 and self.win1 == -1:
+        self.wining = win
+        if self.collidingWithSprites(WinDoor) and self.win==0 and self.wining == -1:
             self.thing = YouWin((400,400))
             self.win = 1
         
