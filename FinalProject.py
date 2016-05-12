@@ -385,6 +385,9 @@ class PortalGame(App):
         Platforms((650,150))
         Sprite(plat,(600,500))
         Platforms((600,500))
+        # lights
+        RedLight((40,40))
+        GreenLight((40,400))
         # button
         CubeButton((0,0))
         # portals, companion cube, and Chell
@@ -392,9 +395,6 @@ class PortalGame(App):
         OrangePortal((0,0))
         Chell((0,0))
         CompanionCube((0,0))
-        # lights
-        RedLight((40,40))
-        GreenLight((40,400))
         
         
     def step(self):
