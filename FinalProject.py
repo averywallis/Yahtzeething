@@ -53,6 +53,7 @@ ccx = 0
 ccy = 0
 hold = 1
 holding = 1
+win = 0
 
 class Chell(Sprite):
     asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,361), 2, 'horizontal')
@@ -144,7 +145,10 @@ class Chell(Sprite):
         else:
             global holding
             holding = 0
+            
         # win
+        global win
+        self.win1 = win
         if self.collidingWithSprites(WinDoor) and self.win == 0:
             self.thing = YouWin((400,400))
             self.win = 1
@@ -333,7 +337,8 @@ class CubeButton(Sprite):
         global hold
         self.hold = hold
         if self.collidingWithSprites(CompanionCube) and self.hold != -1:
-            print("4")
+            global win
+            win = 1
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
