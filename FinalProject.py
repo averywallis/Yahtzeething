@@ -191,6 +191,10 @@ class Chell(Sprite):
             self.x = 50
             self.y = 410
             self.vy =0
+            global cox
+            cox = -100
+            global coy
+            coy = -100
         # borders
         if self.x <0:
             self.x = 0
