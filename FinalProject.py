@@ -196,6 +196,7 @@ class Chell(Sprite):
             self.x = 0
         if self.x > 947:
             self.x = 947
+        """
         # reset
         if self.reset == 1:
             self.x = 50
@@ -214,7 +215,7 @@ class Chell(Sprite):
             ccy = 450
             self.reset = 0
             self.setImage(0)
-
+        """
     def ClickOn(self,event):
         self.click = 1
         global cpx 
