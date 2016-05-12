@@ -392,6 +392,9 @@ class PortalGame(App):
         OrangePortal((0,0))
         Chell((0,0))
         CompanionCube((0,0))
+        # lights
+        RedLight((40,40))
+        GreenLight((40,400))
         
         
     def step(self):
