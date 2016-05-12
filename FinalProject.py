@@ -379,7 +379,7 @@ class PortalGame(App):
         Sprite(jumptxt,(0,10))
         Sprite(optxt, (0,20))
         Sprite(bptxt, (0,30))
-        Sprite(resettxt,(0,40))
+        # Sprite(resettxt,(0,40))
         # exit sprites
         Sprite(exitbig, (800,100))
         # win door
