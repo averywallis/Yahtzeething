@@ -412,6 +412,10 @@ class PortalGame(App):
             cc.step()
         for cubebutton in self.getSpritesbyClass(CubeButton):
             cubebutton.step()
+        for redlight in self.getSpritesbyClass(RedLight):
+            redlight.step()
+        for greenlight in self.getSpritesbyClass(GreenLight):
+            greenlight.step()
             
 myapp = PortalGame(1000,750)
 myapp.run()
