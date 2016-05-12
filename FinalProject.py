@@ -391,9 +391,11 @@ class PortalGame(App):
         Platforms((650,150))
         Sprite(plat,(600,500))
         Platforms((600,500))
+        """
         # lights
         RedLight((40,40))
         GreenLight((40,400))
+        """
         # button
         CubeButton((0,0))
         # portals, companion cube, and Chell
