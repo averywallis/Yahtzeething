@@ -1,7 +1,7 @@
 """
 FinalProject.py
 Author: Avery Wallis
-Sources: Hayden Hatfield, Mr. Donnelly, 
+Sources: Hayden Hatfield, Mr. Dennison, 
 Marcelo Almaguer for the Chell character model used in his own version of Portal called "Remember the Game"
 maxiesnax for the Orange Portal Image: "http://orig05.deviantart.net/58ec/f/2012/361/2/5/portal___orange_portal_by_maxiesnax-d5pcfmj.png"
 Blue Portal Image "http://vignette4.wikia.nocookie.net/kirby-bulborb/images/1/12/Blue_Portal.png/revision/latest?cb=20151004085207"
