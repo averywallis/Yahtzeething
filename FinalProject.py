@@ -149,7 +149,7 @@ class Chell(Sprite):
         # win
         global win
         self.wining = win
-        if self.collidingWithSprites(WinDoor) and self.win==0 and self.wining == -1:
+        if self.collidingWithSprites(WinDoor) and self.win == 0 and self.wining == -1:
             self.thing = YouWin((400,400))
             self.win = 1
         
@@ -339,6 +339,7 @@ class CubeButton(Sprite):
         if self.collidingWithSprites(CompanionCube) and self.hold != -1:
             global win
             win = 1
+            
 class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
