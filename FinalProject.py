@@ -292,6 +292,8 @@ class OpenDoor(Sprite):
     def step(self):
         global win
         self.win = win
+        if self.win == -1:
+            self.x = 0
 class WinDoor(Sprite):
     exitsmall=CircleAsset(20, thinline, platc)
     def __init__(self, position):
