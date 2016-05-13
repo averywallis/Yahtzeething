@@ -37,6 +37,7 @@ portalline2= LineStyle(1, orange)
 # assorted environmental sprites
 wall=RectangleAsset(1000,750, noline, wall)
 exitbig=CircleAsset(70, thinline, platc)
+exitempty=CircleAsset(70, thinline, white)
 exitsmall=CircleAsset(20, thinline, platc)
 plat=RectangleAsset(250, 50, noline, platc)
 doorline=LineAsset(0, 120, thinline)
