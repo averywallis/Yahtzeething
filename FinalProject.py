@@ -285,6 +285,10 @@ class Platforms(Sprite):
     def __init__(self, position):
         super().__init__(Platforms.plat, position)
 
+class OpenDoor(Sprite):
+    
+    def __init__(self, position):
+        super().__init__(WinDoor.exitsmall, position)
 class WinDoor(Sprite):
     exitsmall=CircleAsset(20, thinline, platc)
     def __init__(self, position):
