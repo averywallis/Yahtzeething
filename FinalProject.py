@@ -293,8 +293,8 @@ class OpenDoor(Sprite):
         global win
         self.win = win
         if self.win == 1:
-            self.getSpritesbyClass(OrangePortal)
-            OrangePortal.destroy()
+            x =self.getSpritesbyClass(OrangePortal)
+            x.destroy()
 
 class WinDoor(Sprite):
     exitsmall=CircleAsset(20, thinline, platc)
