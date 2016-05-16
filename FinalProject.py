@@ -155,9 +155,11 @@ class Chell(Sprite):
         # win
         global win
         self.wining = win
+        """
         if self.collidingWithSprites(WinDoor) and self.win == 0 and self.wining == 1:
             self.wintxt = YouWin((400,400))
             self.win = 1
+        """
         
         # move right and left
         if self.mright == 1:
@@ -285,20 +287,10 @@ class Platforms(Sprite):
     def __init__(self, position):
         super().__init__(Platforms.plat, position)
 
-class OpenDoor(Sprite):
-    exitopen = CircleAsset(70, thinline, white)
+class Door(Sprite):
+    door = ImageAsset("images/PortalDoor%20thing.jpg", Frame(0,0,100,100),2, 'vertical')
     def __init__(self, position):
-        super().__init__(OpenDoor.exitopen, position)
-    def step(self):
-        global win
-        self.win = win
-
-class WinDoor(Sprite):
-    exitsmall=CircleAsset(20, thinline, platc)
-    def __init__(self, position):
-        super().__init__(WinDoor.exitsmall, position)
-        self.x = 800
-        self.y = 100
+        super().__init__(Door.door, position)
         
 class YouWin(Sprite):
     youwintxt = TextAsset(text="YOU WIN!!", width=200, align='center',style='100px Arial', fill=Color(0xff2222,1))
@@ -389,8 +381,6 @@ class PortalGame(App):
         OpenDoor((800,100))
         # exit sprites
         Sprite(exitbig, (800,100))
-        # win door
-        WinDoor((0,0))
         Sprite(doorline, (800, 30))
         # assorted platforms
         Sprite(plat,(0,500))
