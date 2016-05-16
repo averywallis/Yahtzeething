@@ -291,8 +291,8 @@ class Door(Sprite):
     door = ImageAsset("images/PortalDoor%20thing.jpg", Frame(0,0,200,200),2, 'vertical')
     def __init__(self, position):
         super().__init__(Door.door, position)
-        self.x = 20
-        self.y = 20
+        self.x = 200
+        self.y = 200
 
 class YouWin(Sprite):
     youwintxt = TextAsset(text="YOU WIN!!", width=200, align='center',style='100px Arial', fill=Color(0xff2222,1))
