@@ -322,11 +322,6 @@ class CompanionCube(Sprite):
             self.vy -= .1
             self.y += self.vy
             self.vy = 0
-        # constantly moving down for gravity if not colliding with platform
-        elif self.collidingWithSprites(CubeButton):
-            self.vy -= .1
-            self.y += self.vy
-            self.vy = 0
         else:    
             self.vy += .1
             self.y += self.vy
