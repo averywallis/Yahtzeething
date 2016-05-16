@@ -288,12 +288,17 @@ class Platforms(Sprite):
         super().__init__(Platforms.plat, position)
 
 class ExitDoor(Sprite):
-    door = ImageAsset("images/PortalDoorthing.png", Frame(0,0,195,210), 1, 'vertical')
+    door = ImageAsset("images/PortalDoorthing.png", Frame(0,0,195,210), 2, 'vertical')
     def __init__(self, position):
         super().__init__(ExitDoor.door, position)
         self.scale = .65
     def step(self):
-        self.x = self.x
+        global win
+        self.win = win
+        if self.win == -1:
+            self.setImage(1)
+        else:
+            self.setImage(0)
 
 class YouWin(Sprite):
     youwintxt = TextAsset(text="YOU WIN!!", width=200, align='center',style='100px Arial', fill=Color(0xff2222,1))
