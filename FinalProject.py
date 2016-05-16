@@ -288,7 +288,7 @@ class Platforms(Sprite):
         super().__init__(Platforms.plat, position)
 
 class ExitDoor(Sprite):
-    door = ImageAsset("images/PortalDoorthing.png", Frame(0,0,195,210), 2, 'vertical')
+    door = ImageAsset("images/PortalDoorthing.png", Frame(0,0,195,210), 2, 'horizontal')
     def __init__(self, position):
         super().__init__(ExitDoor.door, position)
         self.scale = .65
