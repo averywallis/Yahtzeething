@@ -367,11 +367,8 @@ class PortalGame(App):
         optxt = TextAsset(text="Left Click to Place Orange Portal", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         bptxt = TextAsset(text="Alt + Left Click to Place Blue Portal", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         # resettxt = TextAsset(text="Press R to reset", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
-        door1 = ImageAsset("images/PortalDoorthing.png", Frame(0,0,195,210), 1, 'vertical')
         #background
         Sprite(wall, (0,0))
-        #entrance sprites
-        Sprite(door1, (10,500))
         """
         Sprite(exitbig, (75,450))
         Sprite(exitsmall, (75,450))
