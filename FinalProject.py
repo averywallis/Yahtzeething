@@ -295,7 +295,7 @@ class ExitDoor(Sprite):
     def step(self):
         global win
         self.win = win
-        if self.win == -1:
+        if self.win == 1:
             self.setImage(1)
         else:
             self.setImage(0)
