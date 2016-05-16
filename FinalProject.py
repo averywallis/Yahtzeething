@@ -387,8 +387,8 @@ class PortalGame(App):
         # assorted platforms
         Sprite(plat,(0,500))
         Platforms((0,500))
-        Sprite(platsmall,(10,80))
-        Platforms((10,80))
+        Sprite(platsmall,(10,100))
+        Platforms((10,100))
         Sprite(plat,(650,150))
         Platforms((650,150))
         Sprite(plat,(600,500))
