@@ -408,8 +408,9 @@ class PortalGame(App):
             cc.step()
         for cubebutton in self.getSpritesbyClass(CubeButton):
             cubebutton.step()
+            """
         for door in self.getSpritesbyClass(Door):
             door.step()
-            
+            """
 myapp = PortalGame(1000,750)
 myapp.run()
