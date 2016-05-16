@@ -369,7 +369,7 @@ class PortalGame(App):
         # resettxt = TextAsset(text="Press R to reset", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         door1 = ImageAsset("images/PortalDoorthing.png", Frame(0,0,195,210), 1, 'vertical')
         #background
-        Sprite(wall, (0,0))
+        Sprite(wall, (0,0), scale = .65)
         #entrance sprites
         Sprite(door1, (10,500))
         """
