@@ -362,6 +362,9 @@ class CubeButton(Sprite):
         if self.collidingWithSprites(CompanionCube) and self.hold != -1:
             global win
             win = 1
+        else:
+            global win
+            win = -1
         
 class PortalGame(App):
     def __init__(self, width, height):
