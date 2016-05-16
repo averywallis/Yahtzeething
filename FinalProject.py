@@ -288,9 +288,9 @@ class Platforms(Sprite):
         super().__init__(Platforms.plat, position)
 
 class ExitDoor(Sprite):
-    door1 = ImageAsset("images/PortalDoorthing.png", Frame(0,0,195,210), 1, 'vertical')
+    door = ImageAsset("images/PortalDoorthing.png", Frame(0,0,195,210), 1, 'vertical')
     def __init__(self, position):
-        super().__init__(ExitDoor.door1, position)
+        super().__init__(ExitDoor.door, position)
         self.scale = .65
     def step(self):
         self.x = self.x
@@ -367,12 +367,16 @@ class PortalGame(App):
         optxt = TextAsset(text="Left Click to Place Orange Portal", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         bptxt = TextAsset(text="Alt + Left Click to Place Blue Portal", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         # resettxt = TextAsset(text="Press R to reset", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
+        door1 = ImageAsset("images/PortalDoorthing.png", Frame(0,0,195,210), 1, 'vertical')
         #background
         Sprite(wall, (0,0))
         #entrance sprites
+        Sprite(door1, (10,500))
+        """
         Sprite(exitbig, (75,450))
         Sprite(exitsmall, (75,450))
         Sprite(doorline, (75,380))
+        """
         #goo
         Sprite(goo, (0,650))
         # creation of text
