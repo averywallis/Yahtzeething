@@ -291,7 +291,7 @@ class ExitDoor(Sprite):
     door1 = ImageAsset("images/PortalDoorthing.png", Frame(0,0,195,210), 1, 'vertical')
     def __init__(self, position):
         super().__init__(ExitDoor.door1, position)
-        self.scale = .5
+        self.scale = .25
 
 
 class YouWin(Sprite):
