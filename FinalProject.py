@@ -286,14 +286,14 @@ class Platforms(Sprite):
     plat=RectangleAsset(250, 1, noline, platc)
     def __init__(self, position):
         super().__init__(Platforms.plat, position)
-
+"""
 class Door(Sprite):
     door = ImageAsset("images/PortalDoor%20thing.jpg", Frame(0,0,100,100),2, 'vertical')
     def __init__(self, position):
         super().__init__(Door.door, position)
         self.x = 20
         self.y = 20
-        
+        """
 class YouWin(Sprite):
     youwintxt = TextAsset(text="YOU WIN!!", width=200, align='center',style='100px Arial', fill=Color(0xff2222,1))
     def __init__(self, position):
