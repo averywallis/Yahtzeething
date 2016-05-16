@@ -310,7 +310,7 @@ class CompanionCube(Sprite):
         super().__init__(CompanionCube.cc, position)
         self.scale = 1/7
         self.x = 10
-        self.y = 25
+        self.y = 30
         self.visible = True
         self.vx = 0
         self.vy = 0
@@ -387,8 +387,8 @@ class PortalGame(App):
         # assorted platforms
         Sprite(plat,(0,500))
         Platforms((0,500))
-        Sprite(platsmall,(10,75))
-        Platforms((10,75))
+        Sprite(platsmall,(10,80))
+        Platforms((10,80))
         Sprite(plat,(650,150))
         Platforms((650,150))
         Sprite(plat,(600,500))
