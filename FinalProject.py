@@ -369,11 +369,9 @@ class PortalGame(App):
         # resettxt = TextAsset(text="Press R to reset", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         #background
         Sprite(wall, (0,0))
-        """
         Sprite(exitbig, (75,450))
         Sprite(exitsmall, (75,450))
         Sprite(doorline, (75,380))
-        """
         #goo
         Sprite(goo, (0,650))
         # creation of text
