@@ -400,7 +400,6 @@ class PortalGame(App):
         Chell((0,0))
         CompanionCube((0,0))
         
-        
     def step(self):
         for chell in self.getSpritesbyClass(Chell):
             chell.step()
