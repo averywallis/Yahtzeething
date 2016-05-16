@@ -40,7 +40,7 @@ exitbig=CircleAsset(70, thinline, platc)
 exitempty=CircleAsset(70, thinline, white)
 exitsmall=CircleAsset(20, thinline, platc)
 plat=RectangleAsset(250, 50, noline, platc)
-platsmall=RectangleAsset(200, 50, noline, platc)
+platsmall=RectangleAsset(250, 25, noline, platc)
 doorline=LineAsset(0, 120, thinline)
 goo=RectangleAsset(1000,100,noline,gooy)
 
