@@ -288,7 +288,7 @@ class Platforms(Sprite):
         super().__init__(Platforms.plat, position)
 
 class Door(Sprite):
-    door = ImageAsset("images/PortalDoor%20thing.jpg", Frame(0,0,100,100),2, 'vertical')
+    door = ImageAsset("images/PortalDoor%20thing.jpg", Frame(0,0,200,200),2, 'vertical')
     def __init__(self, position):
         super().__init__(Door.door, position)
         self.x = 20
