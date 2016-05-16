@@ -378,7 +378,6 @@ class PortalGame(App):
         Sprite(optxt, (0,20))
         Sprite(bptxt, (0,30))
         # Sprite(resettxt,(0,40))
-        OpenDoor((800,100))
         # exit sprites
         Sprite(exitbig, (800,100))
         Sprite(doorline, (800, 30))
