@@ -380,7 +380,7 @@ class PortalGame(App):
         Sprite(bptxt, (0,30))
         # Sprite(resettxt,(0,40))
         # exit sprite
-        Door((20,20))
+        Door((800,100))
         # assorted platforms
         Sprite(plat,(0,500))
         Platforms((0,500))
