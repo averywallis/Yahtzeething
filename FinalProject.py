@@ -292,7 +292,8 @@ class ExitDoor(Sprite):
     def __init__(self, position):
         super().__init__(ExitDoor.door1, position)
         self.scale = .65
-
+    def step(self):
+        self.x = self.x
 
 class YouWin(Sprite):
     youwintxt = TextAsset(text="YOU WIN!!", width=200, align='center',style='100px Arial', fill=Color(0xff2222,1))
@@ -409,9 +410,8 @@ class PortalGame(App):
             cc.step()
         for cubebutton in self.getSpritesbyClass(CubeButton):
             cubebutton.step()
-            """
-        for door in self.getSpritesbyClass(Door):
+        for door in self.getSpritesbyClass(ExitDoor):
             door.step()
-            """
+            
 myapp = PortalGame(1000,750)
 myapp.run()
