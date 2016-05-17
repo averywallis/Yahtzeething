@@ -57,6 +57,9 @@ hold = 1
 holding = 1
 win = 0
 
+# sounds and playing them
+explosion_asset = SoundAsset("sounds/explosion2.mp3")
+
 class Chell(Sprite):
     asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,361), 2, 'horizontal')
     def __init__(self, position):
