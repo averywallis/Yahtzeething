@@ -59,7 +59,7 @@ win = 0
 
 # sounds and playing them
 explosion_asset = SoundAsset("sounds/explosion2.mp3")
-expl = Sount(explosion_asset)
+expl = Sound(explosion_asset)
 expl.play()
 
 class Chell(Sprite):
