@@ -58,7 +58,7 @@ holding = 1
 win = 0
 
 # sounds and playing them
-explosion_asset = SoundAsset("sounds/explosion2.mp3")
+explosion_asset = SoundAsset("sounds/portal2_background02.wav")
 expl = Sound(explosion_asset)
 expl.play()
 
