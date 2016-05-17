@@ -59,6 +59,8 @@ win = 0
 
 # sounds and playing them
 explosion_asset = SoundAsset("sounds/explosion2.mp3")
+expl = Sount(explosion_asset)
+expl.play()
 
 class Chell(Sprite):
     asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,361), 2, 'horizontal')
