@@ -58,8 +58,8 @@ holding = 1
 win = 0
 
 # sounds
-blueportal_asset = SoundAsset("sounds/portalgun_shoot_blue1.wav")
-bp = Sound(blueportal_asset)
+bp = Sound(SoundAsset("sounds/portalgun_shoot_blue1.wav"))
+bp = Sound(
 orangeportal_asset = SoundAsset("sounds/portalgun_shoot_red1.wav")
 op = Sound(orangeportal_asset)
 
