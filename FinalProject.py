@@ -341,7 +341,7 @@ class CompanionCube(Sprite):
         # death by goo
         if  self.y >= 620:
             self.x = 10
-            self.y = 450
+            self.y = 75
             self.vy =0
             
 class CubeButton(Sprite):
