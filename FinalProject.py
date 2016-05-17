@@ -310,7 +310,7 @@ class CompanionCube(Sprite):
         super().__init__(CompanionCube.cc, position)
         self.scale = 1/7
         self.x = 10
-        self.y = 65
+        self.y = 64
         self.visible = True
         self.vx = 0
         self.vy = 0
