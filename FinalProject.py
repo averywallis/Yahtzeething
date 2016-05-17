@@ -60,7 +60,7 @@ win = 0
 # sounds and playing them
 blueportal_asset = SoundAsset("sounds/portalgun_shoot_blue1.wav")
 bp = Sound(blueportal_asset)
-bp.play()
+
 
 class Chell(Sprite):
     asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,361), 2, 'horizontal')
@@ -105,8 +105,9 @@ class Chell(Sprite):
             global coy
             coy = cpy
             self.click = 0
-        # move blue portal        
+        # move blue portal and play sound      
         if self.click == 1 and self.alt == 1:
+            bp.play()
             global cbx
             cbx = cpx
             global cby
