@@ -102,7 +102,7 @@ class Chell(Sprite):
     def step(self):
         # move orange portal and play sound
         if self.click == 1 and self.alt != 1:
-            op.play()
+            op.loop()
             global cox
             cox = cpx
             global coy
