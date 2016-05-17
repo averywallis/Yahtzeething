@@ -57,9 +57,11 @@ hold = 1
 holding = 1
 win = 0
 
-# sounds and playing them
+# sounds
 blueportal_asset = SoundAsset("sounds/portalgun_shoot_blue1.wav")
 bp = Sound(blueportal_asset)
+orangeportal_asset = SoundAsset("sounds/portalgun_shoot_red1.wav")
+op = Sound(orangeportal_asset)
 
 
 class Chell(Sprite):
@@ -98,8 +100,9 @@ class Chell(Sprite):
         PortalGame.listenKeyEvent("keydown", "e" , self.holdOn)
         
     def step(self):
-        # move orange portal
+        # move orange portal and play sound
         if self.click == 1 and self.alt != 1:
+            op.play()
             global cox
             cox = cpx
             global coy
