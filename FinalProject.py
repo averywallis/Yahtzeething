@@ -58,9 +58,9 @@ holding = 1
 win = 0
 
 # sounds and playing them
-explosion_asset = SoundAsset("sounds/portalgun_shoot_blue1.wav")
-expl = Sound(explosion_asset)
-expl.play()
+blueportal_asset = SoundAsset("sounds/portalgun_shoot_blue1.wav")
+bp = Sound(blueportal_asset)
+bp.play()
 
 class Chell(Sprite):
     asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,361), 2, 'horizontal')
