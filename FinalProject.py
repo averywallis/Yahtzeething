@@ -59,8 +59,8 @@ win = 0
 
 # sounds
 bp = Sound(SoundAsset("sounds/portalgun_shoot_blue1.wav"))
-orangeportal_asset = SoundAsset("sounds/portalgun_shoot_red1.wav")
-op = Sound(orangeportal_asset)
+op = Sound(SoundAsset("sounds/portalgun_shoot_red1.wav"))
+
 
 
 class Chell(Sprite):
