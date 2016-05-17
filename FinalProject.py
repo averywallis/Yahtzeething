@@ -310,7 +310,7 @@ class CompanionCube(Sprite):
         super().__init__(CompanionCube.cc, position)
         self.scale = 1/7
         self.x = 10
-        self.y = 75
+        self.y = 70
         self.visible = True
         self.vx = 0
         self.vy = 0
@@ -341,7 +341,7 @@ class CompanionCube(Sprite):
         # death by goo
         if  self.y >= 620:
             self.x = 10
-            self.y = 75
+            self.y = 70
             self.vy =0
             
 class CubeButton(Sprite):
