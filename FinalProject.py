@@ -208,7 +208,7 @@ class Chell(Sprite):
         if self.x > 947:
             self.x = 947
         if self.y < 0:
-            self.x = 0
+            self.y = 0
         """
         # reset
         if self.reset == 1:
