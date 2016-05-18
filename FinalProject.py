@@ -62,6 +62,11 @@ bp = Sound(SoundAsset("sounds/portalgun_shoot_blue1.wav"))
 op = Sound(SoundAsset("sounds/portalgun_shoot_red1.wav"))
 pe = Sound(SoundAsset("sounds/portal_enter_01.wav"))
 e1 = Sound(SoundAsset("sounds/00_part1_entry-1.wav"))
+e2 = Sound(SoundAsset("sounds/00_part1_entry-2.wav"))
+e3 = Sound(SoundAsset("sounds/00_part1_entry-3.wav"))
+e4 = Sound(SoundAsset("sounds/00_part1_entry-4.wav"))
+e5 = Sound(SoundAsset("sounds/00_part1_entry-5.wav"))
+e6 = Sound(SoundAsset("sounds/00_part1_entry-6.wav"))
 # SOUNDS TO COME/IDEAS:
 """
 death of chell, death of cube, teleport through portals, open of door, glados,
