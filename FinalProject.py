@@ -361,6 +361,7 @@ class CompanionCube(Sprite):
             
 class Glados(Sprite):
     cc = ImageAsset("images/companioncube.png", Frame(20,20,260,260), 1, 'horizontal')
+    e1 = Sound(SoundAsset("sounds/00_part1_entry-1.wav"))
     def __init__(self, position):
         super().__init__(Glados.cc, position)
         self.x = self.x
