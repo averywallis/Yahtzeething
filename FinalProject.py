@@ -363,7 +363,7 @@ class Glados(Sprite):
     cc = ImageAsset("images/companioncube.png", Frame(20,20,260,260), 1, 'horizontal')
     def __init__(self, position):
         super().__init__(CompanionCube.cc, position)
-            self.x = self.x
+        self.x = self.x
     def step(self):
         e1.play()
 class CubeButton(Sprite):
