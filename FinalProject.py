@@ -60,8 +60,8 @@ win = 0
 # sounds
 bp = Sound(SoundAsset("sounds/portalgun_shoot_blue1.wav"))
 op = Sound(SoundAsset("sounds/portalgun_shoot_red1.wav"))
+pe = Sound(SoundAsset("sounds/portal_enter_01.wav"))
 e1 = Sound(SoundAsset("sounds/00_part1_entry-1.wav"))
-e1.play()
 # SOUNDS TO COME/IDEAS:
 """
 death of chell, death of cube, teleport through portals, open of door, glados,
@@ -132,11 +132,12 @@ class Chell(Sprite):
         if self.x<= cox-20 and self.x>=cox-30 and self.y <= coy-10 and self.y >= coy-40 and cby>=0 and cbx>=0 and self.hold != -1:
             self.x = cbx - 10
             self.y = cby - 40
+            ep.play()
         # player and blue portal detection    
         elif self.x<=cbx-20 and self.x>=cbx-30 and self.y <= cby-10 and self.y >= cby-40 and coy>=0 and cox>=0 and self.hold != -1:
             self.x = cox - 10
             self.y = coy - 40
-            
+            ep.play()
         # player, orange portal, and holding companion cube detection:
         if self.x<= cox-20 and self.x>=cox-30 and self.y <= coy-10 and self.y >= coy-40 and cby>=0 and cbx>=0 and self.collidingWithSprites(CompanionCube) and self.hold == -1:
             self.x = cbx - 10
@@ -147,6 +148,7 @@ class Chell(Sprite):
             ccx = self.x
             global ccy
             ccy = self.y
+            ep.play()
         # player, blue portal, and holding companion cube detection:    
         elif self.x<=cbx-20 and self.x>=cbx-30 and self.y <= cby-10 and self.y >= cby-40 and coy>=0 and cox>=0 and self.collidingWithSprites(CompanionCube) and self.hold == -1:
             self.x = cox - 10
@@ -157,6 +159,7 @@ class Chell(Sprite):
             ccx = self.x
             global ccy
             ccy = self.y
+            ep.play()
         else:
             global holding
             holding = 0
