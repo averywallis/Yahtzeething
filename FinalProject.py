@@ -74,7 +74,7 @@ death of chell, death of cube, teleport through portals, open of door, glados,
 e1.play()
 t = time.time()
 if time.time() > t + 7 and time.time() < t + 8:
-    ep2.play()
+    e2.play()
 
 class Chell(Sprite):
     asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,361), 2, 'horizontal')
