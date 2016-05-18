@@ -109,7 +109,7 @@ class Chell(Sprite):
         e1.play()
         self.t = time.time()
         if time.time() > self.t + 7 and time.time() < self.t + 8:
-        e2.play()
+            e2.play()
         
     def step(self):
         # move orange portal and play sound
