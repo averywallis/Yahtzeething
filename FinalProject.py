@@ -67,7 +67,7 @@ e3 = Sound(SoundAsset("sounds/00_part1_entry-3.wav"))
 e4 = Sound(SoundAsset("sounds/00_part1_entry-4.wav"))
 e5 = Sound(SoundAsset("sounds/00_part1_entry-5.wav"))
 e6 = Sound(SoundAsset("sounds/00_part1_entry-6.wav"))
-e1.play()
+
 
 # SOUNDS TO COME/IDEAS:
 """
@@ -432,6 +432,7 @@ class PortalGame(App):
             cubebutton.step()
         for door in self.getSpritesbyClass(ExitDoor):
             door.step()
+        e1.play()
             
 myapp = PortalGame(1000,750)
 myapp.run()
