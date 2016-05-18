@@ -417,7 +417,7 @@ class PortalGame(App):
         CompanionCube((0,0))
         e1.play()
         self.t = time.time()
-        if time.time() > self.t + 7 and time.time() < self.t + 8:
+        if time.time() > self.t + 8 and time.time() < self.t + 9:
             e2.play()
         
     def step(self):
