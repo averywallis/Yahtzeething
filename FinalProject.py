@@ -69,7 +69,7 @@ e5 = Sound(SoundAsset("sounds/00_part1_entry-5.wav"))
 e6 = Sound(SoundAsset("sounds/00_part1_entry-6.wav"))
 # SOUNDS TO COME/IDEAS:
 """
-death of chell, death of cube, teleport through portals, open of door, glados,
+death of chell, death of cube, open of door, glados,
 """
 
 class Chell(Sprite):
