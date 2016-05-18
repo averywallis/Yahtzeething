@@ -385,6 +385,7 @@ class Glados(Sprite):
             e1.play()
             self.p = 1
             self.t = time.time()
+            print(time.time())
         
         
 class PortalGame(App):
