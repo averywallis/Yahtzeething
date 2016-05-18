@@ -359,6 +359,13 @@ class CompanionCube(Sprite):
             self.y = 63
             self.vy =0
             
+class Glados(Sprite):
+    cc = ImageAsset("images/companioncube.png", Frame(20,20,260,260), 1, 'horizontal')
+    def __init__(self, position):
+        super().__init__(CompanionCube.cc, position)
+            self.x = self.x
+    def step(self):
+        e1.play()
 class CubeButton(Sprite):
     button = RectangleAsset(100,10,noline,red)
     def __init__(self, position):
@@ -415,10 +422,6 @@ class PortalGame(App):
         OrangePortal((0,0))
         Chell((0,0))
         CompanionCube((0,0))
-        e1.play()
-        self.t = time.time()
-        if time.time() > self.t + 8 and time.time() < self.t + 9:
-            e2.play()
         
     def step(self):
         for chell in self.getSpritesbyClass(Chell):
@@ -433,6 +436,8 @@ class PortalGame(App):
             cubebutton.step()
         for door in self.getSpritesbyClass(ExitDoor):
             door.step()
+        for glados in self.getSpritesbyClass(Glados):
+            glados.step()
             
 myapp = PortalGame(1000,750)
 myapp.run()
