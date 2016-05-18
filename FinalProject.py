@@ -106,10 +106,6 @@ class Chell(Sprite):
         PortalGame.listenKeyEvent("keydown", "space", self.jumpOn)
         PortalGame.listenKeyEvent("keyup", "space", self.jumpOff)
         PortalGame.listenKeyEvent("keydown", "e" , self.holdOn)
-        e1.play()
-        self.t = time.time()
-        if time.time() > self.t + 7 and time.time() < self.t + 8:
-            e2.play()
         
     def step(self):
         # move orange portal and play sound
@@ -419,6 +415,11 @@ class PortalGame(App):
         OrangePortal((0,0))
         Chell((0,0))
         CompanionCube((0,0))
+        
+        e1.play()
+        self.t = time.time()
+        if time.time() > self.t + 7 and time.time() < self.t + 8:
+            e2.play()
         
     def step(self):
         for chell in self.getSpritesbyClass(Chell):
