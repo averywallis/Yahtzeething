@@ -132,12 +132,12 @@ class Chell(Sprite):
         if self.x<= cox-20 and self.x>=cox-30 and self.y <= coy-10 and self.y >= coy-40 and cby>=0 and cbx>=0 and self.hold != -1:
             self.x = cbx - 10
             self.y = cby - 40
-            ep.play()
+            pe.play()
         # player and blue portal detection    
         elif self.x<=cbx-20 and self.x>=cbx-30 and self.y <= cby-10 and self.y >= cby-40 and coy>=0 and cox>=0 and self.hold != -1:
             self.x = cox - 10
             self.y = coy - 40
-            ep.play()
+            pe.play()
         # player, orange portal, and holding companion cube detection:
         if self.x<= cox-20 and self.x>=cox-30 and self.y <= coy-10 and self.y >= coy-40 and cby>=0 and cbx>=0 and self.collidingWithSprites(CompanionCube) and self.hold == -1:
             self.x = cbx - 10
@@ -148,7 +148,7 @@ class Chell(Sprite):
             ccx = self.x
             global ccy
             ccy = self.y
-            ep.play()
+            pe.play()
         # player, blue portal, and holding companion cube detection:    
         elif self.x<=cbx-20 and self.x>=cbx-30 and self.y <= cby-10 and self.y >= cby-40 and coy>=0 and cox>=0 and self.collidingWithSprites(CompanionCube) and self.hold == -1:
             self.x = cox - 10
@@ -159,7 +159,7 @@ class Chell(Sprite):
             ccx = self.x
             global ccy
             ccy = self.y
-            ep.play()
+            pe.play()
         else:
             global holding
             holding = 0
