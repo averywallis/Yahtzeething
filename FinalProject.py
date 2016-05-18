@@ -415,7 +415,6 @@ class PortalGame(App):
         OrangePortal((0,0))
         Chell((0,0))
         CompanionCube((0,0))
-        
         e1.play()
         self.t = time.time()
         if time.time() > self.t + 7 and time.time() < self.t + 8:
@@ -434,7 +433,6 @@ class PortalGame(App):
             cubebutton.step()
         for door in self.getSpritesbyClass(ExitDoor):
             door.step()
-        e1.play()
             
 myapp = PortalGame(1000,750)
 myapp.run()
