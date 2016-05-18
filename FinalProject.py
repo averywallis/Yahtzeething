@@ -364,8 +364,11 @@ class Glados(Sprite):
     def __init__(self, position):
         super().__init__(CompanionCube.cc, position)
         self.x = self.x
+        self.p = 0
     def step(self):
-        e1.play()
+        if self.p == 0:
+            e1.play()
+            self.p += 1
 class CubeButton(Sprite):
     button = RectangleAsset(100,10,noline,red)
     def __init__(self, position):
