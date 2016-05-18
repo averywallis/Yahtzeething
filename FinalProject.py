@@ -427,7 +427,7 @@ class PortalGame(App):
         Chell((0,0))
         CompanionCube((0,0))
         # Glados
-        Glados((-100,-100))
+        Glados((-1000,-1000))
         
     def step(self):
         for chell in self.getSpritesbyClass(Chell):
