@@ -379,14 +379,13 @@ class Glados(Sprite):
     cc = ImageAsset("images/companioncube.png", Frame(20,20,260,260), 1, 'horizontal')
     def __init__(self, position):
         super().__init__(Glados.cc, position)
-        self.x = self.x
         self.p = 0
         self.t = time.time()
     def step(self):
         if self.p == 0:
             e1.play()
             self.p = 1
-        if time.time() > int(self.t) + 7 and time.time < self.t + 8 and self.p == 1:
+        if time.time() > self.t + 7 and time.time < self.t + 8 and self.p == 1:
             e2.play()
             self.p = 2
         
