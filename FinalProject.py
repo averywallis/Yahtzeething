@@ -71,10 +71,6 @@ e6 = Sound(SoundAsset("sounds/00_part1_entry-6.wav"))
 """
 death of chell, death of cube, teleport through portals, open of door, glados,
 """
-e1.play()
-t = time.time()
-if time.time() > t + 7 and time.time() < t + 8:
-    e2.play()
 
 class Chell(Sprite):
     asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,361), 2, 'horizontal')
@@ -110,6 +106,10 @@ class Chell(Sprite):
         PortalGame.listenKeyEvent("keydown", "space", self.jumpOn)
         PortalGame.listenKeyEvent("keyup", "space", self.jumpOff)
         PortalGame.listenKeyEvent("keydown", "e" , self.holdOn)
+        e1.play()
+        self.t = time.time()
+        if time.time() > self.t + 7 and time.time() < self.t + 8:
+        e2.play()
         
     def step(self):
         # move orange portal and play sound
