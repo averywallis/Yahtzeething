@@ -359,17 +359,6 @@ class CompanionCube(Sprite):
             self.y = 63
             self.vy =0
             
-class Glados(Sprite):
-    cc = ImageAsset("images/companioncube.png", Frame(20,20,260,260), 1, 'horizontal')
-    e1 = Sound(SoundAsset("sounds/00_part1_entry-1.wav"))
-    def __init__(self, position):
-        super().__init__(Glados.cc, position)
-        self.x = self.x
-        self.p = 0
-    def step(self):
-        if self.p == 0:
-            e1.play()
-            self.p = 1
 class CubeButton(Sprite):
     button = RectangleAsset(100,10,noline,red)
     def __init__(self, position):
@@ -385,6 +374,21 @@ class CubeButton(Sprite):
         else:
             global win
             win = -1
+        
+class Glados(Sprite):
+    cc = ImageAsset("images/companioncube.png", Frame(20,20,260,260), 1, 'horizontal')
+    e1 = Sound(SoundAsset("sounds/00_part1_entry-1.wav"))
+    def __init__(self, position):
+        super().__init__(Glados.cc, position)
+        self.x = self.x
+        self.p = 0
+        self.t = time.time()
+    def step(self):
+        if self.p == 0:
+            e1.play()
+            self.p = 1
+        if time.time() > self.t + 7 and time.time < self.t + 8
+        
         
 class PortalGame(App):
     def __init__(self, width, height):
