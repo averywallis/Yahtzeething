@@ -60,6 +60,7 @@ win = 0
 # sounds
 bp = Sound(SoundAsset("sounds/portalgun_shoot_blue1.wav"))
 op = Sound(SoundAsset("sounds/portalgun_shoot_red1.wav"))
+e1 = Sound(SoundAsset("sounds/00_part1_entry-1.wav"))
 # SOUNDS TO COME/IDEAS:
 """
 death of chell, death of cube, teleport through portals, open of door, glados,
