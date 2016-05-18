@@ -386,7 +386,7 @@ class Glados(Sprite):
             self.p = 1
             self.t = time.time()
             print(time.time())
-        if time.time() > self.t +2 and self.p == 1:
+        if time.time() > self.t + 6 and time.time() < self.t+ 6 and self.p == 1:
             e2.play()
         
         
