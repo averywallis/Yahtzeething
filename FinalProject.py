@@ -362,7 +362,7 @@ class CompanionCube(Sprite):
 class Glados(Sprite):
     cc = ImageAsset("images/companioncube.png", Frame(20,20,260,260), 1, 'horizontal')
     def __init__(self, position):
-        super().__init__(CompanionCube.cc, position)
+        super().__init__(Glados.cc, position)
         self.x = self.x
         self.p = 0
     def step(self):
