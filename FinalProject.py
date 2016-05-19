@@ -73,7 +73,7 @@ success2 = Sound(SoundAsset("sounds/01_part2_success-1.wav"))
 euth = Sound(SoundAsset("sounds/13_part1_euthanized-1.wav"))
 
 gman1 = Sound(SoundAsset("sounds/gman_04.wav"))
-gman1.play()
+
 
 
 # SOUND IDEAS:
@@ -102,6 +102,7 @@ class Chell(Sprite):
         self.op = 0
         self.reset = 0
         self.win = 0
+        self.g = 0
         # all key inputs
         PortalGame.listenKeyEvent("keydown", "d", self.rightOn)
         PortalGame.listenKeyEvent("keyup", "d", self.rightOff)
@@ -184,8 +185,6 @@ class Chell(Sprite):
             self.wintxt = YouWin((400,400))
             self.win = 1
             success2.play()
-            
-        
         
         # move right and left
         if self.mright == 1:
@@ -254,6 +253,9 @@ class Chell(Sprite):
             self.reset = 0
             self.setImage(0)
         """
+        if self.reset == 1 and self.g == 0:
+            gman1.play()
+            self.g = 1
     def ClickOn(self,event):
         self.click = 1
         global cpx 
