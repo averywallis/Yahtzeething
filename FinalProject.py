@@ -74,7 +74,7 @@ euth = Sound(SoundAsset("sounds/13_part1_euthanized-1.wav"))
 
 
 gman1 = Sound(SoundAsset("sounds/citadel_alert_loop2.wav"))
-gman1.play()
+
 
 
 # SOUND IDEAS:
@@ -254,9 +254,8 @@ class Chell(Sprite):
             self.reset = 0
             self.setImage(0)
         """
-        if self.reset == 1 and self.g == 0:
+        if self.reset == 1:
             gman1.play()
-            self.g = 1
     def ClickOn(self,event):
         self.click = 1
         global cpx 
