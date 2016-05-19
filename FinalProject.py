@@ -71,9 +71,11 @@ cdeath = Sound(SoundAsset("sounds/material_emancipation_01.wav"))
 success1 = Sound(SoundAsset("sounds/00_part2_success-1.wav"))
 success2 = Sound(SoundAsset("sounds/01_part2_success-1.wav"))
 euth = Sound(SoundAsset("sounds/13_part1_euthanized-1.wav"))
-# SOUNDS TO COME/IDEAS:
+
+
+# SOUND IDEAS:
 """
-death of chell, death of cube, open of door, glados,
+death of chell, open of door
 """
 
 class Chell(Sprite):
