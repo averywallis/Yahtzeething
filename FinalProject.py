@@ -73,7 +73,7 @@ success2 = Sound(SoundAsset("sounds/01_part2_success-1.wav"))
 euth = Sound(SoundAsset("sounds/13_part1_euthanized-1.wav"))
 
 
-gman1 = Sound(SoundAsset("sounds/apc_alarm_pass1.wav"))
+gman1 = Sound(SoundAsset("sounds/fprison_missionfailurereminder.wav"))
 
 
 # SOUND IDEAS:
