@@ -67,6 +67,7 @@ e3 = Sound(SoundAsset("sounds/00_part1_entry-3.wav"))
 e4 = Sound(SoundAsset("sounds/00_part1_entry-4.wav"))
 e5 = Sound(SoundAsset("sounds/00_part1_entry-5.wav"))
 e6 = Sound(SoundAsset("sounds/00_part1_entry-6.wav"))
+cdeath = Sound(SoundAsset("sounds/material_emancipation_01.wav"))
 # SOUNDS TO COME/IDEAS:
 """
 death of chell, death of cube, open of door, glados,
@@ -355,6 +356,7 @@ class CompanionCube(Sprite):
 
         # death by goo
         if  self.y >= 620:
+            cdeath.play()
             self.x = 10
             self.y = 63
             self.vy =0
