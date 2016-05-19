@@ -68,6 +68,7 @@ e4 = Sound(SoundAsset("sounds/00_part1_entry-4.wav"))
 e5 = Sound(SoundAsset("sounds/00_part1_entry-5.wav"))
 e6 = Sound(SoundAsset("sounds/00_part1_entry-6.wav"))
 cdeath = Sound(SoundAsset("sounds/material_emancipation_01.wav"))
+success1 = Sound(SoundAsset("sounds/00_part2_success-1.wav"))
 euth = Sound(SoundAsset("sounds/13_part1_euthanized-1.wav"))
 # SOUNDS TO COME/IDEAS:
 """
@@ -383,6 +384,7 @@ class CubeButton(Sprite):
         if self.collidingWithSprites(CompanionCube) and self.hold != -1:
             global win
             win = 1
+            success1.play()
         else:
             global win
             win = -1
