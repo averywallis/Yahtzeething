@@ -257,7 +257,7 @@ class Chell(Sprite):
             self.setImage(0)
         """
         if self.reset == 1:
-            toffwr.play()
+            mfoffwr.play()
     def ClickOn(self,event):
         self.click = 1
         global cpx 
