@@ -78,6 +78,7 @@ toffwr = Sound(SoundAsset("sounds/f_innactionisconspiracy_spkr.wav"))
 mfoffwr = Sound(SoundAsset("sounds/fprison_missionfailurereminder.wav"))
 mh = Sound(SoundAsset("sounds/manhack_alert_pass1.wav"))
 toffwr = Sound(SoundAsset("sounds/f_trainstation_offworldrelocation_spkr.wav"))
+gman2 = Sound(SoundAsset("sounds/gman_04.wav"))
 
 
 
@@ -259,7 +260,7 @@ class Chell(Sprite):
             self.setImage(0)
         """
         if self.reset == 1:
-            toffwr.play()
+            gman2.play()
     def ClickOn(self,event):
         self.click = 1
         global cpx 
