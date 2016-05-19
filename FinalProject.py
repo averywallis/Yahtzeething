@@ -74,6 +74,7 @@ euth = Sound(SoundAsset("sounds/13_part1_euthanized-1.wav"))
 
 
 apcpass = Sound(SoundAsset("sounds/apc_alarm_pass1.wav"))
+toffwr = Sound(SoundAsset("sounds/f_trainstation_offworldrelocation_spkr.wav"))
 
 
 
@@ -255,7 +256,7 @@ class Chell(Sprite):
             self.setImage(0)
         """
         if self.reset == 1:
-            apcpass.play()
+            toffwr.play()
     def ClickOn(self,event):
         self.click = 1
         global cpx 
