@@ -74,6 +74,7 @@ euth = Sound(SoundAsset("sounds/13_part1_euthanized-1.wav"))
 
 
 gman1 = Sound(SoundAsset("sounds/citadel_alert_loop2.wav"))
+gman1.play()
 
 
 # SOUND IDEAS:
