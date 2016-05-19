@@ -72,8 +72,8 @@ success1 = Sound(SoundAsset("sounds/00_part2_success-1.wav"))
 success2 = Sound(SoundAsset("sounds/01_part2_success-1.wav"))
 euth = Sound(SoundAsset("sounds/13_part1_euthanized-1.wav"))
 
-gman1 = Sound(SoundAsset("sounds/gman_04.wav"))
 
+gman1 = Sound(SoundAsset("sounds/gman_04.wav"))
 
 
 # SOUND IDEAS:
