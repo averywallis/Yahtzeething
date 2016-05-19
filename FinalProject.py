@@ -410,6 +410,10 @@ class Glados(Sprite):
             e2.play()
             self.p = 2
             self.t = time.time()
+        if time.time() > self.t + 7 and time.time() < self.t + 8 and self.p == 2:
+            e3.play()
+            self.p = 3
+            self.t = time.time()
         
         
 class PortalGame(App):
