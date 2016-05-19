@@ -68,6 +68,7 @@ e4 = Sound(SoundAsset("sounds/00_part1_entry-4.wav"))
 e5 = Sound(SoundAsset("sounds/00_part1_entry-5.wav"))
 e6 = Sound(SoundAsset("sounds/00_part1_entry-6.wav"))
 cdeath = Sound(SoundAsset("sounds/material_emancipation_01.wav"))
+euth = Sound(SoundAsset("sounds/13_part1_euthanized-1.wav"))
 # SOUNDS TO COME/IDEAS:
 """
 death of chell, death of cube, open of door, glados,
@@ -331,6 +332,7 @@ class CompanionCube(Sprite):
         self.vx = 0
         self.vy = 0
         self.held = 1
+        self.d = 0
     def step(self):
         # moving up if colliding with platforms to counteract gravity
         if self.collidingWithSprites(Platforms):
@@ -356,7 +358,12 @@ class CompanionCube(Sprite):
 
         # death by goo
         if  self.y >= 620:
-            cdeath.play()
+            if self.d ==0:
+                cdeath.play()
+                euth.play()
+            else:
+                
+                cdeath.play()
             self.x = 10
             self.y = 63
             self.vy =0
