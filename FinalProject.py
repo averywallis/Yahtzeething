@@ -393,7 +393,7 @@ class CubeButton(Sprite):
             win = -1
         
 class Glados(Sprite):
-    cc = ImageAsset("images/companioncube.png", Frame(20,20,260,260), 1, 'horizontal')
+    cc = CircleAsset(5,thinline,black)
     def __init__(self, position):
         super().__init__(Glados.cc, position)
         self.p = 0
