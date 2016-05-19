@@ -69,6 +69,7 @@ e5 = Sound(SoundAsset("sounds/00_part1_entry-5.wav"))
 e6 = Sound(SoundAsset("sounds/00_part1_entry-6.wav"))
 cdeath = Sound(SoundAsset("sounds/material_emancipation_01.wav"))
 success1 = Sound(SoundAsset("sounds/00_part2_success-1.wav"))
+success2 = Sound(SoundAsset("sounds/01_part2_success-1.wav"))
 euth = Sound(SoundAsset("sounds/13_part1_euthanized-1.wav"))
 # SOUNDS TO COME/IDEAS:
 """
@@ -177,6 +178,9 @@ class Chell(Sprite):
         if self.collidingWithSprites(ExitDoor) and self.win == 0 and self.wining == 1:
             self.wintxt = YouWin((400,400))
             self.win = 1
+            success2.play()
+            
+        
         
         # move right and left
         if self.mright == 1:
