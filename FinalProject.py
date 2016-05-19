@@ -378,13 +378,16 @@ class CubeButton(Sprite):
         super().__init__(CubeButton.button, position)
         self.x = 700
         self.y = 490
+        self.w = 0
     def step(self):
         global hold
         self.hold = hold
         if self.collidingWithSprites(CompanionCube) and self.hold != -1:
             global win
             win = 1
-            success1.play()
+            if self.w == 0:
+                success1.play()
+                self.w = 1
         else:
             global win
             win = -1
