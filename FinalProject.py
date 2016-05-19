@@ -77,7 +77,7 @@ apcpass = Sound(SoundAsset("sounds/apc_alarm_pass1.wav"))
 toffwr = Sound(SoundAsset("sounds/f_innactionisconspiracy_spkr.wav"))
 mfoffwr = Sound(SoundAsset("sounds/fprison_missionfailurereminder.wav"))
 mh = Sound(SoundAsset("sounds/manhack_alert_pass1.wav"))
-scanpass = Sound(SoundAsset("sounds/scanner_alert_pass1.wav"))
+toffwr = Sound(SoundAsset("sounds/f_trainstation_offworldrelocation_spkr.wav"))
 
 
 
@@ -259,7 +259,7 @@ class Chell(Sprite):
             self.setImage(0)
         """
         if self.reset == 1:
-            scanpass.play()
+            toffwr.play()
     def ClickOn(self,event):
         self.click = 1
         global cpx 
