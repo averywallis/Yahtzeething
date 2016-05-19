@@ -74,7 +74,7 @@ euth = Sound(SoundAsset("sounds/13_part1_euthanized-1.wav"))
 
 
 apcpass = Sound(SoundAsset("sounds/apc_alarm_pass1.wav"))
-toffwr = Sound(SoundAsset("sounds/f_trainstation_offworldrelocation_spkr.wav"))
+toffwr = Sound(SoundAsset("sounds/f_innactionisconspiracy_spkr.wav"))
 
 
 
