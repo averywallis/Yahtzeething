@@ -109,6 +109,7 @@ class Chell(Sprite):
         self.reset = 0
         self.win = 0
         self.g = 0
+        self.t1 = 0
         # all key inputs
         PortalGame.listenKeyEvent("keydown", "d", self.rightOn)
         PortalGame.listenKeyEvent("keyup", "d", self.rightOff)
@@ -264,11 +265,13 @@ class Chell(Sprite):
         """
         if self.reset == 1:
             toffwr.play()
+        if self.t1 == 1:
+            toffwr.play()
     # secret key input stuff
     def tOn(self,event):
         self.t1 = 1
     def tOff(self,event):
-        self.t1 = 1
+        self.t1 = 0
             
     # key input changing stuff
     def ClickOn(self,event):
