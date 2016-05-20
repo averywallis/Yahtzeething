@@ -270,6 +270,8 @@ class Chell(Sprite):
             toffwr.play()
         if self.t1 == 1:
             toffwr.play()
+        if self.y1 == 1:
+            apcpass.play()
     # secret key input stuff
     def tOn(self,event):
         self.t1 = 1
@@ -279,6 +281,7 @@ class Chell(Sprite):
         self.y1 = 1
     def yOff(self,event):
         self.y1 = 0
+    
             
     # key input changing stuff
     def ClickOn(self,event):
