@@ -111,6 +111,7 @@ class Chell(Sprite):
         self.g = 0
         self.t1 = 0
         self.y1 = 0
+        self.u1 = 0
         # all key inputs
         PortalGame.listenKeyEvent("keydown", "d", self.rightOn)
         PortalGame.listenKeyEvent("keyup", "d", self.rightOff)
@@ -129,6 +130,8 @@ class Chell(Sprite):
         PortalGame.listenKeyEvent("keyup", "t", self.tOff)
         PortalGame.listenKeyEvent("keydown","y", self.yOn)
         PortalGame.listenKeyEvent("keyup", "y", self.yOff)
+        PortalGame.listenKeyEvent("keydown","u", self.uOn)
+        PortalGame.listenKeyEvent("keyup", "u", self.uOff)
         
     def step(self):
         # move orange portal and play sound
@@ -266,8 +269,6 @@ class Chell(Sprite):
             self.reset = 0
             self.setImage(0)
         """
-        if self.reset == 1:
-            toffwr.play()
         if self.t1 == 1:
             toffwr.play()
         if self.y1 == 1:
@@ -281,7 +282,10 @@ class Chell(Sprite):
         self.y1 = 1
     def yOff(self,event):
         self.y1 = 0
-    
+    def uOn(self,event):
+        self.u1 = 1
+    def uOff(self,event):
+        self.u1 = 0
             
     # key input changing stuff
     def ClickOn(self,event):
