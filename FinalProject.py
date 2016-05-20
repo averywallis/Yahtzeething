@@ -188,7 +188,7 @@ class Chell(Sprite):
         global win
         self.wining = win
         if self.collidingWithSprites(ExitDoor) and self.win == 0 and self.wining == 1:
-            self.wintxt = YouWin((300,400))
+            self.wintxt = YouWin((250,400))
             self.win = 1
             success2.play()
         
