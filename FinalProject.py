@@ -277,6 +277,8 @@ class Chell(Sprite):
             apcpass.play()
         if self.u1 == 1:
             mfoffwr.play()
+        if self.i1 == 1:
+            ic.play()
     # secret key input stuff
     def tOn(self,event):
         self.t1 = 1
