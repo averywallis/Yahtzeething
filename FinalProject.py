@@ -132,6 +132,8 @@ class Chell(Sprite):
         PortalGame.listenKeyEvent("keyup", "y", self.yOff)
         PortalGame.listenKeyEvent("keydown","u", self.uOn)
         PortalGame.listenKeyEvent("keyup", "u", self.uOff)
+        PortalGame.listenKeyEvent("keydown","i", self.iOn)
+        PortalGame.listenKeyEvent("keyup", "i", self.iOff)
         
     def step(self):
         # move orange portal and play sound
@@ -288,6 +290,10 @@ class Chell(Sprite):
         self.u1 = 1
     def uOff(self,event):
         self.u1 = 0
+    def iOn(self,event):
+        self.i1 = 1
+    def iOff(self,event):
+        self.i1 = 0
             
     # key input changing stuff
     def ClickOn(self,event):
