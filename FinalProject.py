@@ -334,7 +334,7 @@ class ExitDoor(Sprite):
             self.setImage(0)
 
 class YouWin(Sprite):
-    youwintxt = TextAsset(text="YOU WIN!! (There are secrets)", width=200, align='center',style='100px Arial', fill=Color(0xff2222,1))
+    youwintxt = TextAsset(text="YOU WIN!! (There are secrets)", width=500, align='center',style='100px Arial', fill=Color(0xff2222,1))
     def __init__(self, position):
         super().__init__(YouWin.youwintxt, position)
             
