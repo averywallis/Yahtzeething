@@ -131,8 +131,8 @@ class Chell(Sprite):
         PortalGame.listenKeyEvent("keyup", "t", self.tOff)
         PortalGame.listenKeyEvent("keydown","y", self.yOn)
         PortalGame.listenKeyEvent("keyup", "y", self.yOff)
-        PortalGame.listenKeyEvent("keydown","u", self.uOn)
-        PortalGame.listenKeyEvent("keyup", "u", self.uOff)
+        PortalGame.listenKeyEvent("keydown","c", self.uOn)
+        PortalGame.listenKeyEvent("keyup", "c", self.uOff)
         PortalGame.listenKeyEvent("keydown","i", self.iOn)
         PortalGame.listenKeyEvent("keyup", "i", self.iOff)
         
