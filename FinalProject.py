@@ -117,11 +117,14 @@ class Chell(Sprite):
         PortalGame.listenMouseEvent("click", self.ClickOn)
         PortalGame.listenKeyEvent("keydown", "alt", self.altOn)
         PortalGame.listenKeyEvent("keyup", "alt", self.altOff)
-        PortalGame.listenKeyEvent("keydown","r", self.resetOn)
-        PortalGame.listenKeyEvent("keyup", "r", self.resetOff)
         PortalGame.listenKeyEvent("keydown", "space", self.jumpOn)
         PortalGame.listenKeyEvent("keyup", "space", self.jumpOff)
         PortalGame.listenKeyEvent("keydown", "e" , self.holdOn)
+        # secret sounds
+        PortalGame.listenKeyEvent("keydown","r", self.resetOn)
+        PortalGame.listenKeyEvent("keyup", "r", self.resetOff)
+        PortalGame.listenKeyEvent("keydown","t", self.tOn)
+        PortalGame.listenKeyEvent("keyup", "t", self.tOff)
         
     def step(self):
         # move orange portal and play sound
@@ -261,6 +264,13 @@ class Chell(Sprite):
         """
         if self.reset == 1:
             toffwr.play()
+    # secret key input stuff
+    def tOn(self,event):
+        self.t1 = 1
+    def tOff(self,event):
+        self.t1 = 1
+            
+    # key input changing stuff
     def ClickOn(self,event):
         self.click = 1
         global cpx 
