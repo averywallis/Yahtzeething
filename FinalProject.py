@@ -282,7 +282,7 @@ class Chell(Sprite):
         # apc pass    
         if self.c1 == 1:
             apcpass.play()
-        
+        # mission failure will result in permanent off world assignment
         if self.u1 == 1:
             mfoffwr.play()
         # innaction is conspiracy
