@@ -276,8 +276,10 @@ class Chell(Sprite):
             self.reset = 0
             self.setImage(0)
         """
+        # citizen notice, failure to cooperate will result in permanent off world relocation
         if self.t1 == 1:
             toffwr.play()
+            
         if self.y1 == 1:
             apcpass.play()
         if self.u1 == 1:
