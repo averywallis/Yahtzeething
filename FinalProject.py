@@ -110,7 +110,7 @@ class Chell(Sprite):
         self.win = 0
         self.g = 0
         self.t1 = 0
-        self.y1 = 0
+        self.c1 = 0
         self.u1 = 0
         self.i1 = 0
         self.m1 = 0
@@ -130,8 +130,8 @@ class Chell(Sprite):
         PortalGame.listenKeyEvent("keyup", "r", self.resetOff)
         PortalGame.listenKeyEvent("keydown","t", self.tOn)
         PortalGame.listenKeyEvent("keyup", "t", self.tOff)
-        PortalGame.listenKeyEvent("keydown","c", self.yOn)
-        PortalGame.listenKeyEvent("keyup", "c", self.yOff)
+        PortalGame.listenKeyEvent("keydown","c", self.cOn)
+        PortalGame.listenKeyEvent("keyup", "c", self.cOff)
         PortalGame.listenKeyEvent("keydown","u", self.uOn)
         PortalGame.listenKeyEvent("keyup", "u", self.uOff)
         PortalGame.listenKeyEvent("keydown","i", self.iOn)
@@ -280,10 +280,11 @@ class Chell(Sprite):
         if self.t1 == 1:
             toffwr.play()
             
-        if self.y1 == 1:
+        if self.c1 == 1:
             apcpass.play()
         if self.u1 == 1:
             mfoffwr.play()
+        # innaction is conspiracy
         if self.i1 == 1:
             ic.play()
         if self.m1 == 1:
@@ -293,10 +294,10 @@ class Chell(Sprite):
         self.t1 = 1
     def tOff(self,event):
         self.t1 = 0
-    def yOn(self,event):
-        self.y1 = 1
-    def yOff(self,event):
-        self.y1 = 0
+    def cOn(self,event):
+        self.c1 = 1
+    def cOff(self,event):
+        self.c1 = 0
     def uOn(self,event):
         self.u1 = 1
     def uOff(self,event):
