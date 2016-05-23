@@ -205,6 +205,7 @@ class Chell(Sprite):
         self.wining = win
         if self.collidingWithSprites(ExitDoor) and self.win == 0 and self.wining == 1:
             self.wintxt = YouWin((250,200))
+            self.secretstxt = Secrets((250,250))
             self.win = 1
             success2.play()
         
