@@ -254,7 +254,8 @@ class Chell(Sprite):
             self.x = 0
         if self.x > 947:
             self.x = 947
-
+            
+        # play secret sounds
         # citizen notice, failure to cooperate will result in permanent off world relocation
         if self.t1 == 1:
             toffwr.play()
@@ -270,6 +271,7 @@ class Chell(Sprite):
         # manhack pass
         if self.m1 == 1:
             mh.play()
+            
     # secret key input stuff
     def tOn(self,event):
         self.t1 = 1
