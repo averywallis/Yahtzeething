@@ -256,26 +256,7 @@ class Chell(Sprite):
             self.x = 0
         if self.x > 947:
             self.x = 947
-        """
-        # reset
-        if self.reset == 1:
-            self.x = 50
-            self.y = 410
-            global cox
-            cox = -100
-            global coy
-            coy = -100
-            global cbx
-            cbx = -100
-            global cby
-            cby = -100
-            global ccx
-            ccx = 10
-            global ccy
-            ccy = 450
-            self.reset = 0
-            self.setImage(0)
-        """
+
         # citizen notice, failure to cooperate will result in permanent off world relocation
         if self.t1 == 1:
             toffwr.play()
@@ -505,7 +486,6 @@ class PortalGame(App):
         optxt = TextAsset(text="Left Click to Place Orange Portal", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         bptxt = TextAsset(text="Alt + Left Click to Place Blue Portal", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         errortxt = TextAsset(text="If not teleporting through portal, press E once", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
-        # resettxt = TextAsset(text="Press R to reset", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         #background
         Sprite(wall, (0,0))
         Sprite(exitbig, (75,450))
