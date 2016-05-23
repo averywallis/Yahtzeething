@@ -126,8 +126,6 @@ class Chell(Sprite):
         PortalGame.listenKeyEvent("keyup", "space", self.jumpOff)
         PortalGame.listenKeyEvent("keydown", "e" , self.holdOn)
         # secret sounds
-        PortalGame.listenKeyEvent("keydown","r", self.resetOn)
-        PortalGame.listenKeyEvent("keyup", "r", self.resetOff)
         PortalGame.listenKeyEvent("keydown","t", self.tOn)
         PortalGame.listenKeyEvent("keyup", "t", self.tOff)
         PortalGame.listenKeyEvent("keydown","c", self.cOn)
@@ -309,10 +307,6 @@ class Chell(Sprite):
         self.hold = self.hold * (-1)
         global hold
         hold = hold * (-1)
-    def resetOn(self,event):
-        self.reset = 1
-    def resetOff(self,event):
-        self.reset = 0
     def rightOn(self,event):
         self.mright = 1
     def rightOff(self,event):
@@ -327,6 +321,7 @@ class Chell(Sprite):
         self.alt = 0
 
 class BluePortal(Sprite):
+    # blue portal
     asset = ImageAsset("images/Blue_Portal.png", Frame(25,10,350,475), 1, 'vertical')
     def __init__(self, position):
         super().__init__(BluePortal.asset, position)
@@ -338,6 +333,7 @@ class BluePortal(Sprite):
         self.y = cby - 60
         
 class OrangePortal(Sprite):
+    # orange portal
     asset = ImageAsset("images/portal___orange_portal_by_maxiesnax-d5pcfmj.png", Frame(25,10,350,475), 1, 'vertical')
     def __init__(self, position):
         super().__init__(OrangePortal.asset, position)
@@ -349,12 +345,14 @@ class OrangePortal(Sprite):
         self.y = coy - 60
     
 class Platforms(Sprite):
+    # thin platform to collide with for gravity
     platc=Color(0xB9BDBB,1.0)
     plat=RectangleAsset(250, 1, noline, platc)
     def __init__(self, position):
         super().__init__(Platforms.plat, position)
 
 class ExitDoor(Sprite):
+    # exit door, with two different images, closed and open
     door = ImageAsset("images/PortalDoor.png", Frame(0,0,195,210), 2, 'horizontal')
     def __init__(self, position):
         super().__init__(ExitDoor.door, position)
@@ -362,16 +360,20 @@ class ExitDoor(Sprite):
     def step(self):
         global win
         self.win = win
+        # if win (cube colliding with button and not held), the set image to open door
         if self.win == 1:
             self.setImage(1)
+        # else set image to closed door
         else:
             self.setImage(0)
 
 class YouWin(Sprite):
+    # you win text
     youwintxt = TextAsset(text="YOU WIN!!", width=700, align='center',style='100px Arial', fill=Color(0xff2222,1))
     def __init__(self, position):
         super().__init__(YouWin.youwintxt, position)
 class Secrets(Sprite):
+    # secrets text
     secretstxt = TextAsset(text="There are secrets", width=700, align='center',style='100px Arial', fill=Color(0xff2222,1))
     def __init__(self, position):
         super().__init__(Secrets.secretstxt, position)
@@ -436,12 +438,15 @@ class CubeButton(Sprite):
     def step(self):
         global hold
         self.hold = hold
+        # if cube is colliding with the button and isn't being held, have win be possible
         if self.collidingWithSprites(CompanionCube) and self.hold != -1:
             global win
             win = 1
+            # play exposure to button sound once
             if self.w == 0:
                 success1.play()
                 self.w = 1
+        # else don't have win be possible
         else:
             global win
             win = -1
@@ -452,26 +457,32 @@ class Glados(Sprite):
         super().__init__(Glados.cc, position)
         self.p = 0
     def step(self):
+        # intro sound 1
         if self.p == 0:
             e1.play()
             self.p = 1
             self.t = time.time()
+        # intro sound 2
         if time.time() > self.t + 6.5 and time.time() < self.t + 7 and self.p == 1:
             e2.play()
             self.p = 2
             self.t = time.time()
+        # intro sound 3
         if time.time() > self.t + 4.5 and time.time() < self.t + 5 and self.p == 2:
             e3.play()
             self.p = 3
             self.t = time.time()
+        # intro sound 4
         if time.time() > self.t + 5 and time.time() < self.t + 6 and self.p == 3:
             e4.play()
             self.p = 4
             self.t = time.time()
+        # intro sound 5
         if time.time() > self.t + 10.25 and time.time() < self.t + 11 and self.p == 4:
             e5.play()
             self.p = 5
             self.t = time.time()
+        # intro sond 6
         if time.time() > self.t + 5 and time.time() < self.t + 6 and self.p == 5:
             e6.play()
             self.p = 6
