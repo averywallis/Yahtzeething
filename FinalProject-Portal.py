@@ -426,7 +426,7 @@ class CompanionCube(Sprite):
                 self.vy =0
                 self.d = 1
             else:
-                cdeath.volume = 75
+                cdeath.volume = 50
                 cdeath.play()
                 self.x = 10
                 self.y = 63
