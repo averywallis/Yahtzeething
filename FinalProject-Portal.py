@@ -465,7 +465,7 @@ class Glados(Sprite):
             self.p = 1
             self.t = time.time()
         # intro sound 2
-        if time.time() > self.t + 6.5 and time.time() < self.t + 7 and self.p == 1:
+        if time.time() > self.t + 6.75 and time.time() < self.t + 7 and self.p == 1:
             e2.play()
             self.p = 2
             self.t = time.time()
@@ -530,7 +530,7 @@ class PortalGame(App):
         OrangePortal((0,0))
         Chell((0,0))
         CompanionCube((0,0))
-        # Glados
+        # Glados for voices
         Glados((-100,-100))
         
     def step(self):
