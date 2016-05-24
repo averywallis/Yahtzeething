@@ -498,7 +498,7 @@ class PortalGame(App):
         jumptxt = TextAsset(text="Space to Jump, E to Interact", width=200, align='center',style='10px Arua==ial',fill=Color(0xff2222,1))
         optxt = TextAsset(text="Left Click to Place Orange Portal", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         bptxt = TextAsset(text="Alt + Left Click to Place Blue Portal", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
-        errortxt = TextAsset(text="If not teleporting through portal, press E once", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
+        errortxt = TextAsset(text="If not teleporting through portal, press E once", width=200, align='left',style='10px Arial', fill=Color(0xff2222,1))
         #background
         Sprite(wall, (0,0))
         Sprite(exitbig, (75,450))
@@ -511,7 +511,7 @@ class PortalGame(App):
         Sprite(jumptxt,(0,10))
         Sprite(optxt, (0,20))
         Sprite(bptxt, (0,30))
-        # Sprite(resettxt,(0,40))
+        Sprite(errortxt, (0,40))
         # exit sprite
         ExitDoor((700,50))
         # assorted platforms
