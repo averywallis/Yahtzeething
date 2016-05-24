@@ -419,12 +419,12 @@ class CompanionCube(Sprite):
         if  self.y >= 620:
             if self.d == 0:
                 cdeath.play()
-                euth.volume=50
+                euth.volume = 50
                 euth.play()
-                self.d = 1
                 self.x = 10
                 self.y = 63
                 self.vy =0
+                self.d = 1
             else:
                 cdeath.play()
                 self.x = 10
