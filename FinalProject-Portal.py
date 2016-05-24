@@ -418,14 +418,15 @@ class CompanionCube(Sprite):
         # death by goo
         if  self.y >= 620:
             if self.d == 0:
+                cdeath.volume = 50
                 cdeath.play()
-                euth.volume = 25
                 euth.play()
                 self.x = 10
                 self.y = 63
                 self.vy =0
                 self.d = 1
             else:
+                cdeath.volume = 100
                 cdeath.play()
                 self.x = 10
                 self.y = 63
