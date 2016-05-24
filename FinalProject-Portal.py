@@ -508,10 +508,10 @@ class PortalGame(App):
         Sprite(goo, (0,650))
         # creation of text
         Sprite(movetxt,(0,700))
-        Sprite(jumptxt,(0,10))
-        Sprite(optxt, (0,20))
-        Sprite(bptxt, (0,30))
-        Sprite(errortxt, (0,40))
+        Sprite(jumptxt,(0,710))
+        Sprite(optxt, (0,720))
+        Sprite(bptxt, (0,730))
+        Sprite(errortxt, (0,740))
         # exit sprite
         ExitDoor((700,50))
         # assorted platforms
