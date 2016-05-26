@@ -414,6 +414,14 @@ class CompanionCube(Sprite):
         if self.holding == -1:
             self.x = ccx + 10
             self.y = ccy + 25
+        global cox
+        global coy
+        global cbx
+        global cby
+        if self.x<= cox-20 and self.x>=cox-30 and self.y <= coy-10 and self.y >= coy-40 and cby>=0 and cbx>=0 and self.hold != -1:
+            self.x = cbx +20
+            self.y = cby + 20
+        
 
         # death by goo
         if  self.y >= 620:
