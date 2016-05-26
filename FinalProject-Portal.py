@@ -421,8 +421,8 @@ class CompanionCube(Sprite):
         global cby
         # detect portal to go through if not being held
         if self.x<= cox-10 and self.x>=cox-30 and self.y <= coy-5 and self.y >= coy-40 and cby>=0 and cbx>=0 and self.held != -1:
-            self.x = cbx +20
-            self.y = cby + 20
+            self.x = cbx
+            self.y = cby
         
 
         # death by goo
