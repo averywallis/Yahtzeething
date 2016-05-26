@@ -420,11 +420,11 @@ class CompanionCube(Sprite):
         global cbx
         global cby
         # orange portal and not being held detection
-        if self.x<= cox-10 and self.x>=cox-30 and self.y <= coy-5 and self.y >= coy-40 and cby>=0 and cbx>=0 and self.held != -1:
+        if self.x<= cox-10 and self.x>=cox-30 and self.y <= coy-5 and self.y >= coy-50 and cby>=0 and cbx>=0 and self.held != -1:
             self.x = cbx
             self.y = cby
         # blue portal and not being held detection
-        elif self.x<=cbx-10 and self.x>=cbx-30 and self.y <= cby-10 and self.y >= cby-40 and coy>=0 and cox>=0 and self.held != -1:
+        elif self.x<=cbx-10 and self.x>=cbx-30 and self.y <= cby-10 and self.y >= cby-50 and coy>=0 and cox>=0 and self.held != -1:
             self.x = cox
             self.y = coy
         
