@@ -163,12 +163,12 @@ class Chell(Sprite):
             ccy = self.y
         
         # player and orange portal detection
-        if self.x<= cox-20 and self.x>=cox-30 and self.y <= coy-10 and self.y >= coy-40 and cby>=0 and cbx>=0 and self.hold != -1:
+        if self.x<= cox-20 and self.x>=cox-30 and self.y <= coy and self.y >= coy-40 and cby>=0 and cbx>=0 and self.hold != -1:
             self.x = cbx - 10
             self.y = cby - 40
             pe.play()
         # player and blue portal detection    
-        elif self.x<=cbx-20 and self.x>=cbx-30 and self.y <= cby-10 and self.y >= cby-40 and coy>=0 and cox>=0 and self.hold != -1:
+        elif self.x<=cbx-20 and self.x>=cbx-30 and self.y <= cby and self.y >= cby-40 and coy>=0 and cox>=0 and self.hold != -1:
             self.x = cox - 10
             self.y = coy - 40
             pe.play()
