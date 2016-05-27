@@ -1,6 +1,4 @@
-# Title of Your Project Here
-
-
+Portal
 
 ## Functional Specification
 
@@ -31,3 +29,5 @@ Your specification should **not** include the following types of information:
 * Names of any specific files in the project.
 * How you will structure the classes, functions and code in your program.
 * The name of any files or tools that you will use to design the program.
+
+I attempted to recreate a version of Portal by Valve. It's accessed by using http://runpython.com. There is one graphical screen, the one level I was able to create in my version of Portal. The mouse controls where the portals are placed, with the left click moving the orange portal while left click and alt control where the blue portal is. The keyboard controls how the player moves and interacts with objects. My game incorporates rectangles, squares, circles, assorted images, lines, and text. No installation in required, unless the browser running runpython doesn't use JavaScript, which would cause runpython to be unable to display any graphics.
