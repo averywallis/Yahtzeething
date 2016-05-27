@@ -1,5 +1,5 @@
 """
-FinalProject.py
+FinalProject-Portal.py
 Author: Avery Wallis
 Sources: Hayden Hatfield, Mr. Dennison, 
 Marcelo Almaguer for the Chell character model used in his own version of Portal called "Remember the Game"
