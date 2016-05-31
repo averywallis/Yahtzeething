@@ -56,7 +56,7 @@ ccy = 0
 hold = 1
 holding = 1
 win = 0
-play = 0
+
 
 # sounds
 bp = Sound(SoundAsset("sounds/portalgun_shoot_blue1.wav"))
