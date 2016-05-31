@@ -503,7 +503,8 @@ class Glados(Sprite):
         if time.time() > self.t + 5 and time.time() < self.t + 6 and self.p == 5:
             e6.play()
             self.p = 6
-            self.t = time.time()
+            global play
+            play = 1
         
 class PortalGame(App):
     def __init__(self, width, height):
