@@ -498,11 +498,15 @@ class Glados(Sprite):
             e5.play()
             self.p = 5
             self.t = time.time()
-        # intro sond 6
+        # intro sound 6
         if time.time() > self.t + 5 and time.time() < self.t + 6 and self.p == 5:
             e6.play()
             self.p = 6
             self.t = time.time()
+        # intro sound 7
+        if time.time > self.t + 4 and time.time() < self.t +4.5 and self.p == 6:
+            e7.play()
+            self.p = 7
         
 class PortalGame(App):
     def __init__(self, width, height):
