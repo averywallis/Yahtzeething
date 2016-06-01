@@ -490,6 +490,7 @@ class Glados(Sprite):
             e3.play()
             self.p = 3
             self.t = time.time()
+            print(self.t)
         # intro sound 4
         if time.time() > self.t + 5 and time.time() < self.t + 6 and self.p == 3:
             e4.play()
