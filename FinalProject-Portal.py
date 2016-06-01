@@ -10,7 +10,7 @@ Special thanks to Valve for creating such an awesome game. Hopefully you can cou
 """
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, LineAsset
 from ggame import ImageAsset, PolygonAsset, Frame, Sound, SoundAsset, TextAsset
-from time import time
+import time
 
 # colors
 red = Color(0xff0000, 1.0)
