@@ -1,11 +1,12 @@
 """
 FinalProject-Portal.py
 Author: Avery Wallis
-Sources: Hayden Hatfield, Mr. Dennison, 
+Sources: Hayden Hatfield, Mr. Dennison
 Marcelo Almaguer for the Chell character model used in his own version of Portal called "Remember the Game"
 maxiesnax for the Orange Portal Image: "http://orig05.deviantart.net/58ec/f/2012/361/2/5/portal___orange_portal_by_maxiesnax-d5pcfmj.png"
 Blue Portal Image "http://vignette4.wikia.nocookie.net/kirby-bulborb/images/1/12/Blue_Portal.png/revision/latest?cb=20151004085207"
 Scott Bouloutian for the Companion Cube image: "https://lh4.ggpht.com/afyb1Nyo1suLIWpbtEACIY65SHW2Fjr5g1-KN8ONkA3aNSPd7cJKSeIefsngjSaVjtA=w300"
+All sounds are from the game files themselves. I personally own the game, so I don't think this will infringe on any copyrights seeing as I'm not selling this game
 Special thanks to Valve for creating such an awesome game. Hopefully you can count to three.
 """
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, LineAsset
