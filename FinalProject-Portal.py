@@ -82,10 +82,6 @@ mh = Sound(SoundAsset("sounds/manhack_alert_pass1.wav"))
 toffwr = Sound(SoundAsset("sounds/f_trainstation_offworldrelocation_spkr.wav"))
 gman2 = Sound(SoundAsset("sounds/gman_04.wav"))
 
-# SOUND IDEAS:
-# death of chell, open of door
-
-
 class Chell(Sprite):
     asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,361), 2, 'horizontal')
     def __init__(self, position):
