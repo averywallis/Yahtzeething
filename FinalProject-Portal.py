@@ -137,7 +137,6 @@ class Chell(Sprite):
         PortalGame.listenKeyEvent("keyup", "m", self.mOff)
         """
         
-        
     def step(self):
         global play
         if play == 1:
@@ -257,7 +256,8 @@ class Chell(Sprite):
                 self.x = 0
             if self.x > 947:
                 self.x = 947
-                
+            
+            """    
             # play secret sounds
             # citizen notice, failure to cooperate will result in permanent off world relocation
             if self.t1 == 1:
@@ -296,6 +296,7 @@ class Chell(Sprite):
         self.m1 = 1
     def mOff(self,event):
         self.m1 = 0
+    """
             
     # key input changing stuff
     def ClickOn(self,event):
