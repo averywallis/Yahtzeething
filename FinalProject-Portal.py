@@ -505,8 +505,8 @@ class Glados(Sprite):
         if time.time() > self.t + 6 and time.time() < self.t + 6.5 and self.p == 7:
             global cox
             global coy
-            cox = 110
-            coy = 480
+            cox = 120
+            coy = 450
             op.play()
             self.p = 8
             
