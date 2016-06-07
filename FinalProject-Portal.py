@@ -75,6 +75,15 @@ cdeath = Sound(SoundAsset("sounds/material_emancipation_01.wav"))
 success1 = Sound(SoundAsset("sounds/00_part2_success-1.wav"))
 success2 = Sound(SoundAsset("sounds/01_part2_success-1.wav"))
 euth = Sound(SoundAsset("sounds/13_part1_euthanized-1.wav"))
+# Secret sounds not able to play because Chrome can only take so much
+"""
+apcpass = Sound(SoundAsset("sounds/apc_alarm_pass1.wav"))
+ic = Sound(SoundAsset("sounds/f_innactionisconspiracy_spkr.wav"))
+mfoffwr = Sound(SoundAsset("sounds/fprison_missionfailurereminder.wav"))
+mh = Sound(SoundAsset("sounds/manhack_alert_pass1.wav"))
+toffwr = Sound(SoundAsset("sounds/f_trainstation_offworldrelocation_spkr.wav"))
+gman2 = Sound(SoundAsset("sounds/gman_04.wav"))
+"""
 
 class Chell(Sprite):
     asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,361), 2, 'horizontal')
