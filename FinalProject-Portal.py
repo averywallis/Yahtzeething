@@ -75,8 +75,6 @@ cdeath = Sound(SoundAsset("sounds/material_emancipation_01.wav"))
 success1 = Sound(SoundAsset("sounds/00_part2_success-1.wav"))
 success2 = Sound(SoundAsset("sounds/01_part2_success-1.wav"))
 euth = Sound(SoundAsset("sounds/13_part1_euthanized-1.wav"))
-# secret sounds
-
 
 class Chell(Sprite):
     asset = ImageAsset("images/ChellSpriteSheet.png", Frame(0,0,205,361), 2, 'horizontal')
