@@ -533,6 +533,7 @@ class PortalGame(App):
         #goo
         Sprite(goo, (0,650))
         # creation of text
+        Sprite(imagetxt,(0,680))
         Sprite(movetxt,(0,700))
         Sprite(jumptxt,(0,710))
         Sprite(optxt, (0,720))
