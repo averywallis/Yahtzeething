@@ -124,6 +124,7 @@ class Chell(Sprite):
         PortalGame.listenKeyEvent("keyup", "space", self.jumpOff)
         PortalGame.listenKeyEvent("keydown", "e" , self.holdOn)
         # secret sounds
+        """
         PortalGame.listenKeyEvent("keydown","t", self.tOn)
         PortalGame.listenKeyEvent("keyup", "t", self.tOff)
         PortalGame.listenKeyEvent("keydown","c", self.cOn)
@@ -134,6 +135,8 @@ class Chell(Sprite):
         PortalGame.listenKeyEvent("keyup", "i", self.iOff)
         PortalGame.listenKeyEvent("keydown","m", self.mOn)
         PortalGame.listenKeyEvent("keyup", "m", self.mOff)
+        """
+        
         
     def step(self):
         global play
