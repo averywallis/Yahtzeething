@@ -205,7 +205,7 @@ class Chell(Sprite):
             self.wining = win
             if self.collidingWithSprites(ExitDoor) and self.win == 0 and self.wining == 1:
                 self.wintxt = YouWin((250,200))
-                self.secretstxt = Secrets((280,290))
+                # self.secretstxt = Secrets((280,290))
                 self.win = 1
                 success2.play()
             
@@ -378,11 +378,13 @@ class YouWin(Sprite):
     youwintxt = TextAsset(text="YOU WIN!!", width=700, align='center',style='100px Arial', fill=Color(0xff2222,1))
     def __init__(self, position):
         super().__init__(YouWin.youwintxt, position)
+"""
 class Secrets(Sprite):
     # secrets text
     secretstxt = TextAsset(text="There are secrets", width=700, align='center',style='100px Arial', fill=Color(0xff2222,1))
     def __init__(self, position):
         super().__init__(Secrets.secretstxt, position)
+"""
             
 class CompanionCube(Sprite):
     cc = ImageAsset("images/companioncube.png", Frame(20,20,260,260), 1, 'horizontal')
