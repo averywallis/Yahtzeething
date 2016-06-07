@@ -503,7 +503,7 @@ class Glados(Sprite):
             self.p = 6
             self.t = time.time()
         # intro sound 7
-        if time.time() > self.t + 4 and time.time() < self.t + 5 and self.p == 6:
+        if time.time() > self.t + 4 and time.time() < self.t + 6 and self.p == 7:
             e7.play()
             self.p = 7
         if time.time() > self.t + 5 and time.time() < self.t +6 and self.p == 7:
@@ -511,6 +511,9 @@ class Glados(Sprite):
             global coy
             cox = 100
             coy = 100
+            op.play()
+            self.p = 8
+            
         
         
 class PortalGame(App):
