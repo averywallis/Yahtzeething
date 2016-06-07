@@ -57,6 +57,7 @@ ccy = 0
 hold = 1
 holding = 1
 win = 0
+play = 0
 
 
 # sounds
@@ -128,139 +129,141 @@ class Chell(Sprite):
         PortalGame.listenKeyEvent("keyup", "m", self.mOff)
         
     def step(self):
-        # move orange portal and play sound
-        if self.click == 1 and self.alt != 1:
-            op.play()
-            global cox
-            cox = cpx
-            global coy
-            coy = cpy
-            self.click = 0
-        # move blue portal and play sound      
-        if self.click == 1 and self.alt == 1:
-            bp.play()
-            global cbx
-            cbx = cpx
-            global cby
-            cby = cpy
-            self.click = 0
-        
-        # hold cube
-        if self.collidingWithSprites(CompanionCube) and self.hold == -1:
-            global ccx
-            ccx = self.x
-            global ccy
-            ccy = self.y
-        
-        # player and orange portal detection
-        if self.x<= cox-20 and self.x>=cox-30 and self.y <= coy - 20 and self.y >= coy-40 and cby>=0 and cbx>=0 and self.hold != -1:
-            self.x = cbx - 10
-            self.y = cby - 40
-            pe.play()
-        # player and blue portal detection    
-        elif self.x<=cbx-20 and self.x>=cbx-30 and self.y <= cby - 10 and self.y >= cby-50 and coy>=0 and cox>=0 and self.hold != -1:
-            self.x = cox - 10
-            self.y = coy - 40
-            pe.play()
-        # player, orange portal, and holding companion cube detection:
-        if self.x<= cox-20 and self.x>=cox-30 and self.y <= coy-10 and self.y >= coy-40 and cby>=0 and cbx>=0 and self.collidingWithSprites(CompanionCube) and self.hold == -1:
-            self.x = cbx - 10
-            self.y = cby - 40
-            global holding
-            holding = -1
-            global ccx
-            ccx = self.x
-            global ccy
-            ccy = self.y
-            pe.play()
-        # player, blue portal, and holding companion cube detection:    
-        elif self.x<=cbx-20 and self.x>=cbx-30 and self.y <= cby-10 and self.y >= cby-40 and coy>=0 and cox>=0 and self.collidingWithSprites(CompanionCube) and self.hold == -1:
-            self.x = cox - 10
-            self.y = coy - 40
-            global holding
-            holding = -1
-            global ccx
-            ccx = self.x
-            global ccy
-            ccy = self.y
-            pe.play()
-        else:
-            global holding
-            holding = 0
+        global play
+        if play == 0:
+            # move orange portal and play sound
+            if self.click == 1 and self.alt != 1:
+                op.play()
+                global cox
+                cox = cpx
+                global coy
+                coy = cpy
+                self.click = 0
+            # move blue portal and play sound      
+            if self.click == 1 and self.alt == 1:
+                bp.play()
+                global cbx
+                cbx = cpx
+                global cby
+                cby = cpy
+                self.click = 0
             
-        # win
-        global win
-        self.wining = win
-        if self.collidingWithSprites(ExitDoor) and self.win == 0 and self.wining == 1:
-            self.wintxt = YouWin((250,200))
-            self.secretstxt = Secrets((280,290))
-            self.win = 1
-            success2.play()
-        
-        # move right and left
-        if self.mright == 1:
-            self.setImage(0)
-            self.x += 2
-            self.y = self.y
-        if self.mright == 0:
-            self.x =self.x
-            self.y=self.y
-        if self.mleft == 1:
-            self.setImage(1)
-            self.x += -2
-            self.y = self.y
-        if self.mleft == 0:
-            self.x = self.x
-            self.y = self.y
+            # hold cube
+            if self.collidingWithSprites(CompanionCube) and self.hold == -1:
+                global ccx
+                ccx = self.x
+                global ccy
+                ccy = self.y
             
-        # if collliding with platform, go up to counteract the moving down, effectively staying still    
-        if self.collidingWithSprites(Platforms):
-            self.vy -= .1
-            self.y += self.vy
-            self.vy = 0
-            # jump
-            if self.jump == 1:
-                self.vy = -3
-        # constantly moving down for gravity if not colliding with platform
-        else:    
-            self.vy += .1
-            self.y += self.vy
+            # player and orange portal detection
+            if self.x<= cox-20 and self.x>=cox-30 and self.y <= coy - 20 and self.y >= coy-40 and cby>=0 and cbx>=0 and self.hold != -1:
+                self.x = cbx - 10
+                self.y = cby - 40
+                pe.play()
+            # player and blue portal detection    
+            elif self.x<=cbx-20 and self.x>=cbx-30 and self.y <= cby - 10 and self.y >= cby-50 and coy>=0 and cox>=0 and self.hold != -1:
+                self.x = cox - 10
+                self.y = coy - 40
+                pe.play()
+            # player, orange portal, and holding companion cube detection:
+            if self.x<= cox-20 and self.x>=cox-30 and self.y <= coy-10 and self.y >= coy-40 and cby>=0 and cbx>=0 and self.collidingWithSprites(CompanionCube) and self.hold == -1:
+                self.x = cbx - 10
+                self.y = cby - 40
+                global holding
+                holding = -1
+                global ccx
+                ccx = self.x
+                global ccy
+                ccy = self.y
+                pe.play()
+            # player, blue portal, and holding companion cube detection:    
+            elif self.x<=cbx-20 and self.x>=cbx-30 and self.y <= cby-10 and self.y >= cby-40 and coy>=0 and cox>=0 and self.collidingWithSprites(CompanionCube) and self.hold == -1:
+                self.x = cox - 10
+                self.y = coy - 40
+                global holding
+                holding = -1
+                global ccx
+                ccx = self.x
+                global ccy
+                ccy = self.y
+                pe.play()
+            else:
+                global holding
+                holding = 0
+                
+            # win
+            global win
+            self.wining = win
+            if self.collidingWithSprites(ExitDoor) and self.win == 0 and self.wining == 1:
+                self.wintxt = YouWin((250,200))
+                self.secretstxt = Secrets((280,290))
+                self.win = 1
+                success2.play()
             
-        # death by goo    
-        if self.y >= 560:
-            self.x = 50
-            self.y = 410
-            self.vy =0
-            global cox
-            cox = -100
-            global coy
-            coy = -100
-            global cbx
-            cbx = -100
-            global cby
-            cby = -100
-        # borders
-        if self.x <0:
-            self.x = 0
-        if self.x > 947:
-            self.x = 947
-            
-        # play secret sounds
-        # citizen notice, failure to cooperate will result in permanent off world relocation
-        if self.t1 == 1:
-            toffwr.play()
-        # apc pass    
-        if self.c1 == 1:
-            apcpass.play()
-        # mission failure will result in permanent off world assignment
-        if self.u1 == 1:
-            mfoffwr.play()
-        # innaction is conspiracy
-        if self.i1 == 1:
-            ic.play()
-        # manhack pass
-        if self.m1 == 1:
-            mh.play()
+            # move right and left
+            if self.mright == 1:
+                self.setImage(0)
+                self.x += 2
+                self.y = self.y
+            if self.mright == 0:
+                self.x =self.x
+                self.y=self.y
+            if self.mleft == 1:
+                self.setImage(1)
+                self.x += -2
+                self.y = self.y
+            if self.mleft == 0:
+                self.x = self.x
+                self.y = self.y
+                
+            # if collliding with platform, go up to counteract the moving down, effectively staying still    
+            if self.collidingWithSprites(Platforms):
+                self.vy -= .1
+                self.y += self.vy
+                self.vy = 0
+                # jump
+                if self.jump == 1:
+                    self.vy = -3
+            # constantly moving down for gravity if not colliding with platform
+            else:    
+                self.vy += .1
+                self.y += self.vy
+                
+            # death by goo    
+            if self.y >= 560:
+                self.x = 50
+                self.y = 410
+                self.vy =0
+                global cox
+                cox = -100
+                global coy
+                coy = -100
+                global cbx
+                cbx = -100
+                global cby
+                cby = -100
+            # borders
+            if self.x <0:
+                self.x = 0
+            if self.x > 947:
+                self.x = 947
+                
+            # play secret sounds
+            # citizen notice, failure to cooperate will result in permanent off world relocation
+            if self.t1 == 1:
+                toffwr.play()
+            # apc pass    
+            if self.c1 == 1:
+                apcpass.play()
+            # mission failure will result in permanent off world assignment
+            if self.u1 == 1:
+                mfoffwr.play()
+            # innaction is conspiracy
+            if self.i1 == 1:
+                ic.play()
+            # manhack pass
+            if self.m1 == 1:
+                mh.play()
             
     # secret key input stuff
     def tOn(self,event):
@@ -509,8 +512,8 @@ class Glados(Sprite):
             coy = 440
             op.play()
             self.p = 8
-            
-        
+            global play
+            play = 1
         
 class PortalGame(App):
     def __init__(self, width, height):
