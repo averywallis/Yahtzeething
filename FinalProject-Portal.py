@@ -506,7 +506,7 @@ class Glados(Sprite):
             global cox
             global coy
             cox = 100
-            coy = 100
+            coy = 500
             op.play()
             self.p = 8
             
