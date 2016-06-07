@@ -519,6 +519,7 @@ class PortalGame(App):
     def __init__(self, width, height):
         super().__init__(width, height)
         # defining of text on screen
+        imagetxt = TextAsset(text="Certain Sprites Take a While to Load, so be patient. You aren't able to move for a while anyways.", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         movetxt = TextAsset(text="A to Move Left, D to Move Right", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
         jumptxt = TextAsset(text="Space to Jump, E to Interact", width=200, align='center',style='10px Arua==ial',fill=Color(0xff2222,1))
         optxt = TextAsset(text="Left Click to Place Orange Portal", width=200, align='center',style='10px Arial', fill=Color(0xff2222,1))
