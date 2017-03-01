@@ -36,3 +36,4 @@ for x in range(0,5):
 print("Dies")
 print(dielist)
 remove = list(input("Dice removed (no spaces)"))
+remove=remove.split
