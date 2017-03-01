@@ -30,6 +30,9 @@ portalline= LineStyle(1, blue)
 portalline2= LineStyle(1, orange)
 
 dielist=[]
+dieremove=[]
 for x in range(0,5):
     dielist.append(random.randrange(1,7,1))
+print("Dies")
 print(dielist)
+remove = list(input("Dice removed (no spaces)"))
