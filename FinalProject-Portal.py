@@ -38,5 +38,4 @@ print("Dies")
 print(dielist)
 remove = list(input("Dice removed (no spaces)"))
 l = remove.index()
-if remove(x in range(0,
 print(remove)
