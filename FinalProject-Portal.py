@@ -29,4 +29,4 @@ noline= LineStyle(0, black)
 portalline= LineStyle(1, blue)
 portalline2= LineStyle(1, orange)
 
-dieroll = list(random.randrange(1,5,1))
+dieroll = (random.randrange(1,5,1))
