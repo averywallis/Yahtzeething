@@ -40,7 +40,7 @@ print("Dies")
 print(dielist)
 if dielist == [1,2,3,4,5] or [2,3,4,5,6]:
     print("You win!")
-    sys.exit("Error message")
+    exit()
 remove = list(input("Dice removed (no spaces)"))
 l = len(remove)
 print(l)
