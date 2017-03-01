@@ -38,7 +38,7 @@ for x in range(0,5):
 dielist.sort()
 print("Dies")
 print(dielist)
-remove = list(int(input("Dice removed (no spaces)")))
+remove = list(input("Dice removed (no spaces)"))
 l = len(remove)
 print(l)
 print(remove)
