@@ -38,11 +38,13 @@ for x in range(0,5):
 dielist.sort()
 print("Dies")
 print(dielist)
-if dielist == list([1,2,3,4,5]) or list([2,3,4,5,6]):
-    print("You win!")
 remove = list(input("Dice removed (no spaces)"))
 l = len(remove)
 print(l)
 print(remove)
+dielist.remove(l(0))
 
-
+"""
+if dielist == list([1,2,3,4,5]) or list([2,3,4,5,6]):
+    print("You win!")
+"""
