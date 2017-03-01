@@ -6,6 +6,7 @@ from ggame import ImageAsset, PolygonAsset, Frame, Sound, SoundAsset, TextAsset
 import time
 import math
 import random
+import sys
 
 # colors
 red = Color(0xff0000, 1.0)
@@ -30,15 +31,16 @@ portalline= LineStyle(1, blue)
 portalline2= LineStyle(1, orange)
 
 dielist=[]
-dielist=[1,2,3,4,5]
+#dielist=[1,2,3,4,5]
 dieremove=[]
-#for x in range(0,5):
-    #dielist.append(random.randrange(1,7,1))
+for x in range(0,5):
+    dielist.append(random.randrange(1,7,1))
 dielist.sort()
 print("Dies")
 print(dielist)
 if dielist == [1,2,3,4,5] or [2,3,4,5,6]:
     print("You win!")
+    sys.exit("Error message")
 remove = list(input("Dice removed (no spaces)"))
 l = len(remove)
 print(l)
