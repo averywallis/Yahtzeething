@@ -33,7 +33,7 @@ dielist=[]
 dieremove=[]
 for x in range(0,5):
     dielist.append(random.randrange(1,7,1))
-sdielist=dielist.sort
+dielist.sort()
 print("Dies")
-print(sdielist)
+print(dielist)
 remove = list(input("Dice removed (no spaces)"))
