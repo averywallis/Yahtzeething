@@ -5,6 +5,7 @@ from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, El
 from ggame import ImageAsset, PolygonAsset, Frame, Sound, SoundAsset, TextAsset
 import time
 import math
+import random
 
 # colors
 red = Color(0xff0000, 1.0)
@@ -28,4 +29,4 @@ noline= LineStyle(0, black)
 portalline= LineStyle(1, blue)
 portalline2= LineStyle(1, orange)
 
-dieroll = list(math.randint(5))
+dieroll = list(random.randrange(1,5,1))
