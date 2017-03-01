@@ -37,6 +37,6 @@ dielist.sort()
 print("Dies")
 print(dielist)
 remove = list(input("Dice removed (no spaces)"))
-l = remove.count
+l = len(remove)
 print(l)
 print(remove)
