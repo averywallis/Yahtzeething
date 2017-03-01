@@ -37,4 +37,3 @@ dielist.sort
 print("Dies")
 print(dielist)
 remove = list(input("Dice removed (no spaces)"))
-remove=remove.split
