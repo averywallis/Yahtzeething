@@ -30,5 +30,6 @@ portalline= LineStyle(1, blue)
 portalline2= LineStyle(1, orange)
 
 dielist=[]
-dielist.append(random.randrange(1,6,1))
+for x in range(0,6):
+    dielist.append(random.randrange(1,6,1))
 print(dielist)
