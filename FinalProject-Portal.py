@@ -38,4 +38,5 @@ print("Dies")
 print(dielist)
 remove = list(input("Dice removed (no spaces)"))
 l = remove.count
+print(l)
 print(remove)
