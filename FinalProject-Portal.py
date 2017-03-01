@@ -31,4 +31,4 @@ portalline2= LineStyle(1, orange)
 
 dielist=[]
 dielist.append(random.randrange(1,6,1))
-print(dieroll)
+print(dielist)
